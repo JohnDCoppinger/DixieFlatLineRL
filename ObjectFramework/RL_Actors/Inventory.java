@@ -1,5 +1,5 @@
-package RL_Actors;
-import RL_Items.Item;
+package ObjectFramework.RL_Actors;
+import ObjectFramework.RL_Items.Item;
 import java.util.ArrayList;
 import java.util.Iterator;
 

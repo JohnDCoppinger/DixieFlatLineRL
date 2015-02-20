@@ -1,6 +1,4 @@
-package RL_Items;
-
-import RL_Items.Item;
+package ObjectFramework.RL_Items;
 
 /**
  * Created by Gallanoth on 1/29/2015.

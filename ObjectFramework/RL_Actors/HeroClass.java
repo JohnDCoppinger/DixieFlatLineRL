@@ -1,6 +1,4 @@
-package RL_Actors;
-
-import RL_Actors.ActorClass;
+package ObjectFramework.RL_Actors;
 
 /**
  * Created by Gallanoth on 1/29/2015.

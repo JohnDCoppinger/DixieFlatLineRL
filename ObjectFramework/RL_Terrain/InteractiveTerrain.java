@@ -1,4 +1,4 @@
-package RL_Terrain;
+package ObjectFramework.RL_Terrain;
 
 /**
  * Created by Gallanoth on 2/12/2015.

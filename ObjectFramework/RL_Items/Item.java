@@ -1,4 +1,6 @@
-package RL_Items;
+package ObjectFramework.RL_Items;
+
+import ObjectFramework.General.GameEntity;
 
 /**
  * Created by Gallanoth on 1/29/2015.

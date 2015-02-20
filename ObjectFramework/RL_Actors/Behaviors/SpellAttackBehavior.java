@@ -1,6 +1,4 @@
-package RL_Actors.Behaviors;
-
-import RL_Actors.Behaviors.AttackBehavior;
+package ObjectFramework.RL_Actors.Behaviors;
 
 /**
  * Created by Gallanoth on 1/29/2015.

@@ -1,4 +1,4 @@
-package General;
+package ObjectFramework.General;
 
 /**
  * Created by Gallanoth on 2/19/2015.

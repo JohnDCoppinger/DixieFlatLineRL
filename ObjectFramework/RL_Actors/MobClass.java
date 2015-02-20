@@ -1,4 +1,4 @@
-package RL_Actors;
+package ObjectFramework.RL_Actors;
 
 /**
  * Created by Gallanoth on 1/29/2015.
