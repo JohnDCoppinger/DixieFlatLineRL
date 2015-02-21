@@ -79,33 +79,43 @@ public class DungeonGenerator extends MapGenerator
 
             //1000 chances to find a suitable object (room or corridor)..
 
-            for (int testing = 0; testing < TESTING; testing++) {
+            for (int testing = 0; testing < TESTING; testing++)
+            {
                 newx = getRand(1, _xsize - 1);
                 newy = getRand(1, _ysize - 1);
                 validTile = -1;
 
 
-                if (getCell(newx, newy) == WALL || getCell(newx, newy) == CORRIDOR ||getCell(newx, newy) == VERTWALL ) {
+                if (getCell(newx, newy) == WALL || getCell(newx, newy) == CORRIDOR ||getCell(newx, newy) == VERTWALL )
+                {
                     //check if we can reach the place
-                    if (getCell(newx, newy + 1) == FLOOR || getCell(newx, newy + 1) == CORRIDOR) {
+                    if (getCell(newx, newy + 1) == FLOOR || getCell(newx, newy + 1) == CORRIDOR)
+                    {
                         validTile = 0;
                         xmod = 0;
                         ymod = -1;
-                    } else if (getCell(newx - 1, newy) == FLOOR || getCell(newx - 1, newy) == CORRIDOR) {
+                    }
+                    else if (getCell(newx - 1, newy) == FLOOR || getCell(newx - 1, newy) == CORRIDOR)
+                    {
                         validTile = 1;
                         xmod = +1;
                         ymod = 0;
-                    } else if (getCell(newx, newy - 1) == FLOOR || getCell(newx, newy - 1) == CORRIDOR) {
+                    }
+                    else if (getCell(newx, newy - 1) == FLOOR || getCell(newx, newy - 1) == CORRIDOR)
+                    {
                         validTile = 2;
                         xmod = 0;
                         ymod = +1;
-                    } else if (getCell(newx + 1, newy) == FLOOR || getCell(newx + 1, newy) == CORRIDOR) {
+                    }
+                    else if (getCell(newx + 1, newy) == FLOOR || getCell(newx + 1, newy) == CORRIDOR)
+                    {
                         validTile = 3;
                         xmod = -1;
                         ymod = 0;
                     }
 
-                    if (validTile > -1) {
+                    if (validTile > -1)
+                    {
                         if (getCell(newx, newy + 1) == DOOR) //north
                             validTile = -1;
                         else if (getCell(newx - 1, newy) == DOOR)//east
@@ -121,12 +131,15 @@ public class DungeonGenerator extends MapGenerator
                 }
             }
 
-                if (validTile > -1) {
+                if (validTile > -1)
+                {
                     //choose what to build now at our newly found place, and at what direction
                     int feature = getRand(0, 100);
 
-                    if (feature <= CHANCEROOM) { //a new room
-                        if (makeRoom((newx + xmod), (newy + ymod), 8, 6, validTile)) {
+                    if (feature <= CHANCEROOM)
+                    { //a new room
+                        if (makeRoom((newx + xmod), (newy + ymod), 8, 6, validTile))
+                        {
                             currentFeatures++; //add to our quota
 
                             //then we mark the wall opening with a door
@@ -135,8 +148,11 @@ public class DungeonGenerator extends MapGenerator
                             //clean up infront of the door so we can reach it
                             setCell((newx + xmod), (newy + ymod), FLOOR);
                         }
-                    } else if (feature >= CHANCEROOM) { //new corridor
-                        if (makeCorridor((newx + xmod), (newy + ymod), 6, validTile)) {
+                    }
+                    else if (feature >= CHANCEROOM)
+                    { //new corridor
+                        if (makeCorridor((newx + xmod), (newy + ymod), 6, validTile))
+                        {
                             //same thing here, add to the quota and a door
                             currentFeatures++;
                             setCell(newx, newy, DOOR);
@@ -146,29 +162,32 @@ public class DungeonGenerator extends MapGenerator
 
         }
         addFeatures();
+        saveMap();
     }
 
-    private void addFeatures() {
-        //sprinkle out the bonusstuff (stairs, chests etc.) over the map
+    private void addFeatures()
+    {
+
         int newx = 0;
         int newy = 0;
         int ways = 0; //from how many directions we can reach the random spot from
         int state = 0; //the state the loop is in, start with the stairs
 
-        while (state != 10) {
-            for (int testing = 0; testing < TESTING; testing++) {
+        while (state != 10)
+        {
+            for (int testing = 0; testing < TESTING; testing++)
+            {
                 newx = getRand(1, _xsize - 1);
                 newy = getRand(1, _ysize - 2);
-                //cheap bugfix, pulls down newy to 0<y<24, from 0<y<25
 
-                ways = 4; //the lower the better
+
+                ways = 4;
 
                 //check if we can reach the spot
-                if (getCell(newx, newy + 1) == FLOOR || getCell(newx, newy + 1) == CORRIDOR) {
-                    //north
+                //north
+                if (getCell(newx, newy + 1) == FLOOR || getCell(newx, newy + 1) == CORRIDOR)
                     if (getCell(newx, newy + 1) != DOOR)
                         ways--;
-                }
 
                 //east
                 if (getCell(newx - 1, newy) == FLOOR || getCell(newx - 1, newy) == CORRIDOR)
@@ -185,8 +204,10 @@ public class DungeonGenerator extends MapGenerator
                     if (getCell(newx + 1, newy) != DOOR)
                         ways--;
 
-                if (state == 0) {
-                    if (ways == 0) {
+                if (state == 0)
+                {
+                    if (ways == 0)
+                    {
                         //we're in state 0, let's place a "upstairs" thing
                         setCell(newx, newy, UPSTAIRS);
                         state = 1;
@@ -206,7 +227,7 @@ public class DungeonGenerator extends MapGenerator
         }
     }
 
-    public char[][] getMap()
+    public void saveMap()
     {
         for(int x = 0; x < _xsize; x ++)
             for(int y = 0; y < _ysize; y++)
@@ -214,9 +235,12 @@ public class DungeonGenerator extends MapGenerator
                 if(getCell(x,y) != STONEWALL)
                     _Map[x][y] = _dungeonMap[x+_xsize * y];
                 else
-                  _Map[x][y] = UNUSED;
+                    _Map[x][y] = UNUSED;
             }
+    }
 
+    public char[][] getMap()
+    {
         return _Map;
     }
 
@@ -237,64 +261,7 @@ public class DungeonGenerator extends MapGenerator
 
         switch (dir)
         {
-
-
-            case 0: //north
-                xtemp = x;
-
-                // make sure it's not out of the boundaries
-                for (ytemp = y; ytemp > (y-len); ytemp--) {
-                    if (ytemp < 0 || ytemp > _ysize) return false; //oh boho, it was!
-                    if (getCell(xtemp, ytemp) != UNUSED) return false;
-                }
-
-                //if we're still here, let's start building
-                for (ytemp = y; ytemp > (y-len); ytemp--) {
-                    setCell(xtemp, ytemp, CORRIDOR);
-                }
-                break;
-
-            case 1: //east
-                ytemp = y;
-
-                for (xtemp = x; xtemp < (x+len); xtemp++) {
-                    if (xtemp < 0 || xtemp > _xsize) return false;
-                    if (getCell(xtemp, ytemp) != UNUSED) return false;
-                }
-
-                for (xtemp = x; xtemp < (x+len); xtemp++) {
-                    setCell(xtemp, ytemp, CORRIDOR);
-                }
-                break;
-
-            case 2: // south
-                xtemp = x;
-
-                for (ytemp = y; ytemp < (y+len); ytemp++) {
-                    if (ytemp < 0 || ytemp > _ysize) return false;
-                    if (getCell(xtemp, ytemp) != UNUSED) return false;
-                }
-
-                for (ytemp = y; ytemp < (y+len); ytemp++) {
-                    setCell(xtemp, ytemp, CORRIDOR);
-                }
-                break;
-
-            case 3: // west
-                ytemp = y;
-
-                for (xtemp = x; xtemp > (x-len); xtemp--) {
-                    if (xtemp < 0 || xtemp > _xsize) return false;
-                    if (getCell(xtemp, ytemp) != UNUSED) return false;
-                }
-
-                for (xtemp = x; xtemp > (x-len); xtemp--) {
-                    setCell(xtemp, ytemp, CORRIDOR);
-                }
-                break;
-
-
-           /* case 0:
+            case 0:
                 if(!makeCorridorNorth(x,y, len))
                     return false;
                 break;
@@ -309,7 +276,7 @@ public class DungeonGenerator extends MapGenerator
             case 3:
                 if(!makeCorridorWest(x, y, len))
                     return false;
-                break;*/
+                break;
         }
 
         return true;
@@ -317,20 +284,19 @@ public class DungeonGenerator extends MapGenerator
 
     private boolean makeCorridorNorth(int x,int y, int length)
     {
+        int xtemp = x;
         int ytemp;
 
         // make sure it's not out of the boundaries
-        for (ytemp = y; ytemp > (y-length); ytemp--)
-        {
-            if (ytemp < 0 || ytemp > _ysize)
-                return false;
-            if (getCell(x, ytemp) != UNUSED)
-                return false;
+        for (ytemp = y; ytemp > (y-length); ytemp--) {
+            if (ytemp < 0 || ytemp > _ysize) return false;
+            if (getCell(xtemp, ytemp) != UNUSED) return false;
         }
 
-
-        for (ytemp = y; ytemp > (y-length); ytemp--)
-             setCell(x, ytemp, FLOOR);
+        //if we're still here, let's start building
+        for (ytemp = y; ytemp > (y-length); ytemp--) {
+            setCell(xtemp, ytemp, CORRIDOR);
+        }
         return true;
 
     }
@@ -339,50 +305,48 @@ public class DungeonGenerator extends MapGenerator
     {
         int ytemp;
 
-        for (ytemp = y; ytemp < (y+length); ytemp++)
-        {
-            if (ytemp < 0 || ytemp > _ysize)
-                return false;
-            if (getCell(x, ytemp) != UNUSED)
-                return false;
+        int xtemp = x;
+
+        for (ytemp = y; ytemp < (y+length); ytemp++) {
+            if (ytemp < 0 || ytemp > _ysize) return false;
+            if (getCell(xtemp, ytemp) != UNUSED) return false;
         }
 
-        for (ytemp = y; ytemp < (y+length); ytemp++)
-            setCell(x, ytemp, FLOOR);
+        for (ytemp = y; ytemp < (y+length); ytemp++) {
+            setCell(xtemp, ytemp, CORRIDOR);
+        }
         return true;
     }
 
     private boolean makeCorridorEast(int x,int y, int length)
     {
         int xtemp;
+        int ytemp = y;
 
-        for (xtemp = x; xtemp < (x+length); xtemp++)
-        {
-            if (xtemp < 0 || xtemp > _xsize)
-                return false;
-            if (getCell(xtemp, y) != UNUSED)
-                return false;
+        for (xtemp = x; xtemp < (x+length); xtemp++) {
+            if (xtemp < 0 || xtemp > _xsize) return false;
+            if (getCell(xtemp, ytemp) != UNUSED) return false;
         }
 
-        for (xtemp = x; xtemp < (x+length); xtemp++)
-             setCell(xtemp, y, FLOOR);
+        for (xtemp = x; xtemp < (x+length); xtemp++) {
+            setCell(xtemp, ytemp, CORRIDOR);
+        }
         return true;
     }
 
     private boolean makeCorridorWest(int x,int y, int length)
     {
         int xtemp;
+        int ytemp = y;
 
-        for (xtemp = x; xtemp > (x-length); xtemp--)
-        {
-            if (xtemp < 0 || xtemp > _xsize)
-                return false;
-            if (getCell(xtemp, y) != UNUSED)
-                return false;
+        for (xtemp = x; xtemp > (x-length); xtemp--) {
+            if (xtemp < 0 || xtemp > _xsize) return false;
+            if (getCell(xtemp, ytemp) != UNUSED) return false;
         }
 
-        for (xtemp = x; xtemp > (x-length); xtemp--)
-             setCell(xtemp, y, FLOOR);
+        for (xtemp = x; xtemp > (x-length); xtemp--) {
+            setCell(xtemp, ytemp, CORRIDOR);
+        }
         return true;
     }
 
@@ -398,99 +362,7 @@ public class DungeonGenerator extends MapGenerator
 
         switch(dir)
         {
-
-            case 0: // north
-
-                //Check if there's enough space left for it
-                for (int ytemp = y; ytemp > (y-ylen); ytemp--) {
-                    if (ytemp < 0 || ytemp > _ysize) return false;
-                    for (int xtemp = (x-xlen/2); xtemp < (x+(xlen+1)/2); xtemp++) {
-                        if (xtemp < 0 || xtemp > _xsize) return false;
-                        if (getCell(xtemp, ytemp) != UNUSED) return false; //no space left...
-                    }
-                }
-
-                //we're still here, build
-                for (int ytemp = y; ytemp > (y-ylen); ytemp--) {
-                    for (int xtemp = (x-xlen/2); xtemp < (x+(xlen+1)/2); xtemp++) {
-                        //start with the walls
-                        if (xtemp == (x-xlen/2)) setCell(xtemp, ytemp, WALL);
-                        else if (xtemp == (x+(xlen-1)/2)) setCell(xtemp, ytemp, WALL);
-                        else if (ytemp == y) setCell(xtemp, ytemp, VERTWALL);
-                        else if (ytemp == (y-ylen+1)) setCell(xtemp, ytemp, VERTWALL);
-                            //and then fill with the floor
-                        else setCell(xtemp, ytemp, FLOOR);
-                    }
-                }
-
-                break;
-
-            case 1: // east
-
-                for (int ytemp = (y-ylen/2); ytemp < (y+(ylen+1)/2); ytemp++) {
-                    if (ytemp < 0 || ytemp > _ysize) return false;
-                    for (int xtemp = x; xtemp < (x+xlen); xtemp++) {
-                        if (xtemp < 0 || xtemp > _xsize) return false;
-                        if (getCell(xtemp, ytemp) != UNUSED) return false;
-                    }
-                }
-
-                for (int ytemp = (y-ylen/2); ytemp < (y+(ylen+1)/2); ytemp++) {
-                    for (int xtemp = x; xtemp < (x+xlen); xtemp++) {
-                        if (xtemp == x) setCell(xtemp, ytemp, WALL);
-                        else if (xtemp == (x+xlen-1)) setCell(xtemp, ytemp, WALL);
-                        else if (ytemp == (y-ylen/2)) setCell(xtemp, ytemp, VERTWALL);
-                        else if (ytemp == (y+(ylen-1)/2)) setCell(xtemp, ytemp, VERTWALL);
-                        else setCell(xtemp, ytemp, FLOOR);
-                    }
-                }
-
-                break;
-
-            case 2: // south
-
-                for (int ytemp = y; ytemp < (y+ylen); ytemp++) {
-                    if (ytemp < 0 || ytemp > _ysize) return false;
-                    for (int xtemp = (x-xlen/2); xtemp < (x+(xlen+1)/2); xtemp++) {
-                        if (xtemp < 0 || xtemp > _xsize) return false;
-                        if (getCell(xtemp, ytemp) != UNUSED) return false;
-                    }
-                }
-
-                for (int ytemp = y; ytemp < (y+ylen); ytemp++) {
-                    for (int xtemp = (x-xlen/2); xtemp < (x+(xlen+1)/2); xtemp++) {
-                        if (xtemp == (x-xlen/2)) setCell(xtemp, ytemp, WALL);
-                        else if (xtemp == (x+(xlen-1)/2)) setCell(xtemp, ytemp, WALL);
-                        else if (ytemp == y) setCell(xtemp, ytemp, VERTWALL);
-                        else if (ytemp == (y+ylen-1)) setCell(xtemp, ytemp, VERTWALL);
-                        else setCell(xtemp, ytemp, FLOOR);
-                    }
-                }
-
-                break;
-
-            case 3: // west
-
-                for (int ytemp = (y-ylen/2); ytemp < (y+(ylen+1)/2); ytemp++) {
-                    if (ytemp < 0 || ytemp > _ysize) return false;
-                    for (int xtemp = x; xtemp > (x-xlen); xtemp--) {
-                        if (xtemp < 0 || xtemp > _xsize) return false;
-                        if (getCell(xtemp, ytemp) != UNUSED) return false;
-                    }
-                }
-
-                for (int ytemp = (y-ylen/2); ytemp < (y+(ylen+1)/2); ytemp++) {
-                    for (int xtemp = x; xtemp > (x-xlen); xtemp--) {
-                        if (xtemp == x) setCell(xtemp, ytemp, WALL);
-                        else if (xtemp == (x-xlen+1)) setCell(xtemp, ytemp, WALL);
-                        else if (ytemp == (y-ylen/2)) setCell(xtemp, ytemp, VERTWALL);
-                        else if (ytemp == (y+(ylen-1)/2)) setCell(xtemp, ytemp, VERTWALL);
-                        else setCell(xtemp, ytemp, FLOOR);
-                    }
-                }
-
-                break;
-            /*case 0:
+            case 0:
                 if(!makeRoomNorth(x,y,xlen,ylen))
                     return false;
                 break;
@@ -505,7 +377,7 @@ public class DungeonGenerator extends MapGenerator
             case 3:
                 if(!makeRoomWest(x,y,xlen,ylen))
                     return false;
-                break;*/
+                break;
 
         }
 
@@ -515,33 +387,22 @@ public class DungeonGenerator extends MapGenerator
     private boolean makeRoomNorth(int x, int y, int xlength, int ylength)
     {
         //Check if there's enough space left for it
-        for (int ytemp = y; ytemp > (y-ylength); ytemp--)
-        {
-            if (ytemp < 0 || ytemp > _ysize)
-                return false;
-            for (int xtemp = (x-xlength/2); xtemp < (x+(xlength+1)/2); xtemp++)
-            {
-                if (xtemp < 0 || xtemp > _xsize)
-                    return false;
-                if (getCell(xtemp, ytemp) != UNUSED)
-                    return false; //no space left...
+        for (int ytemp = y; ytemp > (y-ylength); ytemp--) {
+            if (ytemp < 0 || ytemp > _ysize) return false;
+            for (int xtemp = (x-xlength/2); xtemp < (x+(xlength+1)/2); xtemp++) {
+                if (xtemp < 0 || xtemp > _xsize) return false;
+                if (getCell(xtemp, ytemp) != UNUSED) return false; //no space left...
             }
         }
 
         //we're still here, build
-        for (int ytemp = y; ytemp > (y-ylength); ytemp--)
-        {
-            for (int xtemp = (x-xlength/2); xtemp < (x+(xlength+1)/2); xtemp++)
-            {
+        for (int ytemp = y; ytemp > (y-ylength); ytemp--) {
+            for (int xtemp = (x-xlength/2); xtemp < (x+(xlength+1)/2); xtemp++) {
                 //start with the walls
-                if (xtemp == (x-xlength/2))
-                    setCell(xtemp, ytemp, WALL);
-                else if (xtemp == (x+(xlength-1)/2))
-                    setCell(xtemp, ytemp, WALL);
-                else if (ytemp == y)
-                    setCell(xtemp, ytemp, WALL);
-                else if (ytemp == (y-ylength+1))
-                    setCell(xtemp, ytemp, WALL);
+                if (xtemp == (x-xlength/2)) setCell(xtemp, ytemp, WALL);
+                else if (xtemp == (x+(xlength-1)/2)) setCell(xtemp, ytemp, WALL);
+                else if (ytemp == y) setCell(xtemp, ytemp, VERTWALL);
+                else if (ytemp == (y-ylength+1)) setCell(xtemp, ytemp, VERTWALL);
                     //and then fill with the floor
                 else setCell(xtemp, ytemp, FLOOR);
             }
@@ -551,32 +412,21 @@ public class DungeonGenerator extends MapGenerator
 
     private boolean makeRoomSouth(int x, int y, int xlength, int ylength)
     {
-        for (int ytemp = y; ytemp < (y+ylength); ytemp++)
-        {
-            if (ytemp < 0 || ytemp > _ysize)
-                return false;
-            for (int xtemp = (x-xlength/2); xtemp < (x+(xlength+1)/2); xtemp++)
-            {
-                if (xtemp < 0 || xtemp > _xsize)
-                    return false;
-                if (getCell(xtemp, ytemp) != UNUSED)
-                    return false;
+        for (int ytemp = y; ytemp < (y+ylength); ytemp++) {
+            if (ytemp < 0 || ytemp > _ysize) return false;
+            for (int xtemp = (x-xlength/2); xtemp < (x+(xlength+1)/2); xtemp++) {
+                if (xtemp < 0 || xtemp > _xsize) return false;
+                if (getCell(xtemp, ytemp) != UNUSED) return false;
             }
         }
 
-        for (int ytemp = y; ytemp < (y+ylength); ytemp++)
-        {
-            for (int xtemp = (x-xlength/2); xtemp < (x+(xlength+1)/2); xtemp++)
-            {
-                if (xtemp == (x-xlength/2))
-                    setCell(xtemp, ytemp, WALL);
-                else if (xtemp == (x+(xlength-1)/2))
-                    setCell(xtemp, ytemp, WALL);
-                else if (ytemp == y)
-                    setCell(xtemp, ytemp, WALL);
-                else if (ytemp == (y+ylength-1))
-                    setCell(xtemp, ytemp, WALL);
-                else setCell(xtemp, ytemp, WALL);
+        for (int ytemp = y; ytemp < (y+ylength); ytemp++) {
+            for (int xtemp = (x-xlength/2); xtemp < (x+(xlength+1)/2); xtemp++) {
+                if (xtemp == (x-xlength/2)) setCell(xtemp, ytemp, WALL);
+                else if (xtemp == (x+(xlength-1)/2)) setCell(xtemp, ytemp, WALL);
+                else if (ytemp == y) setCell(xtemp, ytemp, VERTWALL);
+                else if (ytemp == (y+ylength-1)) setCell(xtemp, ytemp, VERTWALL);
+                else setCell(xtemp, ytemp, FLOOR);
             }
         }
         return true;
@@ -584,33 +434,21 @@ public class DungeonGenerator extends MapGenerator
 
     private boolean makeRoomEast(int x, int y, int xlength, int ylength)
     {
-        for (int ytemp = (y-ylength/2); ytemp < (y+(ylength+1)/2); ytemp++)
-        {
-            if (ytemp < 0 || ytemp > _ysize)
-                return false;
-            for (int xtemp = x; xtemp < (x+xlength); xtemp++)
-            {
-                if (xtemp < 0 || xtemp > _xsize)
-                    return false;
-                if (getCell(xtemp, ytemp) != UNUSED)
-                    return false;
+        for (int ytemp = (y-ylength/2); ytemp < (y+(ylength+1)/2); ytemp++) {
+            if (ytemp < 0 || ytemp > _ysize) return false;
+            for (int xtemp = x; xtemp < (x+xlength); xtemp++) {
+                if (xtemp < 0 || xtemp > _xsize) return false;
+                if (getCell(xtemp, ytemp) != UNUSED) return false;
             }
         }
 
-        for (int ytemp = (y-ylength/2); ytemp < (y+(ylength+1)/2); ytemp++)
-        {
-            for (int xtemp = x; xtemp < (x+xlength); xtemp++)
-            {
-                if (xtemp == x)
-                    setCell(xtemp, ytemp, WALL);
-                else if (xtemp == (x+xlength-1))
-                    setCell(xtemp, ytemp, WALL);
-                else if (ytemp == (y-ylength/2))
-                    setCell(xtemp, ytemp, WALL);
-                else if (ytemp == (y+(ylength-1)/2))
-                    setCell(xtemp, ytemp, WALL);
-                else
-                    setCell(xtemp, ytemp, FLOOR);
+        for (int ytemp = (y-ylength/2); ytemp < (y+(ylength+1)/2); ytemp++) {
+            for (int xtemp = x; xtemp < (x+xlength); xtemp++) {
+                if (xtemp == x) setCell(xtemp, ytemp, WALL);
+                else if (xtemp == (x+xlength-1)) setCell(xtemp, ytemp, WALL);
+                else if (ytemp == (y-ylength/2)) setCell(xtemp, ytemp, VERTWALL);
+                else if (ytemp == (y+(ylength-1)/2)) setCell(xtemp, ytemp, VERTWALL);
+                else setCell(xtemp, ytemp, FLOOR);
             }
         }
         return true;
@@ -618,33 +456,21 @@ public class DungeonGenerator extends MapGenerator
 
     private boolean makeRoomWest(int x, int y, int xlength, int ylength)
     {
-        for (int ytemp = (y-ylength/2); ytemp < (y+(ylength+1)/2); ytemp++)
-        {
-            if (ytemp < 0 || ytemp > _ysize)
-                return false;
-            for (int xtemp = x; xtemp > (x-xlength); xtemp--)
-            {
-                if (xtemp < 0 || xtemp > _xsize)
-                    return false;
-                if (getCell(xtemp, ytemp) != UNUSED)
-                    return false;
+        for (int ytemp = (y-ylength/2); ytemp < (y+(ylength+1)/2); ytemp++) {
+            if (ytemp < 0 || ytemp > _ysize) return false;
+            for (int xtemp = x; xtemp > (x-xlength); xtemp--) {
+                if (xtemp < 0 || xtemp > _xsize) return false;
+                if (getCell(xtemp, ytemp) != UNUSED) return false;
             }
         }
 
-        for (int ytemp = (y-ylength/2); ytemp < (y+(ylength+1)/2); ytemp++)
-        {
-            for (int xtemp = x; xtemp > (x-xlength); xtemp--)
-            {
-                if (xtemp == x)
-                    setCell(xtemp, ytemp, WALL);
-                else if (xtemp == (x-xlength+1))
-                    setCell(xtemp, ytemp, WALL);
-                else if (ytemp == (y-ylength/2))
-                    setCell(xtemp, ytemp, WALL);
-                else if (ytemp == (y+(ylength-1)/2))
-                    setCell(xtemp, ytemp, WALL);
-                else
-                    setCell(xtemp, ytemp, FLOOR);
+        for (int ytemp = (y-ylength/2); ytemp < (y+(ylength+1)/2); ytemp++) {
+            for (int xtemp = x; xtemp > (x-xlength); xtemp--) {
+                if (xtemp == x) setCell(xtemp, ytemp, WALL);
+                else if (xtemp == (x-xlength+1)) setCell(xtemp, ytemp, WALL);
+                else if (ytemp == (y-ylength/2)) setCell(xtemp, ytemp, VERTWALL);
+                else if (ytemp == (y+(ylength-1)/2)) setCell(xtemp, ytemp, VERTWALL);
+                else setCell(xtemp, ytemp, FLOOR);
             }
         }
         return true;
