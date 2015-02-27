@@ -2,7 +2,9 @@ import java.util.Random;
 import java.util.*;
 
 /**
- * Created by bcoll_000 on 2/19/2015.
+ * Created by Brandon Collins on 2/19/2015.
+ * Ideas and code samples from
+ * http://www.roguebasin.com/index.php?title=Dungeon-Building_Algorithm
  */
 abstract class MapGenerator
 {
@@ -10,9 +12,7 @@ abstract class MapGenerator
     public int _ysize;
     private long oldseed = 0;
 
-    public int _objects;
-
-    final public int CHANCEROOM = 75;
+   final public int CHANCEROOM = 75;
 
     protected char[][] _Map;
 

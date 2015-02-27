@@ -1,5 +1,5 @@
 /**
- * Created by bcoll_000 on 2/19/2015.
+ * Created by Brandon Collins on 2/19/2015.
  */
 public class DungeonGenerator extends MapGenerator
 {
@@ -41,33 +41,15 @@ public class DungeonGenerator extends MapGenerator
         _Map = new char[_xsize][_ysize];
         _dungeonMap = new char[_xsize *_ysize];
 
-        for (int y = 0; y < _ysize; y++)
-        {
-            for (int x = 0; x < _xsize; x++)
-            {
-                //ie, making the borders of unwalkable walls
-                if (y == 0)
-                    setCell(x, y, STONEWALL);
-                else if (y == _ysize-1)
-                    setCell(x, y, STONEWALL);
-                else if (x == 0)
-                    setCell(x, y, STONEWALL);
-                else if (x == _xsize-1)
-                    setCell(x, y, STONEWALL);
-
-                    //and fill the rest with dirt
-                else
-                    setCell(x, y, UNUSED);
-            }
-        }
-
+        //initial setup
+        setup();
 
         makeRoom(_xsize / 2, _ysize / 2, 8, 6, getRand(0, 3));
         int currentFeatures = 1;
 
         for (int tries = 0; tries < 1000; tries++)
         {
-            if (currentFeatures == objects)
+            if (currentFeatures == _objects)
                 break;
 
             //start with a random wall
@@ -496,5 +478,26 @@ public class DungeonGenerator extends MapGenerator
     public char getCell(int x, int y)
     {
         return _dungeonMap[x + _xsize * y];
+    }
+
+    public void setup()
+    {
+        for (int y = 0; y < _ysize; y++)
+            for (int x = 0; x < _xsize; x++)
+            {
+                //ie, making the borders of unwalkable walls
+                if (y == 0)
+                    setCell(x, y, STONEWALL);
+                else if (y == _ysize-1)
+                    setCell(x, y, STONEWALL);
+                else if (x == 0)
+                    setCell(x, y, STONEWALL);
+                else if (x == _xsize-1)
+                    setCell(x, y, STONEWALL);
+
+                    //and fill the rest with dirt
+                else
+                    setCell(x, y, UNUSED);
+            }
     }
 }
