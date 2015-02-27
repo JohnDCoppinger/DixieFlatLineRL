@@ -91,7 +91,7 @@ public class TownGenerator extends MapGenerator
             for(int y = 0; y < _ysize; y++)
                 if(getCell(x,y)== DOOR)
                 {
-                    if(x - 2 < 0 || y - 2 < 0 || x + 2 > _xsize || y + 2 > _ysize)
+                    if(x - 2 < 0 || y - 2 < 0 || x + 2 > _xsize-1 || y + 2 > _ysize-1)
                         break;
                     else if(getCell(x-1,y) == STONEWALL && getCell(x-2,y) == FLOOR)//Door is blocked by northern wall
                         setCell(x-1,y,FLOOR);
