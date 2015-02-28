@@ -499,51 +499,6 @@ public class Dungeon {
     {
         return this.dungeon_map;
     }
-   /* PGraphics generateDungeonImage() {
-        /*******************************************************************************/
-       /* PGraphics dungeonImage = createGraphics(xsize * TILE_SIZE, ysize * TILE_SIZE, JAVA2D);
-        dungeonImage.beginDraw();
-        dungeonImage.noStroke();
-
-        for (int y = 0; y < ysize; y++) {
-            for (int x = 0; x < xsize; x++) {
-                switch (getCell(x, y)) {
-                    case 0: // Unused
-                        dungeonImage.fill(54, 47, 45);
-                        break;
-                    case 1: // Dirt Wall
-                        dungeonImage.fill(96, 57, 19);
-                        break;
-                    case 2: // Dirt Floor
-                        dungeonImage.fill(166, 124, 82);
-                        break;
-                    case 3: // Stone Wall
-                        dungeonImage.fill(115, 99, 87);
-                        break;
-                    case 4: // Corridor
-                        dungeonImage.fill(123, 46, 0);
-                        break;
-                    case 5: // Door
-                        dungeonImage.fill(0, 118, 163);
-                        break;
-                    case 6: // Stairs Up
-                        dungeonImage.fill(100, 200, 100);
-                        break;
-                    case 7: // Stairs Down
-                        dungeonImage.fill(200, 100, 100);
-                        break;
-                    case 8: // Treasure Chest
-                        dungeonImage.fill(255, 247, 153);
-                        break;
-                }
-                dungeonImage.rect(x * TILE_SIZE, y * TILE_SIZE, TILE_SIZE, TILE_SIZE);
-            }
-        }
-
-        dungeonImage.endDraw();
-
-        return dungeonImage;
-    }*/
-
+   
 }
 
