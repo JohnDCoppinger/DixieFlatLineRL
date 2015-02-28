@@ -17,6 +17,7 @@ public abstract class GameEntity implements Renderable {
     }
 
     public boolean isPathable() {
+
         return pathable;
     }
 
@@ -42,6 +43,11 @@ public abstract class GameEntity implements Renderable {
     public Renderable returnTop() {
 
         return this.top;
+    }
+
+    public int getEntityId() {
+
+        return this.entityId;
     }
 
     private static int assignId() {

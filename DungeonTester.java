@@ -1,5 +1,5 @@
 
-public class Tester 
+public class DungeonTester
 {
 
 	public static void main(String[] args) 

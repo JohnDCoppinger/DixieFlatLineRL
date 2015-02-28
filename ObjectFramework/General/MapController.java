@@ -1,15 +1,15 @@
 package ObjectFramework.General;
 
 /**
- * Created by Gallanoth on 2/19/2015.
+ * Created by Gallanoth on 2/26/2015.
  */
 public class MapController {
 
-    private MapModel model;
+    private EntityModel model;
 
-    private MapController() {}
+    private MapController(){}
 
-    public MapController(MapModel model) {
+    public MapController(EntityModel model) {
 
         this.model = model;
     }

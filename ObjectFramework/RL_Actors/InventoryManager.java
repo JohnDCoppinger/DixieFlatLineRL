@@ -6,18 +6,27 @@ import java.util.Iterator;
 /**
  * Created by Gallanoth on 2/19/2015.
  */
-public class Inventory{
+public class InventoryManager {
 
     ArrayList<Item> inventory;
 
-    public Inventory() {
+    public InventoryManager() {
 
         this.inventory = new ArrayList<Item>();
     }
 
-    public void addInventory(Item item) {
+    public void addToInventory(Item item) {
 
         this.inventory.add(item);
+    }
+
+    public void removeFromInventory(Item item) {
+
+        this.inventory.remove(item);
+    }
+
+    public void trade(ArrayList<Item> tradeInventory) {
+
     }
 
     public Iterator<Item> iterator() {

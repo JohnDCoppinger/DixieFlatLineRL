@@ -3,20 +3,19 @@ import ObjectFramework.General.GameEntity;
 /**
  * Created by Gallanoth on 1/29/2015.
  */
-public abstract class Actor extends GameEntity {
+public class Actor extends GameEntity {
 
-    char renderChar;
-    Inventory inventory;
-    ActorClass aClass;
+    InventoryManager inventory;
+    ActorClass actorClass;
+    ActorController controller;
 
+    public String name;
 
     public Actor(){}
 
-    public void setRenderChar(char renderChar) {
+    public char render() {
 
-        this.renderChar = renderChar;
+        return 0;
     }
 
-    public abstract void render();
-    public String name;
 }

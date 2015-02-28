@@ -5,5 +5,5 @@ package ObjectFramework.General;
  */
 public interface Renderable {
 
-    public void render();
+    public char render();
 }
