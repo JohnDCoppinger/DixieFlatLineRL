@@ -3,11 +3,11 @@
  */
 public class TownGenerator extends MapGenerator
 {
-    private char UNUSED = ' ';
+    private char UNUSED = '.';
     private char WALL = '-';
     private char VERTWALL = '|';
-    private char FLOOR = '.';
-    private char STONEWALL = 'O';
+    private char FLOOR = ',';
+    private char STONEWALL = '#';
     private char CORRIDOR = '#';
     private char DOOR = 'D';
     private char UPSTAIRS = '>';
@@ -187,7 +187,12 @@ public class TownGenerator extends MapGenerator
                             madeDoor = true;
                     }
                     else
-                        setCell(x, y, STONEWALL);
+                        setCell(x,y,STONEWALL);
+                    /*else if(x == xStart || x == xStart + xSize -1)
+                        setCell(x, y, WALL);
+                    else
+                        setCell(x, y , VERTWALL);*/
+
                 else
                     setCell(x, y, FLOOR);
     }
