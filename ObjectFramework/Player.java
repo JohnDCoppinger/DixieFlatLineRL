@@ -1,6 +1,6 @@
 import net.slashie.libjcsi.ConsoleSystemInterface;
 
-public classs Player{
+public class Player{
 
 
 	private int x;

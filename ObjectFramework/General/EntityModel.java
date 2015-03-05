@@ -1,5 +1,7 @@
 package ObjectFramework.General;
 
+import ObjectFramework.Entity.GameEntity;
+
 import java.util.ArrayList;
 
 /**

@@ -1,9 +1,13 @@
 package ObjectFramework.General;
 
+import ObjectFramework.Entity.GameEntity;
+
+import java.util.Observable;
+
 /**
  * Created by Gallanoth on 2/26/2015.
  */
-public class EntityMap {
+public class EntityMap extends Observable{
 
     private GameEntity[][] map;
     private int rows;

@@ -1,9 +1,11 @@
 package ObjectFramework.RL_Actors;
-import ObjectFramework.General.GameEntity;
+import ObjectFramework.Entity.GameEntity;
+import ObjectFramework.Entity.InventoryManager;
+
 /**
  * Created by Gallanoth on 1/29/2015.
  */
-public class Actor extends GameEntity {
+public class Actor {
 
     InventoryManager inventory;
     ActorClass actorClass;
