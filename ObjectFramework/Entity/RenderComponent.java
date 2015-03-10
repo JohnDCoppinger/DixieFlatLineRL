@@ -5,14 +5,14 @@ import java.util.Vector;
 /**
  * Created by Gallanoth on 3/3/2015.
  */
-public class RenderManager {
+public class RenderComponent {
 
     private char renderChar;
     private int color;
 
-    public RenderManager() {}
+    public RenderComponent() {}
 
-    public RenderManager(char renderChar) {
+    public RenderComponent(char renderChar) {
 
         this.renderChar = renderChar;
     }

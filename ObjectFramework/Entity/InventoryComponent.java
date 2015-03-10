@@ -6,11 +6,11 @@ import java.util.Iterator;
 /**
  * Created by Gallanoth on 2/19/2015.
  */
-public class InventoryManager {
+public class InventoryComponent {
 
     ArrayList<Item> inventory;
 
-    public InventoryManager() {
+    public InventoryComponent() {
 
         this.inventory = new ArrayList<Item>();
     }

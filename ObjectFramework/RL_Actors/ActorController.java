@@ -22,6 +22,5 @@ public class ActorController implements Observer {
 
     public void update(Observable subject, Object data) {
 
-
     }
 }

@@ -11,10 +11,10 @@ public class GameEntity {
     private int y;
     private int level;
 
-    private InventoryManager inventory;
-    private CombatManager combat;
-    private ReactionManager reaction;
-    private RenderManager render;
+    private InventoryComponent inventory;
+    private CombatComponent combat;
+    private ReactionComponent reaction;
+    private RenderComponent render;
 
     private static int nextId = 1;
 
@@ -38,15 +38,15 @@ public class GameEntity {
         return nextId++;
     }
 
-    public InventoryManager getInventory() {
+    public InventoryComponent getInventory() {
         return inventory;
     }
 
-    public ReactionManager getReaction() {
+    public ReactionComponent getReaction() {
         return reaction;
     }
 
-    public RenderManager getRender() {
+    public RenderComponent getRender() {
         return render;
     }
 
@@ -55,15 +55,15 @@ public class GameEntity {
         this.beneath = beneath;
     }
 
-    public void setRender(RenderManager render) {
+    public void setRender(RenderComponent render) {
         this.render = render;
     }
 
-    public void setReaction(ReactionManager reaction) {
+    public void setReaction(ReactionComponent reaction) {
         this.reaction = reaction;
     }
 
-    public void setInventory(InventoryManager inventory) {
+    public void setInventory(InventoryComponent inventory) {
         this.inventory = inventory;
     }
 
@@ -83,11 +83,11 @@ public class GameEntity {
         this.y = y;
     }
 
-    public CombatManager getCombat() {
+    public CombatComponent getCombat() {
         return combat;
     }
 
-    public void setCombat(CombatManager combat) {
+    public void setCombat(CombatComponent combat) {
         this.combat = combat;
     }
 

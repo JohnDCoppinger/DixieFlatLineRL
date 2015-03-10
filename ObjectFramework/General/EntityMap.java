@@ -44,6 +44,19 @@ public class EntityMap extends Observable{
         map[row][col] = newEntity;
     }
 
+    public void moveEntity(int row, int col, GameEntity mover) {
+
+        if (row > this.rows || col > this.cols) {
+
+            throw new IndexOutOfBoundsException();
+        }
+
+        if (mover == null)
+            throw new NullPointerException();
+
+
+    }
+
     public static EntityMap createMap(char map[][]) {
 
         //TODO Map Interpreter

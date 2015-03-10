@@ -3,17 +3,23 @@ package ObjectFramework.General;
 import ObjectFramework.Entity.GameEntity;
 
 import java.util.ArrayList;
+import java.util.Observable;
 
 /**
  * Created by Gallanoth on 2/19/2015.
  */
-public class EntityModel {
+public class EntityModel extends Observable {
 
     private static EntityModel model = null;
 
     private ArrayList<EntityMap> entityMap;
     private EntityMap currentMap;
     private EntityMap previousMap;
+
+    private int lbDirtyX;
+    private int lbDirtyY;
+    private int ubDirtyX;
+    private int ubDirtyY;
 
     private EntityModel() {
 
@@ -81,6 +87,11 @@ public class EntityModel {
 
         this.currentMap.changeEntity(x, y, newEntity);
         return old;
+    }
+
+    public void moveEntity(int x, int y, GameEntity moving) {
+
+
     }
 
     public GameEntity[][] getRegion(int startx, int starty, int endx, int endy) {

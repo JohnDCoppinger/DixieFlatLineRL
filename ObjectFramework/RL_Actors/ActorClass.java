@@ -7,6 +7,5 @@ import ObjectFramework.RL_Actors.Behaviors.*;
 public abstract class ActorClass {
 
     private ActorClass classExtension;
-    protected MovementBehavior movement;
-    protected AttackBehavior attack;
+
 }

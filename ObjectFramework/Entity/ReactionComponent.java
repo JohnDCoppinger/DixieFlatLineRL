@@ -5,13 +5,15 @@ import java.util.Observer;
 /**
  * Created by Gallanoth on 3/3/2015.
  */
-public abstract class ReactionManager {
+public abstract class ReactionComponent {
 
     private boolean clippable;
 
-    public ReactionManager() {}
+    public ReactionComponent() {}
 
-    public abstract void interact();
+    public abstract void react(GameEntity triggerer); //should be used to set the state?
+
+    public abstract void defaultAction(GameEntity triggerer);
 
     public boolean clippable() {
 
