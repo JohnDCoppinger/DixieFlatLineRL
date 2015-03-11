@@ -1,23 +1,22 @@
 package ObjectFramework.Commands;
 
 import ObjectFramework.Entity.GameEntity;
+import ObjectFramework.General.EntityController;
 
 /**
  * Created by Gallanoth on 3/9/2015.
  */
 public class MoveLeftCommand extends MoveCommand {
 
-    GameEntity entity;
+    private MoveLeftCommand() {}
 
-    private MoveLeftCommand(){}
+    public MoveLeftCommand(EntityController controller, GameEntity entity) {
 
-    public MoveLeftCommand(GameEntity entity) {
-
-        this.entity = entity;
+        super(controller, 0, 0, entity);
     }
 
     public void execute() {
 
-        entity.setX(entity.getX() - 1);
+        this.controller.moveLeft(entity);
     }
 }
