@@ -10,13 +10,13 @@ public class MoveUpCommand extends MoveCommand {
 
     private MoveUpCommand() {}
 
-    public MoveUpCommand(EntityController controller, GameEntity entity) {
+    public MoveUpCommand(GameEntity entity) {
 
-        super(controller, 0, 0, entity);
+        super(0, 0, entity);
     }
 
     public void execute() {
 
-        this.controller.moveUp(entity);
+        EntityController.instance().moveUp(entity);
     }
 }

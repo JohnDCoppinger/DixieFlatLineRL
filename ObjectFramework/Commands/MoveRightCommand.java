@@ -10,13 +10,13 @@ public class MoveRightCommand extends MoveCommand{
 
     private MoveRightCommand() {}
 
-    public MoveRightCommand(EntityController controller, GameEntity entity) {
+    public MoveRightCommand(GameEntity entity) {
 
-        super(controller, 0, 0, entity);
+        super(0, 0, entity);
     }
 
     public void execute() {
 
-        this.controller.moveRight(entity);
+        EntityController.instance().moveRight(entity);
     }
 }

@@ -10,13 +10,13 @@ public class MoveDownCommand extends MoveCommand {
 
     private MoveDownCommand() {}
 
-    public MoveDownCommand(EntityController controller, GameEntity entity) {
+    public MoveDownCommand(GameEntity entity) {
 
-        super(controller, 0, 0, entity);
+        super(0, 0, entity);
     }
 
     public void execute() {
 
-        this.controller.moveDown(entity);
+        EntityController.instance().moveDown(entity);
     }
 }

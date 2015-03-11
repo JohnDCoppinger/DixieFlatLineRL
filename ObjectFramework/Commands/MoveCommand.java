@@ -11,21 +11,19 @@ public class MoveCommand implements Command {
     protected int x;
     protected int y;
     protected GameEntity entity;
-    protected EntityController controller;
 
     protected MoveCommand() {}
 
-    public MoveCommand(EntityController controller, int x, int y, GameEntity entity) {
+    public MoveCommand(int x, int y, GameEntity entity) {
 
         this.x = x;
         this.y = y;
         this.entity = entity;
-        this.controller = controller;
     }
 
     //should this check if the move location is valid? Probably
     public void execute() {
 
-        this.controller.move(x, y, entity);
+        EntityController.instance().move(x, y, entity);
     }
 }

@@ -7,6 +7,5 @@ import ObjectFramework.RL_Actors.Behaviors.*;
  */
 public abstract class ActorClass implements ReactionComponent{
 
-    private ActorClass classExtension;
-
+    private ActorClass classExtension; //Decorator for doing level ups
 }

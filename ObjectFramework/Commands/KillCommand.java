@@ -13,7 +13,7 @@ public class KillCommand implements Command {
 
     private KillCommand() {}
 
-    public KillCommand(EntityController controller, GameEntity entity) {
+    public KillCommand(GameEntity entity) {
 
         this.controller = controller;
         this.entity = entity;

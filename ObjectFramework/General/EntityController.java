@@ -5,12 +5,22 @@ import ObjectFramework.Entity.GameEntity;
 
 public class EntityController {
 
+    private static EntityController instance;
+
+    public static EntityController instance() {
+
+        if (instance == null)
+            instance = new EntityController(); //TODO make this a real constructor!!!!!!
+
+        return instance;
+    }
+
     private EntityModel model;
     private MapController terrain;
 
     private EntityController(){}
 
-    public EntityController(EntityModel model, MapController terrain) {
+    private EntityController(EntityModel model, MapController terrain) {
 
         this.model = model;
         this.terrain = terrain;
