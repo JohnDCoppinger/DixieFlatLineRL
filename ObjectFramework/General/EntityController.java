@@ -3,9 +3,6 @@ package ObjectFramework.General;
 import ObjectFramework.Commands.AttackCommand;
 import ObjectFramework.Entity.GameEntity;
 
-/**
- * Created by Gallanoth on 2/19/2015.
- */
 public class EntityController {
 
     private EntityModel model;
@@ -98,7 +95,7 @@ public class EntityController {
 
     }
 
-    public void attackArea(GameEntity aggressor, int x, int y, AttackArea area, AttackCommand attack) {
+    public void attackArea(int x, int y, GameEntity aggressor, AttackCommand attack) {
         //TODO
     }
 
