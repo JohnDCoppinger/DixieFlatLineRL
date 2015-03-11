@@ -12,7 +12,7 @@ public class SimpleActorClass extends ActorClass{
 
     }
 
-    public void react(GameEntity entity) {
+    public void reaction(GameEntity entity) {
 
     }
 }

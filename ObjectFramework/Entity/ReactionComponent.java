@@ -7,7 +7,7 @@ import java.util.Observer;
  */
 public interface ReactionComponent {
 
-    public void react(GameEntity triggerer); //should be used to set the state?
+    public void reaction(GameEntity triggerer); //should be used to set the state?
 
     public void defaultAction(GameEntity triggerer);
 
