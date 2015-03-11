@@ -7,6 +7,7 @@ public class GameEntity {
 
     private int entityId;
     private GameEntity beneath;
+    private boolean clippable;
     private int x;
     private int y;
     private int level;
@@ -19,23 +20,19 @@ public class GameEntity {
     private static int nextId = 1;
 
     public GameEntity() {
-
         this.entityId = this.assignId();
     }
 
-    public GameEntity getBeneath() {
+    private static int assignId() {
+        return nextId++;
+    }
 
+    public GameEntity getBeneath() {
         return this.beneath;
     }
 
     public int getEntityId() {
-
         return this.entityId;
-    }
-
-    private static int assignId() {
-
-        return nextId++;
     }
 
     public InventoryComponent getInventory() {
@@ -51,7 +48,6 @@ public class GameEntity {
     }
 
     public void setBeneath(GameEntity beneath) {
-
         this.beneath = beneath;
     }
 
@@ -97,6 +93,14 @@ public class GameEntity {
 
     public void setLevel(int level) {
         this.level = level;
+    }
+
+    public boolean clippable() {
+        return this.clippable;
+    }
+
+    public void setClippable(boolean clippable) {
+        this.clippable = clippable;
     }
 
 }

@@ -23,6 +23,6 @@ public class MapController {
         if (terrainObject == null)
             return false;
 
-        return terrainObject.getReaction().clippable();
+        return terrainObject.clippable();
     }
 }

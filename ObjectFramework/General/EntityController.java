@@ -1,7 +1,6 @@
 package ObjectFramework.General;
 
 import ObjectFramework.Commands.AttackCommand;
-import ObjectFramework.Commands.Command;
 import ObjectFramework.Entity.GameEntity;
 
 /**
@@ -22,10 +21,10 @@ public class EntityController {
 
     public void move(int x, int y, GameEntity requester) {
 
-        if (!terrainPathable(x, y))
+        if (!terrainClippable(x, y))
             return;
 
-        if (!entityPathable(x, y))
+        if (!entityClippable(x, y))
             entityInteraction(requester, model.getEntity(requester.getX(), requester.getY()));
 
         this.model.moveEntity(x, y, requester);
@@ -33,10 +32,10 @@ public class EntityController {
 
     public void moveUp(GameEntity requester) {
 
-        if (!terrainPathable(requester.getX(), requester.getY() + 1))
+        if (!terrainClippable(requester.getX(), requester.getY() + 1))
             return;
 
-        else if (!entityPathable(requester.getX(), requester.getY() + 1))
+        else if (!entityClippable(requester.getX(), requester.getY() + 1))
             entityInteraction(requester, model.getEntity(requester.getX(), requester.getY() + 1));
 
         else
@@ -45,10 +44,10 @@ public class EntityController {
 
     public void moveDown(GameEntity requester) {
 
-        if (!terrainPathable(requester.getX(), requester.getY() - 1))
+        if (!terrainClippable(requester.getX(), requester.getY() - 1))
             return;
 
-        else if (!entityPathable(requester.getX(), requester.getY() - 1))
+        else if (!entityClippable(requester.getX(), requester.getY() - 1))
             entityInteraction(requester, model.getEntity(requester.getX(), requester.getY() - 1));
 
         else
@@ -57,10 +56,10 @@ public class EntityController {
 
     public void moveRight(GameEntity requester) {
 
-        if (!terrainPathable(requester.getX() + 1, requester.getY()))
+        if (!terrainClippable(requester.getX() + 1, requester.getY()))
             return;
 
-        else if (!entityPathable(requester.getX() + 1, requester.getY()))
+        else if (!entityClippable(requester.getX() + 1, requester.getY()))
             entityInteraction(requester, model.getEntity(requester.getX() + 1, requester.getY()));
 
         else
@@ -69,10 +68,10 @@ public class EntityController {
 
     public void moveLeft(GameEntity requester) {
 
-        if (!terrainPathable(requester.getX() - 1, requester.getY()))
+        if (!terrainClippable(requester.getX() - 1, requester.getY()))
             return;
 
-        else if (!entityPathable(requester.getX() - 1, requester.getY()))
+        else if (!entityClippable(requester.getX() - 1, requester.getY()))
             entityInteraction(requester, model.getEntity(requester.getX() - 1, requester.getY()));
 
         else
@@ -103,18 +102,17 @@ public class EntityController {
         //TODO
     }
 
-    private boolean terrainPathable(int x, int y) {
-
+    private boolean terrainClippable(int x, int y) {
         return terrain.checkPath(x, y);
     }
 
-    private boolean entityPathable(int x, int y) {
+    private boolean entityClippable(int x, int y) {
 
         GameEntity entity = this.model.getEntity(x, y);
 
         if (entity == null)
             return false;
 
-        return entity.getReaction().clippable();
+        return entity.clippable();
     }
 }
