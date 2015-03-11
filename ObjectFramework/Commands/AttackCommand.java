@@ -5,7 +5,7 @@ import ObjectFramework.Entity.GameEntity;
 /**
  * Created by Gallanoth on 3/3/2015.
  */
-public class AttackCommand extends Command {
+public class AttackCommand implements Command {
 
     private GameEntity entity;
     private int damage;

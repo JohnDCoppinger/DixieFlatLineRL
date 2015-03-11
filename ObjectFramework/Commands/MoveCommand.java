@@ -6,7 +6,7 @@ import ObjectFramework.General.EntityController;
 /**
  * Created by Gallanoth on 3/3/2015.
  */
-public class MoveCommand extends Command {
+public class MoveCommand implements Command {
 
     protected int x;
     protected int y;

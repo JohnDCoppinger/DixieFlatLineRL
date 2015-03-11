@@ -7,6 +7,7 @@ public class CombatComponent {
 
     int hp;
     int armor;
+    double magicResist;
 
     public CombatComponent() {}
 

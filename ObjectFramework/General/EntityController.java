@@ -92,7 +92,7 @@ public class EntityController {
     }
 
     public void entityInteraction(GameEntity initiator, GameEntity defender) {
-
+        //TODO
     }
 
     public void attackArea(int x, int y, GameEntity aggressor, AttackCommand attack) {

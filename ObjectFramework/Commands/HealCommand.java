@@ -5,7 +5,7 @@ import ObjectFramework.Entity.GameEntity;
 /**
  * Created by Gallanoth on 3/9/2015.
  */
-public class HealCommand extends Command{
+public class HealCommand implements Command{
 
     private int heal;
     private GameEntity entity;
