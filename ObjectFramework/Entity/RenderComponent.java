@@ -32,4 +32,14 @@ public class RenderComponent {
 
         return this.color;
     }
+
+    public void setColor(int color) {
+
+        this.color = color;
+    }
+
+    public int getBackground() {
+
+        return this.background;
+    }
 }
