@@ -1,6 +1,7 @@
 /**
  * Created by bcoll_000 on 2/19/2015.
  */
+package ObjectFramework.RL_Map;
 public class Tester
 {
     public static void main(String args[])

@@ -1,6 +1,7 @@
 /**
  * Created by bcoll_000 on 3/9/2015.
  */
+package ObjectFramework.RL_Map;
 public class Node implements Comparable
 {
     private int _x;

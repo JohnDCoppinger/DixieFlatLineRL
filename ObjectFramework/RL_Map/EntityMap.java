@@ -1,9 +1,11 @@
+package ObjectFramework.RL_Map;
 import java.util.Date;
 import java.util.Random;
 
 /**
  * Created by bcoll_000 on 3/11/2015.
  */
+
 abstract class EntityMap
 {
     long oldseed = 0;

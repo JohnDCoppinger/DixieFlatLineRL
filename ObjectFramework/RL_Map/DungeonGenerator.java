@@ -1,6 +1,7 @@
 /**
  * Created by Brandon Collins on 2/19/2015.
  */
+package ObjectFramework.RL_Map;
 public class DungeonGenerator extends MapGenerator
 {
     private int SMALLESTROOM = 4;

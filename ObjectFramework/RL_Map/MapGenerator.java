@@ -1,3 +1,4 @@
+package ObjectFramework.RL_Map;
 import java.util.Random;
 import java.util.*;
 
@@ -6,6 +7,7 @@ import java.util.*;
  * Ideas and code samples from
  * http://www.roguebasin.com/index.php?title=Dungeon-Building_Algorithm
  */
+
 abstract class MapGenerator
 {
     public int _xsize;

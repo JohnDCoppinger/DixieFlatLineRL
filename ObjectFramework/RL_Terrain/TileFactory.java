@@ -1,6 +1,10 @@
+package ObjectFramework.RL_Terrain;
+
+import net.slashie.libjcsi.ConsoleSystemInterface;
+
 public class TileFactory{
 	
-	public TileFactory(char ch)
+	public TileFactory(char id)
 	{
 		char draw;
 		switch(id)
@@ -16,12 +20,12 @@ public class TileFactory{
 	        case 8: draw = '*'; break;
 	        default: draw = ' '; break;
 	    }
-	    return draw;
+	    //return draw;
 	}
 
 	private int setColor(int id)
 	{
-		int color = ConsoleSystemInterface.RED; 
+		int color = ConsoleSystemInterface.RED;
 		return color;
 	}
 	}

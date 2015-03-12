@@ -1,8 +1,10 @@
+package ObjectFramework.RL_Map;
 import java.nio.file.Path;
 
 /**
  * Created by bcoll_000 on 2/28/2015.
  */
+
 public class CaveGenerator extends MapGenerator
 {
     private char UNUSED = ' ';

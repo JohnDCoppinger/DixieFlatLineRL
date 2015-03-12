@@ -1,6 +1,7 @@
 /**
  * Created by bcoll_000 on 3/11/2015.
  */
+package ObjectFramework.RL_Map;
 public class DungeonEntityMap extends EntityMap
 {
     private char[][] _map;
