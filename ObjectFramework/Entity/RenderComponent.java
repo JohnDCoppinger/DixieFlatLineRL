@@ -9,10 +9,11 @@ public class RenderComponent {
 
     private char renderChar;
     private int color;
+    private int background;
 
-    public RenderComponent() {}
+    protected RenderComponent() {}
 
-    public RenderComponent(char renderChar) {
+    public RenderComponent(char renderChar, int color, int background) {
 
         this.renderChar = renderChar;
     }

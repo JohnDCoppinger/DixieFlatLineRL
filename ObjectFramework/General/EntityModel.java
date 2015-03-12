@@ -31,14 +31,7 @@ public class EntityModel extends Observable {
     private EntityModel() {
 
         this.entityMap = new ArrayList<EntityMap>();
-    }
 
-    public static EntityModel getInstance() {
-
-        if (model == null)
-            model = new EntityModel();
-
-        return model;
     }
 
     public void addMap(EntityMap newMap) {

@@ -18,7 +18,10 @@ public class EntityController {
     private EntityModel model;
     private MapController terrain;
 
-    private EntityController(){}
+    private EntityController(){
+
+        EntityMap.createMap(MapGenerator.)
+    }
 
     private EntityController(EntityModel model, MapController terrain) {
 

@@ -23,6 +23,8 @@ public class GameEntity {
         this.entityId = this.assignId();
     }
 
+    public GameEntity(boolean clippable)
+
     private static int assignId() {
         return nextId++;
     }

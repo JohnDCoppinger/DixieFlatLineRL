@@ -1,6 +1,8 @@
 /**
  * Created by Brandon Collins on 2/24/2015.
  */
+package ObjectFramework.RL_Map;
+
 public class TownGenerator extends MapGenerator
 {
     private char UNUSED = '.';

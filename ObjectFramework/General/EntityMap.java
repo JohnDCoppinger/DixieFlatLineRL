@@ -9,6 +9,8 @@ import java.util.Observable;
  */
 public class EntityMap {
 
+    private static int level = 1;
+
     private GameEntity[][] map;
     private int rows;
     private int cols;
@@ -110,7 +112,6 @@ public class EntityMap {
         map[row][col] = mover;
         mover.setX(row);
         mover.setY(col);
-
     }
 
     public static EntityMap createMap(char map[][]) {
