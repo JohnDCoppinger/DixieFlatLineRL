@@ -129,7 +129,7 @@ public class AStarPathFinder implements PathFinder {
     {
         boolean valid =  x >= 0 && x < _xsize && y >= 0 && y < _ysize;
 
-        if(_map[x][y] == '#' || _map[x][y] == 'O')
+        if(valid &&(_map[x][y] == '#' || _map[x][y] == 'O'))
             valid = false;
 
         return valid;

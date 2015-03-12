@@ -20,14 +20,6 @@ public class DungeonGenerator extends MapGenerator
     private char DOWNSTAIRS = '<';
 
     private char[] _dungeonMap;
-    //////// ADD RANDOM ENTITY
-
-    /*public char[][] makeEntities()
-    {
-    monster, chest, traps.
-    M, C, T, D, >, <
-    mark doors and stairs
-    }*/
 
     public void createMap(int xMap, int yMap, int objects)
     {
