@@ -5,11 +5,8 @@ package ObjectFramework.RL_Map;
 public class TownGenerator extends MapGenerator
 {
     private char UNUSED = '.';
-    private char WALL = '-';
-    private char VERTWALL = '|';
     private char FLOOR = ',';
-    private char STONEWALL = '#';
-    private char CORRIDOR = '#';
+    private char TOWNWALL = '#';
     private char DOOR = 'D';
     private char UPSTAIRS = '>';
     private char DOWNSTAIRS = '<';
@@ -95,47 +92,47 @@ public class TownGenerator extends MapGenerator
                 {
                     if(x - 2 < 0 || y - 2 < 0 || x + 2 > _xsize-1 || y + 2 > _ysize-1)
                         break;
-                    else if(getCell(x-1,y) == STONEWALL && getCell(x-2,y) == FLOOR)//Door is blocked by northern wall
+                    else if(getCell(x-1,y) == TOWNWALL && getCell(x-2,y) == FLOOR)//Door is blocked by northern wall
                         setCell(x-1,y,FLOOR);
-                    else if(getCell(x+1,y) == STONEWALL && getCell(x+2,y) == FLOOR)//Door is blocked by southern wall
+                    else if(getCell(x+1,y) == TOWNWALL && getCell(x+2,y) == FLOOR)//Door is blocked by southern wall
                         setCell(x+1,y,FLOOR);
-                    else if(getCell(x,y-1) == STONEWALL && getCell(x,y-2) == FLOOR)//Door is blocked by western wall
+                    else if(getCell(x,y-1) == TOWNWALL && getCell(x,y-2) == FLOOR)//Door is blocked by western wall
                         setCell(x,y-1,FLOOR);
-                    else if(getCell(x,y+1) == STONEWALL && getCell(x,y+2) == FLOOR)//Door is blocked by eastern wall
+                    else if(getCell(x,y+1) == TOWNWALL && getCell(x,y+2) == FLOOR)//Door is blocked by eastern wall
                         setCell(x,y+1,FLOOR);
-                    else if(getCell(x-1,y) == STONEWALL && getCell(x,y-1) == STONEWALL && getCell(x,y+1) == STONEWALL && getCell(x+1,y) == FLOOR )//Door is blocked by building to north
+                    else if(getCell(x-1,y) == TOWNWALL && getCell(x,y-1) == TOWNWALL && getCell(x,y+1) == TOWNWALL && getCell(x+1,y) == FLOOR )//Door is blocked by building to north
                     {
                         setCell(x-1,y,UNUSED);
                         if(getCell(x-2,y-1) == FLOOR)
-                            setCell(x-2,y-1, STONEWALL);
+                            setCell(x-2,y-1, TOWNWALL);
                         else if(getCell(x-2, y+1) == FLOOR)//y is left to right
-                            setCell(x-2,y+1,STONEWALL);
+                            setCell(x-2,y+1,TOWNWALL);
                     }
-                    else if(getCell(x-1,y) == FLOOR && getCell(x,y-1) == STONEWALL && getCell(x,y+1) == STONEWALL && getCell(x+1,y) == STONEWALL )//Door is blocked by building to south
+                    else if(getCell(x-1,y) == FLOOR && getCell(x,y-1) == TOWNWALL && getCell(x,y+1) == TOWNWALL && getCell(x+1,y) == TOWNWALL )//Door is blocked by building to south
                     {
                         setCell(x+1,y,UNUSED);
                         if(getCell(x+2,y-1) == FLOOR)
-                            setCell(x+2,y-1, STONEWALL);
+                            setCell(x+2,y-1, TOWNWALL);
                         else if(getCell(x+2, y+1) == FLOOR)
-                            setCell(x+2,y+1,STONEWALL);
+                            setCell(x+2,y+1,TOWNWALL);
 
                     }
-                    else if(getCell(x-1,y) == STONEWALL && getCell(x,y-1) == STONEWALL && getCell(x,y+1) == FLOOR && getCell(x+1,y) == STONEWALL )//Door is blocked by building to east
+                    else if(getCell(x-1,y) == TOWNWALL && getCell(x,y-1) == TOWNWALL && getCell(x,y+1) == FLOOR && getCell(x+1,y) == TOWNWALL )//Door is blocked by building to east
                     {
                         setCell(x,y-1,UNUSED);
                         if(getCell(x-1,y-2) == FLOOR)
-                            setCell(x-1,y-2, STONEWALL);
+                            setCell(x-1,y-2, TOWNWALL);
                         else if(getCell(x+1, y-2) == FLOOR)
-                            setCell(x+1,y-2,STONEWALL);
+                            setCell(x+1,y-2,TOWNWALL);
 
                     }
-                    else if(getCell(x-1,y) == STONEWALL && getCell(x,y-1) == FLOOR && getCell(x,y+1) == STONEWALL && getCell(x+1,y) == STONEWALL )//Door is blocked by building to west
+                    else if(getCell(x-1,y) == TOWNWALL && getCell(x,y-1) == FLOOR && getCell(x,y+1) == TOWNWALL && getCell(x+1,y) == TOWNWALL )//Door is blocked by building to west
                     {
                         setCell(x,y+1,UNUSED);
                         if(getCell(x+1,y+2) == FLOOR)
-                            setCell(x+1,y+2, STONEWALL);
+                            setCell(x+1,y+2, TOWNWALL);
                         else if(getCell(x-1, y+2) == FLOOR)
-                            setCell(x-1,y+2,STONEWALL);
+                            setCell(x-1,y+2,TOWNWALL);
                     }
                 }
 
@@ -166,7 +163,7 @@ public class TownGenerator extends MapGenerator
             for(int y = yStart; y < ysize + yStart && y < _ysize; y++)
             {
                 cellType = getCell(x,y);
-                if(cellType == STONEWALL || cellType == FLOOR)
+                if(cellType == TOWNWALL || cellType == FLOOR)
                     return false;
             }
 
@@ -189,7 +186,7 @@ public class TownGenerator extends MapGenerator
                             madeDoor = true;
                     }
                     else
-                        setCell(x,y,STONEWALL);
+                        setCell(x,y,TOWNWALL);
 
 
                 else
@@ -235,13 +232,13 @@ public class TownGenerator extends MapGenerator
             {
                 //ie, making the borders of unwalkable walls
                 if (y == 0)
-                    setCell(x, y, STONEWALL);
+                    setCell(x, y, TOWNWALL);
                 else if (y == _ysize-1)
-                    setCell(x, y, STONEWALL);
+                    setCell(x, y, TOWNWALL);
                 else if (x == 0)
-                    setCell(x, y, STONEWALL);
+                    setCell(x, y, TOWNWALL);
                 else if (x == _xsize-1)
-                    setCell(x, y, STONEWALL);
+                    setCell(x, y, TOWNWALL);
 
                     //and fill the rest with dirt
                 else

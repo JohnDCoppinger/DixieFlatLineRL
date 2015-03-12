@@ -28,5 +28,5 @@ public class TileFactory{
 		int color = ConsoleSystemInterface.RED;
 		return color;
 	}
-	}
+
 }
