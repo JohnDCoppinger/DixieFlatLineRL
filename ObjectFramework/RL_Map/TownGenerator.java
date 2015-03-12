@@ -65,7 +65,8 @@ public class TownGenerator extends MapGenerator
             int x = getRand(0,_xsize-1);
             int y = getRand(0,_ysize-1);
 
-            if (getCell(x, y) == FLOOR) {
+            if (getCell(x, y) == FLOOR)
+            {
                 if (x - 1 < 0 || x + 1 > _xsize || y - 1 < 0 || y + 1 > _ysize)
                     break;
                 else if (getCell(x - 1, y) != DOOR && getCell(x + 1, y) != DOOR && getCell(x, y - 1) != DOOR && getCell(x, y + 1) != DOOR)
@@ -188,10 +189,7 @@ public class TownGenerator extends MapGenerator
                     }
                     else
                         setCell(x,y,STONEWALL);
-                    /*else if(x == xStart || x == xStart + xSize -1)
-                        setCell(x, y, WALL);
-                    else
-                        setCell(x, y , VERTWALL);*/
+
 
                 else
                     setCell(x, y, FLOOR);

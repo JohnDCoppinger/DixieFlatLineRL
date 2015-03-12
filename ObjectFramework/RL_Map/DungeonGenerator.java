@@ -14,7 +14,7 @@ public class DungeonGenerator extends MapGenerator
     private char VERTWALL = '|';
     private char FLOOR = '.';
     private char STONEWALL = 'O';
-    private char CORRIDOR = '#';
+    private char CORRIDOR = '=';
     private char DOOR = 'D';
     private char UPSTAIRS = '>';
     private char DOWNSTAIRS = '<';

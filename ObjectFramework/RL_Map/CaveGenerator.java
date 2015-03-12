@@ -1,33 +1,26 @@
+import java.nio.file.Path;
+
 /**
  * Created by bcoll_000 on 2/28/2015.
  */
 public class CaveGenerator extends MapGenerator
 {
     private char UNUSED = ' ';
-    private char WALL = '-';
-    private char VERTWALL = '|';
+
     private char FLOOR = '.';
     private char STONEWALL = 'O';
-    private char CORRIDOR = '#';
-    private char DOOR = 'D';
     private char UPSTAIRS = '>';
     private char DOWNSTAIRS = '<';
 
-    private int SMOOTHNESS = 5;
+    private int SMOOTHNESS = 200;
     private int WALLCHANCE = 35;
-    private char[][] tempMap;
 
     private int _xsize;
     private int _ysize;
-    private int _objects;
 
     @Override
     public void createMap(int xMap, int yMap, int objects)
     {
-        if (objects < 1)
-            _objects = 10;
-        else
-            _objects = objects;
 
         if (xMap < 3)
             _xsize = 3;
@@ -51,17 +44,65 @@ public class CaveGenerator extends MapGenerator
 
         }
 
+        addStairs();
 
+        //for(int i = 0; i < 1; i ++)
+            //removeSingles();
+
+    }
+
+    private void removeSingles()
+    {
+        for (int y = 0; y < _ysize; y++)
+            for (int x = 0; x < _xsize; x++)
+            {
+                if(x > 0 && y > 0 && x < _xsize - 1 && y < _ysize -1)
+                {
+                    if(getCell(x,y) == STONEWALL)
+                    {
+                        if(getCell(x-1,y) == FLOOR && getCell(x+1,y) == FLOOR)
+                            setCell(x,y,UNUSED);
+                        if(getCell(x,y-1) == FLOOR && getCell(x,y+1) == FLOOR)
+                            setCell(x,y,UNUSED);
+                    }
+                }
+            }
+        for (int y = 0; y < _ysize; y++)
+            for (int x = 0; x < _xsize; x++)
+                if(getCell(x,y) == UNUSED)
+                    setCell(x,y,FLOOR);
     }
 
     private void addStairs()
     {
+        boolean stairsPlaced = false;
+
+        while(!stairsPlaced)
+        {
+            int startX = getRand(0, _xsize - 1);
+            int startY = getRand(0, _ysize - 1);
+
+            int endX = getRand(0, _xsize - 1);
+            int endY = getRand(0, _ysize - 1);
+
+            if (getCell(startX,startY) == FLOOR && getCell(endX,endY) == FLOOR && findStairPath(startX, startY, endX, endY))
+            {
+                if(startX != endX || startY != endY)
+                {
+                    setCell(startX, startY, UPSTAIRS);
+                    setCell(endX, endY, DOWNSTAIRS);
+                    stairsPlaced = true;
+                }
+            }
+        }
 
     }
 
-    private void findStairPath()
+    private boolean findStairPath(int sX, int sY, int eX, int eY)
     {
-
+        PathFinder find = new AStarPathFinder(_Map,sX,sY,eX,eY,_xsize,_ysize);
+        return find.hasPath();
+        //return true;
     }
 
     private void randomFill()
