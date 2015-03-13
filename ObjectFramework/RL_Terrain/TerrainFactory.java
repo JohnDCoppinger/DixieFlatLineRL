@@ -18,6 +18,11 @@ public class TerrainFactory {
             newTerrain.setClippable(true);
         }
 
+        if (terrain.equals("dirt")) {
+            newTerrain.setRender(new DirtRenderComponent());
+            newTerrain.setClippable(true);
+        }
+
         if (terrain.equals("door")) {
             newTerrain.setRender(new DoorRenderComponent());
             newTerrain.setClippable(true);

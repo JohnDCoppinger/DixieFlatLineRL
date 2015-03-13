@@ -1,6 +1,7 @@
 package ObjectFramework.General;
 
 import ObjectFramework.Entity.GameEntity;
+import ObjectFramework.RL_Terrain.TerrainFactory;
 
 import java.util.Observable;
 
@@ -113,18 +114,64 @@ public class EntityMap {
 
     }
 
-    public static EntityMap createMap(char map[][])
+    public static EntityMap createMap(char[][] gameMap)
     {
-        for(int x = 0; x < map.length; x++)
-            for(int y = 0; y < map[0].length; y++)
+        TerrainFactory terrain = new TerrainFactory();
+        EntityMap map = new EntityMap(gameMap.length,gameMap[0].length);
+
+
+        for(int x = 0; x < gameMap.length; x++)
+            for(int y = 0; y < gameMap[0].length; y++)
             {
-                if(true)
-                    ;
+                if(gameMap[x][y] == '=')
+                {
+                    map.swapEntity(x, y, terrain.createTerrain("corridor"));
+                }
+                else if(gameMap[x][y] == 'D')
+                {
+                    map.swapEntity(x,y,terrain.createTerrain("door"));
+                }
+                else if(gameMap[x][y] == '.')
+                {
+                    map.swapEntity(x,y,terrain.createTerrain("dirt"));
+                }
+                else if(gameMap[x][y] == ',')
+                {
+                    map.swapEntity(x,y,terrain.createTerrain("floor"));
+                }
+                else if(gameMap[x][y] == '<')
+                {
+                    map.swapEntity(x,y,terrain.createTerrain("downstairs"));
+                }
+                else if(gameMap[x][y] == '>')
+                {
+                    map.swapEntity(x,y,terrain.createTerrain("upstairs"));
+                }
+                else if(gameMap[x][y] == 'O')
+                {
+                    map.swapEntity(x,y,terrain.createTerrain("stonewall"));
+                }
+                else if(gameMap[x][y] == '#')
+                {
+                    map.swapEntity(x,y,terrain.createTerrain("townwall"));
+                }
+                else if(gameMap[x][y] == '|')
+                {
+                    map.swapEntity(x,y,terrain.createTerrain("vertwall"));
+                }
+                else if(gameMap[x][y] == '-')
+                {
+                    map.swapEntity(x,y,terrain.createTerrain("wall"));
+                }
+                else if(gameMap[x][y] == ' ')
+                {
+                    map.swapEntity(x,y,terrain.createTerrain("unused"));
+                }
             }
         //TODO Map Interpreter
         // creates the map from the array of characters from the geneation algorithm
 
-        return null;
+        return map;
     }
 
     public int rows() {

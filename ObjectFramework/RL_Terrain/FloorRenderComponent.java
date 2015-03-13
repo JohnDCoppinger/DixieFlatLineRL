@@ -10,7 +10,7 @@ public class FloorRenderComponent extends RenderComponent
 {
     public FloorRenderComponent()
     {
-        super('.', ConsoleSystemInterface.BLACK, ConsoleSystemInterface.BROWN);
+        super(',', ConsoleSystemInterface.BLACK, ConsoleSystemInterface.GRAY);
     }
 }
 ////Floor extends RenderCompenent
