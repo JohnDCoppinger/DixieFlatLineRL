@@ -2,27 +2,35 @@
  * Created by bcoll_000 on 3/11/2015.
  */
 package ObjectFramework.RL_Map;
-public class CaveEntityMap extends EntityMap
+public class DungeonActorMapGenerator extends ActorMapGenerator
 {
     private char[][] _map;
     private int _numObjects;
     private char STAIRSUP = '>';
     private char STAIRDOWN = '<';
+    private char DOOR = 'D';
     private char MONSTER = 'M';
     private char CHEST = 'C';
     private char TRAPS = 'T';
     private char UNUSED = ' ';
     private char DIRT = '.';
+    private char CORRIDOR = '=';
+    //////// ADD RANDOM ENTITY
 
+    /*public char[][] makeEntities()
+    {
+    monster, chest, traps.
+    M, C, T, D, >, <
+    mark doors and stairs
+    }*/
 
-    public CaveEntityMap(char[][] map, int numObjects)
+    public DungeonActorMapGenerator(char[][] map, int numObjects)
     {
         _map = map;
         _numObjects = numObjects;
     }
 
-    @Override
-    char[][] createEntityMap()
+    public char[][] createEntityMap()
     {
         int xStairsUp = 0;
         int yStairsUp = 0;
@@ -38,6 +46,8 @@ public class CaveEntityMap extends EntityMap
                     yStairsUp = y;
                     ret[x][y] = STAIRSUP;
                 }
+                else if(_map[x][y] == DOOR)
+                    ret[x][y] = DOOR;
                 else if(_map[x][y] == STAIRDOWN)
                     ret[x][y] = STAIRDOWN;
                 else
@@ -53,7 +63,7 @@ public class CaveEntityMap extends EntityMap
             int x = getRand(0,_map.length-1);
             int y = getRand(0, _map[0].length-1);
 
-            if(_map[x][y] == DIRT)
+            if(_map[x][y] == DIRT || _map[x][y] == CORRIDOR)
             {
                 PathFinder find = new AStarPathFinder(_map,x,y,xStairsUp,yStairsUp,_map.length,_map[0].length);
                 if(find.hasPath())

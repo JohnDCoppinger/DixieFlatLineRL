@@ -6,11 +6,11 @@ import java.util.Random;
  * Created by bcoll_000 on 3/11/2015.
  */
 
-abstract class EntityMap
+public abstract class ActorMapGenerator
 {
     long oldseed = 0;
 
-    abstract char[][] createEntityMap();
+    public abstract char[][] createEntityMap();
 
     public int getRand(int min, int max)
     {

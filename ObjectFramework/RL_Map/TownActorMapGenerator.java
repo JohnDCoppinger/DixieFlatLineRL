@@ -1,37 +1,34 @@
-/**
- * Created by bcoll_000 on 3/11/2015.
- */
 package ObjectFramework.RL_Map;
-public class DungeonEntityMap extends EntityMap
+
+/**
+ * Created by bcoll_000 on 3/12/2015.
+ */
+public class TownActorMapGenerator extends ActorMapGenerator
 {
     private char[][] _map;
     private int _numObjects;
     private char STAIRSUP = '>';
     private char STAIRDOWN = '<';
-    private char DOOR = 'D';
     private char MONSTER = 'M';
     private char CHEST = 'C';
     private char TRAPS = 'T';
     private char UNUSED = ' ';
     private char DIRT = '.';
-    private char CORRIDOR = '=';
-    //////// ADD RANDOM ENTITY
+    private char DOOR = 'D';
+    private char HERO = '@';
+    private char FLOOR = ',';
 
-    /*public char[][] makeEntities()
-    {
-    monster, chest, traps.
-    M, C, T, D, >, <
-    mark doors and stairs
-    }*/
 
-    public DungeonEntityMap(char[][] map, int numObjects)
+    public TownActorMapGenerator(char[][] map, int numObjects)
     {
         _map = map;
         _numObjects = numObjects;
     }
 
-    public char[][] createEntityMap()
+    @Override
+    char[][] createEntityMap()
     {
+        boolean heroPlace = false;
         int xStairsUp = 0;
         int yStairsUp = 0;
 
@@ -46,10 +43,10 @@ public class DungeonEntityMap extends EntityMap
                     yStairsUp = y;
                     ret[x][y] = STAIRSUP;
                 }
-                else if(_map[x][y] == DOOR)
-                    ret[x][y] = DOOR;
                 else if(_map[x][y] == STAIRDOWN)
                     ret[x][y] = STAIRDOWN;
+                else if(_map[x][y] == DOOR)
+                    ret[x][y] = DOOR;
                 else
                     ret[x][y] = UNUSED;
             }
@@ -63,7 +60,7 @@ public class DungeonEntityMap extends EntityMap
             int x = getRand(0,_map.length-1);
             int y = getRand(0, _map[0].length-1);
 
-            if(_map[x][y] == DIRT || _map[x][y] == CORRIDOR)
+            if(_map[x][y] == DIRT)
             {
                 PathFinder find = new AStarPathFinder(_map,x,y,xStairsUp,yStairsUp,_map.length,_map[0].length);
                 if(find.hasPath())
@@ -74,7 +71,28 @@ public class DungeonEntityMap extends EntityMap
             }
         }
 
+        while(!heroPlace)
+        {
+            int x = getRand(0,_map.length-1);
+            int y = getRand(0, _map[0].length-1);
+
+            if(_map[x][y] == FLOOR)
+            {
+                PathFinder find = new AStarPathFinder(_map,x,y,xStairsUp,yStairsUp,_map.length,_map[0].length);
+
+                if(find.hasPath())
+                {
+                    placeHero(x, y, ret);
+                    heroPlace = true;
+                }
+            }
+        }
         return ret;
+    }
+
+    private void placeHero(int x, int y, char[][] ret)
+    {
+        ret[x][y] = HERO;
     }
 
     private void placeObject(int x, int y, char[][] ret)

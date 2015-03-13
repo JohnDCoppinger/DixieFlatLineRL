@@ -1,9 +1,8 @@
-package ObjectFramework.RL_Map;
-
 /**
- * Created by bcoll_000 on 3/12/2015.
+ * Created by bcoll_000 on 3/11/2015.
  */
-public class TownEntityMap extends EntityMap
+package ObjectFramework.RL_Map;
+public class CaveActorMapGenerator extends ActorMapGenerator
 {
     private char[][] _map;
     private int _numObjects;
@@ -14,12 +13,9 @@ public class TownEntityMap extends EntityMap
     private char TRAPS = 'T';
     private char UNUSED = ' ';
     private char DIRT = '.';
-    private char DOOR = 'D';
-    private char HERO = '@';
-    private char FLOOR = ',';
 
 
-    public TownEntityMap(char[][] map, int numObjects)
+    public CaveActorMapGenerator(char[][] map, int numObjects)
     {
         _map = map;
         _numObjects = numObjects;
@@ -28,7 +24,6 @@ public class TownEntityMap extends EntityMap
     @Override
     char[][] createEntityMap()
     {
-        boolean heroPlace = false;
         int xStairsUp = 0;
         int yStairsUp = 0;
 
@@ -45,8 +40,6 @@ public class TownEntityMap extends EntityMap
                 }
                 else if(_map[x][y] == STAIRDOWN)
                     ret[x][y] = STAIRDOWN;
-                else if(_map[x][y] == DOOR)
-                    ret[x][y] = DOOR;
                 else
                     ret[x][y] = UNUSED;
             }
@@ -71,28 +64,7 @@ public class TownEntityMap extends EntityMap
             }
         }
 
-        while(!heroPlace)
-        {
-            int x = getRand(0,_map.length-1);
-            int y = getRand(0, _map[0].length-1);
-
-            if(_map[x][y] == FLOOR)
-            {
-                PathFinder find = new AStarPathFinder(_map,x,y,xStairsUp,yStairsUp,_map.length,_map[0].length);
-
-                if(find.hasPath())
-                {
-                    placeHero(x, y, ret);
-                    heroPlace = true;
-                }
-            }
-        }
         return ret;
-    }
-
-    private void placeHero(int x, int y, char[][] ret)
-    {
-        ret[x][y] = HERO;
     }
 
     private void placeObject(int x, int y, char[][] ret)

@@ -11,7 +11,7 @@ public class Tester
 
         map.createMap(50,60,100);
         newMap = map.getMap();
-        EntityMap eMap = new CaveEntityMap(newMap, 10);
+        ActorMapGenerator eMap = new CaveActorMapGenerator(newMap, 10);
         entityMap = eMap.createEntityMap();
 
         for (int i = 0; i < newMap.length; i ++)
