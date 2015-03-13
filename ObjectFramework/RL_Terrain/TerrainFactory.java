@@ -54,6 +54,9 @@ public class TerrainFactory {
             newTerrain.setRender(new WallRenderComponent());
         }
 
+        if (terrain.equals("unused")) {
+            newTerrain.setRender(new UnusedRenderComponent());
+        }
         return newTerrain;
     }
 }
