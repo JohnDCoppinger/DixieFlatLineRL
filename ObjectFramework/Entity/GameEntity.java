@@ -19,7 +19,7 @@ public class GameEntity {
 
     private static int nextId = 1;
 
-    private GameEntity() {
+    protected GameEntity() {
         this.entityId = this.assignId();
     }
 

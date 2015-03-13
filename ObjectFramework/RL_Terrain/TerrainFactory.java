@@ -1,6 +1,7 @@
 package ObjectFramework.RL_Terrain;
 
 import ObjectFramework.Entity.GameEntity;
+import ObjectFramework.RenderComponents.Terrain.*;
 
 /**
  * Created by Gallanoth on 3/12/2015.

@@ -2,6 +2,8 @@ package ObjectFramework.General;
 
 import ObjectFramework.Commands.AttackCommand;
 import ObjectFramework.Entity.GameEntity;
+import ObjectFramework.RL_Items.SimpleItemReaction;
+import ObjectFramework.RenderComponents.Item.CorpseRenderComponent;
 
 import java.util.Observer;
 
@@ -91,8 +93,9 @@ public class EntityController {
 
         if (corpse.getInventory() != null) {
 
-            item = new GameEntity();
+            item = new GameEntity(new CorpseRenderComponent());
             item.setInventory(corpse.getInventory());
+            item.setReaction(new SimpleItemReaction(item));
         }
 
         this.model.swapEntity(corpse.getX(), corpse.getY(), item);

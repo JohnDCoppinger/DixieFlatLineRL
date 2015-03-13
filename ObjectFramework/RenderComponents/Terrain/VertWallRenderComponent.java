@@ -1,4 +1,4 @@
-package ObjectFramework.RL_Terrain;
+package ObjectFramework.RenderComponents.Terrain;
 
 import ObjectFramework.Entity.RenderComponent;
 import net.slashie.libjcsi.ConsoleSystemInterface;
