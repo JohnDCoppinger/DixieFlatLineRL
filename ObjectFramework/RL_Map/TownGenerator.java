@@ -54,7 +54,7 @@ public class TownGenerator extends MapGenerator
 
     public void placeStairs()
     {
-        boolean upstairs = false;
+        boolean upstairs = true;
         boolean downstairs = false;
         boolean bothStairs = false;
 
