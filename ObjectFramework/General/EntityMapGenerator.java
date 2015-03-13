@@ -36,7 +36,7 @@ public class EntityMapGenerator {
         this.numObjects = numObjects;
     }
 
-    public void generateMap(String mapType)
+    public EntityMap generateMap(String mapType)
     {
         char[][] actorMapTemp;
         EntityMap gameMap;
@@ -61,8 +61,28 @@ public class EntityMapGenerator {
 
         actorMapTemp = actorMap.createEntityMap();
 
+        for(int x = 0; x < actorMapTemp.length; x ++)
+            for(int y = 0; y < actorMapTemp[0].length; y++)
+            {
+                if(actorMapTemp[x][y] == 'M')
+                {
+                    ;//gameMap.moveEntity(x,y,new MonsterEntity());
+                }
+                if(actorMapTemp[x][y] == 'T')
+                {
+                    ;//gameMap.moveEntity(x,y,new TrapEntity());
+                }
 
-        ///////
+                if(actorMapTemp[x][y] == 'C')
+                {
+                    ;//gameMap.moveEntity(x,y,new ChestEntity);
+                }
+                if(actorMapTemp[x][y] == '@')
+                {
+                    ;//gameMap.moveEntity(x,y,new PartyEntity());
+                }
+            }
 
+        return  gameMap;
     }
 }
