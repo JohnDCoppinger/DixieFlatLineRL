@@ -11,6 +11,6 @@ public interface InventoryComponent {
     public Item[] showItems();
     public Item giveItem(int itemIndex);
     public void addItem(Item newItem);
-    public void deleteItem();
+    public void deleteItem(int itemIndex);
     public int inventorySize();
 }

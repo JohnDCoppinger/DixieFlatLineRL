@@ -9,7 +9,7 @@ public class MessageQueue extends LinkedList<String> {
 
     private static MessageQueue instance;
 
-    public MessageQueue getInstance() {
+    public static MessageQueue getInstance() {
 
         if (instance == null)
             instance = new MessageQueue();
@@ -17,7 +17,7 @@ public class MessageQueue extends LinkedList<String> {
         return instance;
     }
 
-    public MessageQueue() {
+    private MessageQueue() {
         super();
     }
 }

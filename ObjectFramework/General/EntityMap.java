@@ -167,7 +167,6 @@ public class EntityMap {
                     retMap.swapEntity(x,y,terrain.createTerrain("unused"));
                 }
             }
-        //TODO Map Interpreter
         // creates the map from the array of characters from the geneation algorithm
 
         return retMap;
