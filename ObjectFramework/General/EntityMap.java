@@ -117,61 +117,60 @@ public class EntityMap {
     public static EntityMap createMap(char[][] gameMap)
     {
         TerrainFactory terrain = new TerrainFactory();
-        EntityMap map = new EntityMap(gameMap.length,gameMap[0].length);
-
+        EntityMap retMap = new EntityMap(gameMap.length,gameMap[0].length);
 
         for(int x = 0; x < gameMap.length; x++)
             for(int y = 0; y < gameMap[0].length; y++)
             {
                 if(gameMap[x][y] == '=')
                 {
-                    map.swapEntity(x, y, terrain.createTerrain("corridor"));
+                    retMap.swapEntity(x, y, terrain.createTerrain("corridor"));
                 }
                 else if(gameMap[x][y] == 'D')
                 {
-                    map.swapEntity(x,y,terrain.createTerrain("door"));
+                    retMap.swapEntity(x,y,terrain.createTerrain("door"));
                 }
                 else if(gameMap[x][y] == '.')
                 {
-                    map.swapEntity(x,y,terrain.createTerrain("dirt"));
+                    retMap.swapEntity(x,y,terrain.createTerrain("dirt"));
                 }
                 else if(gameMap[x][y] == ',')
                 {
-                    map.swapEntity(x,y,terrain.createTerrain("floor"));
+                    retMap.swapEntity(x,y,terrain.createTerrain("floor"));
                 }
                 else if(gameMap[x][y] == '<')
                 {
-                    map.swapEntity(x,y,terrain.createTerrain("downstairs"));
+                    retMap.swapEntity(x,y,terrain.createTerrain("downstairs"));
                 }
                 else if(gameMap[x][y] == '>')
                 {
-                    map.swapEntity(x,y,terrain.createTerrain("upstairs"));
+                    retMap.swapEntity(x,y,terrain.createTerrain("upstairs"));
                 }
                 else if(gameMap[x][y] == 'O')
                 {
-                    map.swapEntity(x,y,terrain.createTerrain("stonewall"));
+                    retMap.swapEntity(x,y,terrain.createTerrain("stonewall"));
                 }
                 else if(gameMap[x][y] == '#')
                 {
-                    map.swapEntity(x,y,terrain.createTerrain("townwall"));
+                    retMap.swapEntity(x,y,terrain.createTerrain("townwall"));
                 }
                 else if(gameMap[x][y] == '|')
                 {
-                    map.swapEntity(x,y,terrain.createTerrain("vertwall"));
+                    retMap.swapEntity(x,y,terrain.createTerrain("vertwall"));
                 }
                 else if(gameMap[x][y] == '-')
                 {
-                    map.swapEntity(x,y,terrain.createTerrain("wall"));
+                    retMap.swapEntity(x,y,terrain.createTerrain("wall"));
                 }
                 else if(gameMap[x][y] == ' ')
                 {
-                    map.swapEntity(x,y,terrain.createTerrain("unused"));
+                    retMap.swapEntity(x,y,terrain.createTerrain("unused"));
                 }
             }
         //TODO Map Interpreter
         // creates the map from the array of characters from the geneation algorithm
 
-        return map;
+        return retMap;
     }
 
     public int rows() {
