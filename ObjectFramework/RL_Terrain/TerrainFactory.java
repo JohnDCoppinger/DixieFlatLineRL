@@ -15,6 +15,7 @@ public class TerrainFactory {
 
         if (terrain.equals("corridor")) {
             newTerrain.setRender(new CorridorRenderComponent());
+            newTerrain.setClippable(true);
         }
 
         if (terrain.equals("door")) {
