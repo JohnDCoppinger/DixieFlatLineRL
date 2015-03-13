@@ -9,12 +9,15 @@ public class RenderComponent {
 
     private char renderChar;
     private int color;
+    private int backgroundColor;
 
-    public RenderComponent() {}
+    protected RenderComponent() {}
 
-    public RenderComponent(char renderChar) {
+    public RenderComponent(char renderChar, int color, int backgroundColor) {
 
         this.renderChar = renderChar;
+        this.color = color;
+        this.backgroundColor = backgroundColor;
     }
 
     public char getRenderChar() {
@@ -31,4 +34,18 @@ public class RenderComponent {
 
         return this.color;
     }
+
+    public int getBackgroundColor() {
+        return backgroundColor;
+    }
+
+    public void setBackgroundColor(int backgroundColor) {
+        this.backgroundColor = backgroundColor;
+    }
+
+    public void setColor(int color) {
+        this.color = color;
+    }
+
+
 }

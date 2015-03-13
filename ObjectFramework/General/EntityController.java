@@ -16,11 +16,11 @@ public class EntityController {
     }
 
     private EntityModel model;
-    private MapController terrain;
+    private TerrainController terrain;
 
     private EntityController(){}
 
-    private EntityController(EntityModel model, MapController terrain) {
+    private EntityController(EntityModel model, TerrainController terrain) {
 
         this.model = model;
         this.terrain = terrain;

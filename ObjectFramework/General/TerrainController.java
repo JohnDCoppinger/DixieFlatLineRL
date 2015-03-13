@@ -5,24 +5,24 @@ import ObjectFramework.Entity.GameEntity;
 /**
  * Created by Gallanoth on 2/26/2015.
  */
-public class MapController {
+public class TerrainController {
 
-    private static MapController instance;
+    private static TerrainController instance;
 
     private EntityModel model;
 
     //TODO work on getting an actual model into the instance
-    public static MapController instance() {
+    public static TerrainController instance() {
 
         if (instance == null)
-            instance = new MapController();
+            instance = new TerrainController();
 
         return instance;
     }
 
-    private MapController(){}
+    private TerrainController(){}
 
-    private MapController(EntityModel model) {
+    private TerrainController(EntityModel model) {
 
         this.model = model;
     }
