@@ -11,56 +11,56 @@ public class TerrainFactory {
 
     public GameEntity createTerrain(String terrain) {
 
-        GameEntity newTerrain = new GameEntity();
+        GameEntity newTerrain = null;
 
         if (terrain.equals("corridor")) {
-            newTerrain.setRender(new CorridorRenderComponent());
+            newTerrain = new GameEntity((new CorridorRenderComponent()));
             newTerrain.setClippable(true);
         }
 
         if (terrain.equals("dirt")) {
-            newTerrain.setRender(new DirtRenderComponent());
+            newTerrain = new GameEntity((new DirtRenderComponent()));
             newTerrain.setClippable(true);
         }
 
         if (terrain.equals("door")) {
-            newTerrain.setRender(new DoorRenderComponent());
+            newTerrain = new GameEntity((new DoorRenderComponent()));
             newTerrain.setClippable(true);
         }
 
         if (terrain.equals("downstairs")) {
-            newTerrain.setRender(new DownStairsRenderComponent());
+            newTerrain = new GameEntity((new DownStairsRenderComponent()));
             newTerrain.setClippable(true);
         }
 
         if (terrain.equals("floor")) {
-            newTerrain.setRender(new FloorRenderComponent());
+            newTerrain = new GameEntity((new FloorRenderComponent()));
             newTerrain.setClippable(true);
         }
 
         if (terrain.equals("stonewall")) {
-            newTerrain.setRender(new StoneWallRenderComponent());
+            newTerrain = new GameEntity((new StoneWallRenderComponent()));
         }
 
         if (terrain.equals("townwall")) {
-            newTerrain.setRender(new TownWallRenderComponent());
+            newTerrain = new GameEntity((new TownWallRenderComponent()));
         }
 
         if (terrain.equals("upstairs")) {
-            newTerrain.setRender(new UpStairsRenderComponent());
+            newTerrain = new GameEntity((new UpStairsRenderComponent()));
             newTerrain.setClippable(true);
         }
 
         if (terrain.equals("vertwall")) {
-            newTerrain.setRender(new VertWallRenderComponent());
+            newTerrain = new GameEntity((new VertWallRenderComponent()));
         }
 
         if (terrain.equals("wall")) {
-            newTerrain.setRender(new WallRenderComponent());
+            newTerrain = new GameEntity((new WallRenderComponent()));
         }
 
         if (terrain.equals("unused")) {
-            newTerrain.setRender(new UnusedRenderComponent());
+            newTerrain = new GameEntity((new UnusedRenderComponent()));
         }
         return newTerrain;
     }

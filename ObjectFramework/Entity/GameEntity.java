@@ -12,15 +12,21 @@ public class GameEntity {
     private int y;
     private int level;
 
-    private InventoryComponent inventory;
-    private CombatComponent combat;
-    private ReactionComponent reaction;
-    private RenderComponent render;
+    protected InventoryComponent inventory;
+    protected CombatComponent combat;
+    protected ReactionComponent reaction;
+    protected RenderComponent render;
 
     private static int nextId = 1;
 
-    public GameEntity() {
+    private GameEntity() {
         this.entityId = this.assignId();
+    }
+
+    //Thinking about making this the only available constructor
+    public GameEntity(RenderComponent render) {
+        this();
+        this.render = render;
     }
 
     private static int assignId() {

@@ -5,7 +5,8 @@ import ObjectFramework.RL_Actors.Behaviors.*;
 /**
  * Created by Gallanoth on 1/29/2015.
  */
-public abstract class ActorClass implements ReactionComponent{
+public interface ActorClass extends ReactionComponent{
 
-    private ActorClass classExtension; //Decorator for doing level ups
+    public Ability[] listAbilities();
+    public Ability selectAbility(int abilityNo);
 }

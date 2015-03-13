@@ -10,6 +10,7 @@ public class RenderComponent {
     private char renderChar;
     private int color;
     private int backgroundColor;
+    private String name;
 
     protected RenderComponent() {}
 
@@ -46,6 +47,16 @@ public class RenderComponent {
     public void setColor(int color) {
         this.color = color;
     }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+
 
 
 }

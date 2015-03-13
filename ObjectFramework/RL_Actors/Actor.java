@@ -1,11 +1,12 @@
 package ObjectFramework.RL_Actors;
 import ObjectFramework.Entity.CombatComponent;
+import ObjectFramework.Entity.GameEntity;
 import ObjectFramework.Entity.InventoryComponent;
 
 /**
  * Created by Gallanoth on 1/29/2015.
  */
-public class Actor {
+public class Actor extends GameEntity {
 
     InventoryComponent inventory;
     CombatComponent combat;

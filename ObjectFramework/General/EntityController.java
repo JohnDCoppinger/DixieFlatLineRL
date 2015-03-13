@@ -107,7 +107,7 @@ public class EntityController {
             defender.getReaction().react(initiator);
     }
 
-    public void attackArea(int x, int y, GameEntity aggressor, AttackCommand attack) {
+    public void interactArea(int x, int y, GameEntity aggressor) {
         //TODO
     }
 

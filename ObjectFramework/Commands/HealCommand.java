@@ -19,7 +19,7 @@ public class HealCommand implements Command{
     public void execute() {
 
         if (this.entity.getCombat() != null)
-            this.entity.getCombat().increaseHP(heal);
+            this.entity.getCombat().heal(heal);
         else
             ;//TODO add message queue thing here
     }

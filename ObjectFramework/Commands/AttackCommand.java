@@ -21,6 +21,6 @@ public class AttackCommand implements Command {
     public void execute() {
 
         if (entity.getCombat() != null)
-            entity.getCombat().decreaseHP(damage);
+            entity.getCombat().takeDamage(damage);
     }
 }

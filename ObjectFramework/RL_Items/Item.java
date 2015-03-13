@@ -5,10 +5,11 @@ import ObjectFramework.Entity.GameEntity;
 /**
  * Created by Gallanoth on 1/29/2015.
  */
-public abstract class Item extends GameEntity {
+public abstract class Item {
 
     private int weight;
     private int itemID;
+    private String itemName;
 
     private static int nextID = 1;
 
