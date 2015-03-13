@@ -8,6 +8,11 @@ import ObjectFramework.General.TerrainController;
  */
 public class DixieFlatlineRoguelike {
 
+    private static int MAPXSIZE = 50;
+    private static int MAPYSIZE = 60;
+    private static int NUMOFOBJECTS = 60;
+    private static int NUMOFACTORS = 10;
+
     public static void main(String[] args) {
 
         initialize();
@@ -18,7 +23,7 @@ public class DixieFlatlineRoguelike {
 
         EntityMapGenerator generator = new EntityMapGenerator(EntityController.instance(), TerrainController.instance());
 
-        generator.setMapValues(50,60,100,10);// x, y, numOfObjects, numOfActors
+        generator.setMapValues(MAPXSIZE,MAPYSIZE,NUMOFOBJECTS,NUMOFACTORS);
         model.addMap(generator.generateMap("town"));
         model.addMap(generator.generateMap("cave"));
 
