@@ -16,6 +16,7 @@ public class EntityMapGenerator {
     private int x;
     private int y;
     private int numObjects;
+    private int numOfActors;
 
     private EntityMapGenerator() {
 
@@ -29,11 +30,12 @@ public class EntityMapGenerator {
         this.terrain = terrain;
     }
 
-    public void setMapValues(int x, int y, int numObjects)
+    public void setMapValues(int x, int y, int numObjects, int numOfActors)
     {
         this.x = x;
         this.y = y;
         this.numObjects = numObjects;
+        this.numOfActors = numOfActors;
     }
 
     public EntityMap generateMap(String mapType)
@@ -53,11 +55,11 @@ public class EntityMapGenerator {
         gameMap = EntityMap.createMap(map.getMap());
 
         if(mapType.equalsIgnoreCase("Cave"))
-            actorMap = new CaveActorMapGenerator(map.getMap(),numObjects);
+            actorMap = new CaveActorMapGenerator(map.getMap(),numOfActors);
         else if(mapType.equalsIgnoreCase("Town"))
-            actorMap = new TownActorMapGenerator(map.getMap(), numObjects);
+            actorMap = new TownActorMapGenerator(map.getMap(), numOfActors);
         else
-            actorMap = new DungeonActorMapGenerator(map.getMap(),numObjects);
+            actorMap = new DungeonActorMapGenerator(map.getMap(),numOfActors);
 
         actorMapTemp = actorMap.createEntityMap();
 
