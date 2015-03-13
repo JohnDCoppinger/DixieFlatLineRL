@@ -3,6 +3,8 @@ package ObjectFramework.General;
 import ObjectFramework.Commands.AttackCommand;
 import ObjectFramework.Entity.GameEntity;
 
+import java.util.Observer;
+
 public class EntityController {
 
     private static EntityController instance;
@@ -121,6 +123,14 @@ public class EntityController {
             return false;
 
         return entity.clippable();
+    }
+
+    public void registerModel(Observer observer) {
+        this.model.register(observer);
+    }
+
+    public void registerModel(Observer observer, int startx, int starty, int endx, int endy) {
+        this.model.register(observer);
     }
 
     public EntityModel getModel() {

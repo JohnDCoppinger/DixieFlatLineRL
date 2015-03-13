@@ -19,7 +19,7 @@ public class EntityMap {
 
         this.rows = rows;
         this.cols = cols;
-        this.map = new GameEntity[rows][cols];
+        this.map = new GameEntity[rows + 1][cols + 1];
     }
 
     public GameEntity getEntity(int row, int col) {

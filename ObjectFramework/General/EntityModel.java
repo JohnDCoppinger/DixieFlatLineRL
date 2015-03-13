@@ -16,9 +16,7 @@ import java.util.Observer;
  */
 public class EntityModel extends Observable {
 
-        private static EntityModel model = null;
-
-    private ArrayList<Observer> subscribers;
+    private ArrayList<RegionObserver> subscribers;
     private ArrayList<EntityMap> entityMap;
     private EntityMap currentMap;
     private EntityMap previousMap;
@@ -78,6 +76,7 @@ public class EntityModel extends Observable {
         previousMap = temp;
 
         this.clean();
+        this.updateSubscribers();
     }
 
     public GameEntity getEntity(int x, int y) {
@@ -94,7 +93,11 @@ public class EntityModel extends Observable {
             return null;
 
         this.setDirty(x, y);
-        return this.currentMap.swapEntity(x, y, newEntity);
+        this.setChanged();
+        GameEntity temp = this.currentMap.swapEntity(x, y, newEntity);
+        this.updateSubscribers();
+
+        return temp;
     }
 
     public void moveEntity(int x, int y, GameEntity moving) {
@@ -103,8 +106,9 @@ public class EntityModel extends Observable {
             return;
 
         this.setDirty(x, y);
+        this.setChanged();
         this.currentMap.moveEntity(x, y, moving);
-
+        this.updateSubscribers();
     }
 
     public GameEntity[][] getRegion(int startx, int starty, int endx, int endy) {
@@ -118,9 +122,21 @@ public class EntityModel extends Observable {
         if (!this.hasChanged())
             return;
 
-        for (Observer o : subscribers) {
+        for (RegionObserver o : subscribers) {
 
-            o.update(this, null);
+            GameEntity[][] updatedMap = null;
+
+            if (o.region) {
+
+                if (o.endY == 0)
+                    updatedMap = currentMap.getRegion(0, 0, currentMap.rows(), currentMap.cols());
+                else if (ubDirtyX > o.startX || ubDirtyY > o.startY)
+                    updatedMap = currentMap.getRegion(o.startX, o.startY, o.endX, o.endY);
+                else
+                    continue;
+            }
+
+            o.observer.update(this, updatedMap);
         }
     }
 
@@ -147,5 +163,36 @@ public class EntityModel extends Observable {
             ubDirtyY = y;
     }
 
+    public void register(Observer observer) {
+        this.subscribers.add(new RegionObserver(observer));
+    }
+
+    public void register(Observer observer, int startx, int starty, int endx, int endy) {
+        this.subscribers.add(new RegionObserver(observer, startx, starty, endx, endy));
+    }
+
+    private class RegionObserver{
+
+        public Observer observer;
+        public boolean region;
+        public int startX;
+        public int startY;
+        public int endX;
+        public int endY;
+
+        public RegionObserver(Observer observer) {
+            this.observer = observer;
+            this.region = false;
+        }
+
+        public RegionObserver(Observer observer, int startX, int startY, int endX, int endY) {
+            this.observer = observer;
+            this.startX = startX;
+            this.startY = startY;
+            this.endX = endX;
+            this.endY = endY;
+            this.region = true;
+        }
+    }
 
 }
