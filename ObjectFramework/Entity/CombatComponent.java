@@ -7,11 +7,11 @@ import ObjectFramework.Commands.KillCommand;
  */
 public class CombatComponent {
 
-    int baseHP, hp;
-    int baseArmor, armor;
-    double baseMagicResist, magicResist;
+    private int baseHP, hp;
+    private int baseArmor, armor;
+    private double baseMagicResist, magicResist;
 
-    GameEntity owner;
+    private GameEntity owner;
 
     private CombatComponent() {}
 
@@ -37,7 +37,6 @@ public class CombatComponent {
     }
 
     public void takeMagicDamage(int damage) {
-
         this.decreaseHP((int)(damage * magicResist));
     }
 

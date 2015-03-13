@@ -10,21 +10,16 @@ public class EntityController {
     public static EntityController instance() {
 
         if (instance == null)
-            instance = new EntityController(); //TODO make this a real constructor!!!!!!
+            instance = new EntityController();
 
         return instance;
     }
 
     private EntityModel model;
+
     private TerrainController terrain;
 
     private EntityController(){}
-
-    private EntityController(EntityModel model, TerrainController terrain) {
-
-        this.model = model;
-        this.terrain = terrain;
-    }
 
     public void move(int x, int y, GameEntity requester) {
 
@@ -102,7 +97,12 @@ public class EntityController {
     }
 
     public void entityInteraction(GameEntity initiator, GameEntity defender) {
-        //TODO
+
+        if (initiator != null && initiator.getReaction() != null)
+            initiator.getReaction().defaultAction(defender);
+
+        if (defender != null && defender.getReaction() != null)
+            defender.getReaction().react(initiator);
     }
 
     public void attackArea(int x, int y, GameEntity aggressor, AttackCommand attack) {
@@ -121,5 +121,29 @@ public class EntityController {
             return false;
 
         return entity.clippable();
+    }
+
+    public EntityModel getModel() {
+        return model;
+    }
+
+    public void setModel(EntityModel model) {
+        this.model = model;
+    }
+
+    public TerrainController getTerrain() {
+        return terrain;
+    }
+
+    public void setTerrain(TerrainController terrain) {
+        this.terrain = terrain;
+    }
+
+    public int addMap(EntityMap newMap) {
+        return this.model.addMap(newMap);
+    }
+
+    public void changeMap(int map) {
+        this.model.changeMap(map);
     }
 }

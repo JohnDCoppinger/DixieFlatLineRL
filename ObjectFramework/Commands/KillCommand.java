@@ -8,19 +8,17 @@ import ObjectFramework.General.EntityController;
  */
 public class KillCommand implements Command {
 
-    private EntityController controller;
     private GameEntity entity;
 
     private KillCommand() {}
 
     public KillCommand(GameEntity entity) {
 
-        this.controller = controller;
         this.entity = entity;
     }
 
     public void execute() {
 
-        this.controller.kill(entity);
+        EntityController.instance().kill(entity);
     }
 }

@@ -15,7 +15,13 @@ public class EntityMapGenerator {
     private TownGenerator towns;
     private CaveGenerator caves;
 
-    private EntityMapGenerator() {}
+    private EntityMapGenerator() {
+
+        this.entities = EntityController.instance();
+        this.terrain = TerrainController.instance();
+
+
+    }
 
     public EntityMapGenerator(EntityController entities, TerrainController terrain) {
 

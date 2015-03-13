@@ -28,25 +28,19 @@ public class EntityModel extends Observable {
     private int ubDirtyX;
     private int ubDirtyY;
 
-    private EntityModel() {
+    public EntityModel() {
 
         this.entityMap = new ArrayList<EntityMap>();
     }
 
-    public static EntityModel getInstance() {
-
-        if (model == null)
-            model = new EntityModel();
-
-        return model;
-    }
-
-    public void addMap(EntityMap newMap) {
+    public int addMap(EntityMap newMap) {
 
         if (newMap == null)
             throw new NullPointerException();
 
         this.entityMap.add(newMap);
+
+        return this.entityMap.indexOf(newMap);
     }
 
     public EntityMap changeMap(int mapNumber) {

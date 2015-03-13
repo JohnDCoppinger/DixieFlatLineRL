@@ -36,4 +36,12 @@ public class TerrainController {
 
         return terrainObject.clippable();
     }
+
+    public void addMap(EntityMap newMap) {
+        this.model.addMap(newMap);
+    }
+
+    public void changeMap(int map) {
+        this.model.changeMap(map);
+    }
 }
