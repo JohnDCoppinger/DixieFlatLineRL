@@ -9,6 +9,6 @@ public class WallRenderComponent extends RenderComponent
 {
     public WallRenderComponent()
     {
-        super('-');
+        super('-', 7, 0);
     }
 }
