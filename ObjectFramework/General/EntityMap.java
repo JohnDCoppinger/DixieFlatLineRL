@@ -113,8 +113,14 @@ public class EntityMap {
 
     }
 
-    public static EntityMap createMap(char map[][]) {
-
+    public static EntityMap createMap(char map[][])
+    {
+        for(int x = 0; x < map.length; x++)
+            for(int y = 0; y < map[0].length; y++)
+            {
+                if(true)
+                    ;
+            }
         //TODO Map Interpreter
         // creates the map from the array of characters from the geneation algorithm
 

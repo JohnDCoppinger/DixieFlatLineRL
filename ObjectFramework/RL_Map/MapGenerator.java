@@ -8,7 +8,7 @@ import java.util.*;
  * http://www.roguebasin.com/index.php?title=Dungeon-Building_Algorithm
  */
 
-abstract class MapGenerator
+public abstract class MapGenerator
 {
     public int _xsize;
     public int _ysize;
