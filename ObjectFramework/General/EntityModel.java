@@ -130,8 +130,10 @@ public class EntityModel extends Observable {
 
                 if (o.endY == 0)
                     updatedMap = currentMap.getRegion(0, 0, currentMap.rows(), currentMap.cols());
-                else
+                else if (ubDirtyX > o.startX || ubDirtyY > o.startY)
                     updatedMap = currentMap.getRegion(o.startX, o.startY, o.endX, o.endY);
+                else
+                    continue;
             }
 
             o.observer.update(this, updatedMap);
