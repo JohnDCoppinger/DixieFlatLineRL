@@ -1,7 +1,6 @@
 import ObjectFramework.General.EntityController;
 import ObjectFramework.General.EntityMapGenerator;
 import ObjectFramework.General.EntityModel;
-import ObjectFramework.General.TerrainController;
 
 /**
  * Created by Gallanoth on 3/12/2015.
