@@ -1,9 +1,11 @@
+package ObjectFramework.General;
+
+import ObjectFramework.Entity.GameEntity;
 import net.slashie.libjcsi.CSIColor;
 import net.slashie.libjcsi.CharKey;
 import net.slashie.libjcsi.ConsoleSystemInterface;
 import net.slashie.libjcsi.wswing.WSwingConsoleInterface;
 
-package ObjectFramework.General;
 
 public class MapController
 {
