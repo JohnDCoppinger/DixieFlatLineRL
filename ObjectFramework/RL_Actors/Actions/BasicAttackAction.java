@@ -22,7 +22,7 @@ public class BasicAttackAction implements Action{
     }
 
     public void perform(GameEntity affected) {
-        new AttackCommand(affected, basePower + (int)((basePower/10)* RandomNumber.instance().generate()));
+        new AttackCommand(affected, basePower + (int)((basePower/10)* RandomNumber.instance().generate())).execute();
     }
 
     public int actionCost() {

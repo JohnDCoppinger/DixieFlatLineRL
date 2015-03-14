@@ -14,5 +14,4 @@ public interface CombatComponent {
     public void increaseArmor(int increase);
     public void reduceMagicResist(double reduction);
     public void increaseMagicResist(double increase);
-
 }

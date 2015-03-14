@@ -17,6 +17,7 @@ public class MoveLeftCommand extends MoveCommand {
 
     public void execute() {
 
-        EntityController.instance().moveLeft(entity);
+        if (entity != null)
+            EntityController.instance().move(entity.getX() - 1, entity.getY(), entity);
     }
 }

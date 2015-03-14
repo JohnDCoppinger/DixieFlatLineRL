@@ -17,6 +17,7 @@ public class MoveUpCommand extends MoveCommand {
 
     public void execute() {
 
-        EntityController.instance().moveUp(entity);
+        if (entity != null)
+            EntityController.instance().move(entity.getX(), entity.getY() + 1, entity);
     }
 }

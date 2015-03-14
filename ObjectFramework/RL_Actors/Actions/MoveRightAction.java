@@ -1,16 +1,21 @@
 package ObjectFramework.RL_Actors.Actions;
 
+import ObjectFramework.Commands.MoveRightCommand;
 import ObjectFramework.Entity.GameEntity;
 
 /**
  * Created by Gallanoth on 3/13/2015.
  */
-public class MoveRightAction implements Action{
+public class MoveRightAction extends MoveAction{
 
     private int cost;
 
-    public void perform(GameEntity affected) {
+    public MoveRightAction() {
+        this.cost = 1;
+    }
 
+    public void perform(GameEntity affected) {
+        new MoveRightCommand(affected).execute();
     }
 
     public int actionCost() {

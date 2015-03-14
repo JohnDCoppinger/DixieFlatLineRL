@@ -1,16 +1,21 @@
 package ObjectFramework.RL_Actors.Actions;
 
+import ObjectFramework.Commands.MoveDownCommand;
 import ObjectFramework.Entity.GameEntity;
 
 /**
  * Created by Gallanoth on 3/13/2015.
  */
-public class MoveDownAction implements Action{
+public class MoveDownAction extends MoveAction {
 
     private int cost;
 
-    public void perform(GameEntity affected) {
+    public MoveDownAction() {
+        this.cost = 1;
+    }
 
+    public void perform(GameEntity affected) {
+        new MoveDownCommand(affected).execute();
     }
 
     public int actionCost() {

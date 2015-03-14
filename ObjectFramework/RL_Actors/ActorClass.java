@@ -10,5 +10,7 @@ public interface ActorClass extends ReactionComponent{
 
     public Action[] listAbilities();
     public Action selectAbility(int abilityNo);
+    public void setDefault(Action newDefault);
+    public void setReaction(Action newReaction);
     public int getActionPool();
 }
