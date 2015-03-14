@@ -1,8 +1,5 @@
 package ObjectFramework.RL_Map;
 
-/**
- * Created by bcoll_000 on 3/12/2015.
- */
 public class TownActorMapGenerator extends ActorMapGenerator
 {
     private char[][] _map;
@@ -25,8 +22,8 @@ public class TownActorMapGenerator extends ActorMapGenerator
         _numObjects = numObjects;
     }
 
-    @Override
-    char[][] createEntityMap()
+
+    public char[][] createEntityMap()
     {
         boolean heroPlace = false;
         int xStairsUp = 0;
