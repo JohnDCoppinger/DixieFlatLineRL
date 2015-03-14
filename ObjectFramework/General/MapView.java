@@ -33,17 +33,15 @@ public class MapView
 
 	private void printToScreen(GameEntity gEnt)
 	{
-		int x, y;
-		CSIColor color, 
-		bgColor;
+		int x, y, color, bgColor;
 		char renderChar;
 
 		x = gEnt.getX();
 		y = gEnt.getY();
 		color = gEnt.getRender().getColor();
-		bgColor = gEnt.getRender().getBackgroundColor();
+		//bgColor = gEnt.getRender().getBackgroundColor();
 		renderChar = gEnt.getRender().getRenderChar();
-		csi.print(x, y, renderChar, color, bgColor);
+		csi.print(x, y, renderChar, color);
 	}
 
 	public void printMapToScreen(GameEntity[][] curMap)
@@ -57,5 +55,10 @@ public class MapView
 		}
 	}
 
+	public CharKey inKey()
+	{
+		CharKey key = csi.inkey();
+		return key;
+	}
 
 }

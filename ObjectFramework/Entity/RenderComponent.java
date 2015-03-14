@@ -1,5 +1,5 @@
 package ObjectFramework.Entity;
-
+import net.slashie.libjcsi.CSIColor;
 import java.util.Vector;
 
 /**
