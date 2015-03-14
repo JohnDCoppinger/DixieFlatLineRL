@@ -9,8 +9,16 @@ import ObjectFramework.RL_Map.*;
  */
 public class EntityMapGenerator {
 
+    private static EntityMapGenerator instance;
+
+    public static EntityMapGenerator instance() {
+        if (instance == null)
+            instance = new EntityMapGenerator();
+
+        return instance;
+    }
+
     private EntityController entities;
-    private TerrainController terrain;
     private MapGenerator map;
     private ActorMapGenerator actorMap;
     private int x;
@@ -21,13 +29,6 @@ public class EntityMapGenerator {
     private EntityMapGenerator() {
 
         this.entities = EntityController.instance();
-        this.terrain = TerrainController.instance();
-    }
-
-    public EntityMapGenerator(EntityController entities, TerrainController terrain) {
-
-        this.entities = entities;
-        this.terrain = terrain;
     }
 
     public void setMapValues(int x, int y, int numObjects, int numOfActors)

@@ -5,4 +5,9 @@ package ObjectFramework.RL_Actors;
  */
 public class ActionManager {
 
+    public void performActions() {
+        //AI Encapsulated here
+    }
+
+    
 }

@@ -2,6 +2,7 @@ package ObjectFramework.RL_Items;
 
 import ObjectFramework.Entity.GameEntity;
 import ObjectFramework.Entity.InventoryComponent;
+import ObjectFramework.RL_Items.Item;
 
 import java.util.ArrayList;
 

@@ -21,7 +21,7 @@ public class DixieFlatlineRoguelike {
     public static void initialize() {
         EntityModel model = new EntityModel();
 
-        EntityMapGenerator generator = new EntityMapGenerator(EntityController.instance(), TerrainController.instance());
+        EntityMapGenerator generator = EntityMapGenerator.instance();
 
         generator.setMapValues(MAPXSIZE,MAPYSIZE,NUMOFOBJECTS,NUMOFACTORS);
         model.addMap(generator.generateMap("town"));
