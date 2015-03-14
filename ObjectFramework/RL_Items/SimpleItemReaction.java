@@ -23,7 +23,7 @@ public class SimpleItemReaction implements ReactionComponent{
         if (this.owner != null) {
             if(this.owner.getInventory() != null) {
                 if (this.owner.getInventory().inventorySize() == 0) {
-                    CommandQueue.getInstance().add(new RemoveItemEntityCommand(this.owner));
+                    new RemoveItemEntityCommand(this.owner).execute();
                 }
             }
         }

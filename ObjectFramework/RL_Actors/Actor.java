@@ -8,12 +8,8 @@ import ObjectFramework.Entity.InventoryComponent;
  */
 public class Actor extends GameEntity {
 
-    InventoryComponent inventory;
-    CombatComponent combat;
-    ActorClass actorClass;
     ActorController controller;
-
-    public String name;
+    private String name;
 
     public Actor(){}
 
