@@ -3,7 +3,6 @@ package ObjectFramework.RL_Items;
 import ObjectFramework.Commands.RemoveEntityCommand;
 import ObjectFramework.Entity.GameEntity;
 import ObjectFramework.Entity.ReactionComponent;
-import ObjectFramework.General.CommandQueue;
 
 /**
  * Created by Gallanoth on 3/13/2015.

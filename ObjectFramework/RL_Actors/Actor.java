@@ -25,4 +25,7 @@ public class Actor extends GameEntity {
         return this.manager;
     }
 
+    public int getInitiative() {
+        return this.initiative;
+    }
 }
