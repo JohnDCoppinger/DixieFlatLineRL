@@ -22,7 +22,7 @@ public class CaveActorMapGenerator extends ActorMapGenerator
     }
 
     @Override
-    char[][] createEntityMap()
+    public char[][] createEntityMap()
     {
         int xStairsUp = 0;
         int yStairsUp = 0;
