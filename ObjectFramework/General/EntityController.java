@@ -21,14 +21,9 @@ public class EntityController {
 
     private EntityModel model;
 
-    private TerrainController terrain;
-
     private EntityController(){}
 
     public void move(int x, int y, GameEntity requester) {
-
-        if (!terrainClippable(x, y))
-            return;
 
         if (!entityClippable(x, y))
             entityInteraction(requester, model.getEntity(requester.getX(), requester.getY()));
@@ -38,10 +33,7 @@ public class EntityController {
 
     public void moveUp(GameEntity requester) {
 
-        if (!terrainClippable(requester.getX(), requester.getY() + 1))
-            return;
-
-        else if (!entityClippable(requester.getX(), requester.getY() + 1))
+        if (!entityClippable(requester.getX(), requester.getY() + 1))
             entityInteraction(requester, model.getEntity(requester.getX(), requester.getY() + 1));
 
         else
@@ -50,10 +42,7 @@ public class EntityController {
 
     public void moveDown(GameEntity requester) {
 
-        if (!terrainClippable(requester.getX(), requester.getY() - 1))
-            return;
-
-        else if (!entityClippable(requester.getX(), requester.getY() - 1))
+        if (!entityClippable(requester.getX(), requester.getY() - 1))
             entityInteraction(requester, model.getEntity(requester.getX(), requester.getY() - 1));
 
         else
@@ -62,10 +51,7 @@ public class EntityController {
 
     public void moveRight(GameEntity requester) {
 
-        if (!terrainClippable(requester.getX() + 1, requester.getY()))
-            return;
-
-        else if (!entityClippable(requester.getX() + 1, requester.getY()))
+        if (!entityClippable(requester.getX() + 1, requester.getY()))
             entityInteraction(requester, model.getEntity(requester.getX() + 1, requester.getY()));
 
         else
@@ -74,10 +60,7 @@ public class EntityController {
 
     public void moveLeft(GameEntity requester) {
 
-        if (!terrainClippable(requester.getX() - 1, requester.getY()))
-            return;
-
-        else if (!entityClippable(requester.getX() - 1, requester.getY()))
+        if (!entityClippable(requester.getX() - 1, requester.getY()))
             entityInteraction(requester, model.getEntity(requester.getX() - 1, requester.getY()));
 
         else
@@ -114,10 +97,6 @@ public class EntityController {
         //TODO
     }
 
-    private boolean terrainClippable(int x, int y) {
-        return terrain.checkPath(x, y);
-    }
-
     private boolean entityClippable(int x, int y) {
 
         GameEntity entity = this.model.getEntity(x, y);
@@ -142,14 +121,6 @@ public class EntityController {
 
     public void setModel(EntityModel model) {
         this.model = model;
-    }
-
-    public TerrainController getTerrain() {
-        return terrain;
-    }
-
-    public void setTerrain(TerrainController terrain) {
-        this.terrain = terrain;
     }
 
     public int addMap(EntityMap newMap) {
