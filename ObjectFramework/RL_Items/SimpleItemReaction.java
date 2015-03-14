@@ -1,9 +1,9 @@
 package ObjectFramework.RL_Items;
 
-import ObjectFramework.Commands.RemoveItemEntityCommand;
+import ObjectFramework.Commands.RemoveEntityCommand;
 import ObjectFramework.Entity.GameEntity;
 import ObjectFramework.Entity.ReactionComponent;
-import ObjectFramework.General.CommandQueue;
+
 
 /**
  * Created by Gallanoth on 3/13/2015.
@@ -23,7 +23,7 @@ public class SimpleItemReaction implements ReactionComponent{
         if (this.owner != null) {
             if(this.owner.getInventory() != null) {
                 if (this.owner.getInventory().inventorySize() == 0) {
-                    new RemoveItemEntityCommand(this.owner).execute();
+                    new RemoveEntityCommand(this.owner).execute();
                 }
             }
         }

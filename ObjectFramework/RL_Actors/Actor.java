@@ -8,14 +8,24 @@ import ObjectFramework.Entity.InventoryComponent;
  */
 public class Actor extends GameEntity {
 
-    ActorController controller;
+    private ActionManager manager;
+    private int initiative;
     private String name;
 
-    public Actor(){}
+    private Actor(){}
 
-    public char render() {
+    public Actor(String name, int initiative, ActionManager manager) {
 
-        return 0;
+        this.name = name;
+        this.initiative = initiative;
+        this.manager = manager;
     }
 
+    public ActionManager getManager() {
+        return this.manager;
+    }
+
+    public int getInitiative() {
+        return this.initiative;
+    }
 }

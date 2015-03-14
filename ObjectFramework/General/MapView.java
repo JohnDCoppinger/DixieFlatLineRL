@@ -1,20 +1,27 @@
 package ObjectFramework.General;
-
-import ObjectFramework.Entity.GameEntity;
+import  ObjectFramework.Entity.*;
 import net.slashie.libjcsi.CSIColor;
 import net.slashie.libjcsi.CharKey;
 import net.slashie.libjcsi.ConsoleSystemInterface;
 import net.slashie.libjcsi.wswing.WSwingConsoleInterface;
 
+public class MapView
+{	
+	private static MapView instance;
 
-public class MapController
-{
+    public static MapView instance() 
+    {
+        if (instance == null)
+            instance = new MapView();
 
-	ConsoleSystemInterface csi;
+        return instance;
+    }
 
-	public MapController()
+    private WSwingConsoleInterface csi;
+
+	private MapView()
 	{
-		ConsoleSystemInterface csi = null;
+		WSwingConsoleInterface csi = null;
         try {
             csi = new WSwingConsoleInterface("DixieFlatlineRL", false);
         } catch (ExceptionInInitializerError eiie) {
@@ -24,7 +31,7 @@ public class MapController
         }
 	}
 
-	public void printToScreen(GameEntity gEnt)
+	private void printToScreen(GameEntity gEnt)
 	{
 		int x, y, color, bgColor;
 		char renderChar;
@@ -32,16 +39,26 @@ public class MapController
 		x = gEnt.getX();
 		y = gEnt.getY();
 		color = gEnt.getRender().getColor();
-		bgColor = gEnt.getRender().getBackgroundColor();
+		//bgColor = gEnt.getRender().getBackgroundColor();
 		renderChar = gEnt.getRender().getRenderChar();
-		csi.print(x, y, renderChar, color, bgColor);
+		csi.print(x, y, renderChar, color);
 	}
 
 	public void printMapToScreen(GameEntity[][] curMap)
 	{
-		for(GameEntity gEnt : curMap)
+		for(GameEntity[] gEnts : curMap)
 		{
-			printToScreen(gEnt);
+			for(GameEntity gEnt : gEnts)
+			{
+				printToScreen(gEnt);
+			}
 		}
 	}
+
+	public CharKey inKey()
+	{
+		CharKey key = csi.inkey();
+		return key;
+	}
+
 }

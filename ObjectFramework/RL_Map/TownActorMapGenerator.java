@@ -26,7 +26,7 @@ public class TownActorMapGenerator extends ActorMapGenerator
     }
 
     @Override
-    public char[][] createEntityMap()
+    char[][] createEntityMap()
     {
         boolean heroPlace = false;
         int xStairsUp = 0;

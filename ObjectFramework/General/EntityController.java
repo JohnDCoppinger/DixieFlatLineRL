@@ -2,9 +2,12 @@ package ObjectFramework.General;
 
 import ObjectFramework.Commands.AttackCommand;
 import ObjectFramework.Entity.GameEntity;
+import ObjectFramework.RL_Actors.ActionManager;
+import ObjectFramework.RL_Actors.Actor;
 import ObjectFramework.RL_Items.SimpleItemReaction;
 import ObjectFramework.RenderComponents.Item.CorpseRenderComponent;
 
+import java.util.ArrayList;
 import java.util.Observer;
 
 public class EntityController {
@@ -20,8 +23,11 @@ public class EntityController {
     }
 
     private EntityModel model;
+    private ArrayList<ActionManager> actors;
 
-    private EntityController(){}
+    private EntityController(){
+        this.actors = new ArrayList<ActionManager>();
+    }
 
     public void move(int x, int y, GameEntity requester) {
 
@@ -29,42 +35,6 @@ public class EntityController {
             entityInteraction(requester, model.getEntity(requester.getX(), requester.getY()));
 
         this.model.moveEntity(x, y, requester);
-    }
-
-    public void moveUp(GameEntity requester) {
-
-        if (!entityClippable(requester.getX(), requester.getY() + 1))
-            entityInteraction(requester, model.getEntity(requester.getX(), requester.getY() + 1));
-
-        else
-            this.model.moveEntity(requester.getX(), requester.getY() + 1, requester);
-    }
-
-    public void moveDown(GameEntity requester) {
-
-        if (!entityClippable(requester.getX(), requester.getY() - 1))
-            entityInteraction(requester, model.getEntity(requester.getX(), requester.getY() - 1));
-
-        else
-            this.model.moveEntity(requester.getX(), requester.getY() - 1, requester);
-    }
-
-    public void moveRight(GameEntity requester) {
-
-        if (!entityClippable(requester.getX() + 1, requester.getY()))
-            entityInteraction(requester, model.getEntity(requester.getX() + 1, requester.getY()));
-
-        else
-            this.model.moveEntity(requester.getX() + 1, requester.getY(), requester);
-    }
-
-    public void moveLeft(GameEntity requester) {
-
-        if (!entityClippable(requester.getX() - 1, requester.getY()))
-            entityInteraction(requester, model.getEntity(requester.getX() - 1, requester.getY()));
-
-        else
-            this.model.moveEntity(requester.getX() - 1, requester.getY(), requester);
     }
 
     public void kill(GameEntity corpse) {
@@ -82,6 +52,11 @@ public class EntityController {
         }
 
         this.model.swapEntity(corpse.getX(), corpse.getY(), item);
+    }
+
+    public void swapEntity(int x, int y, GameEntity entity) {
+
+        this.model.swapEntity(x, y, entity);
     }
 
     public void entityInteraction(GameEntity initiator, GameEntity defender) {
@@ -129,5 +104,21 @@ public class EntityController {
 
     public void changeMap(int map) {
         this.model.changeMap(map);
+    }
+
+    public void registerActor(Actor actor) {
+        actors.add(actor.getManager());
+    }
+
+    public void unregisterActor(Actor actor) {
+        ActionQueue.instance().remove(actor.getManager());
+    }
+
+    public void populateQueue() {
+
+        ActionQueue queue = ActionQueue.instance();
+
+        for (ActionManager manager : actors)
+            queue.add(manager);
     }
 }

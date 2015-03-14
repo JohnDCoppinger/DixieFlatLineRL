@@ -1,6 +1,7 @@
 import ObjectFramework.General.EntityController;
 import ObjectFramework.General.EntityMapGenerator;
 import ObjectFramework.General.EntityModel;
+import ObjectFramework.General.MapView;
 
 /**
  * Created by Gallanoth on 3/12/2015.
@@ -19,7 +20,7 @@ public class DixieFlatlineRoguelike {
 
     public static void initialize() {
         EntityModel model = new EntityModel();
-
+        MapView swingCSI = MapView.instance();
         EntityMapGenerator generator = EntityMapGenerator.instance();
 
         generator.setMapValues(MAPXSIZE,MAPYSIZE,NUMOFOBJECTS,NUMOFACTORS);

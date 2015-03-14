@@ -3,11 +3,8 @@ package ObjectFramework.RL_Actors;
 /**
  * Created by Gallanoth on 2/28/2015.
  */
-public class ActionManager {
+public interface ActionManager extends Comparable<ActionManager>{
 
-    public void performActions() {
-        //AI Encapsulated here
-    }
-
-    
+    public abstract void performActions();
+    public int getInitiative();
 }
