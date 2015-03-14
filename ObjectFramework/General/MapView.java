@@ -1,17 +1,27 @@
 package ObjectFramework.General;
+import  ObjectFramework.Entity.*;
 import net.slashie.libjcsi.CSIColor;
 import net.slashie.libjcsi.CharKey;
 import net.slashie.libjcsi.ConsoleSystemInterface;
 import net.slashie.libjcsi.wswing.WSwingConsoleInterface;
 
-public class MapController
-{
+public class MapView
+{	
+	private static MapView instance;
 
-	ConsoleSystemInterface csi;
+    public static MapView instance() 
+    {
+        if (instance == null)
+            instance = new MapView();
 
-	public MapController()
+        return instance;
+    }
+
+    private WSwingConsoleInterface csi;
+
+	private MapView()
 	{
-		ConsoleSystemInterface csi = null;
+		WSwingConsoleInterface csi = null;
         try {
             csi = new WSwingConsoleInterface("DixieFlatlineRL", false);
         } catch (ExceptionInInitializerError eiie) {
@@ -21,9 +31,11 @@ public class MapController
         }
 	}
 
-	public void printToScreen(GameEntity gEnt)
+	private void printToScreen(GameEntity gEnt)
 	{
-		int x, y, color, bgColor;
+		int x, y;
+		CSIColor color, 
+		bgColor;
 		char renderChar;
 
 		x = gEnt.getX();
@@ -36,9 +48,14 @@ public class MapController
 
 	public void printMapToScreen(GameEntity[][] curMap)
 	{
-		for(GameEntity gEnt : curMap)
+		for(GameEntity[] gEnts : curMap)
 		{
-			printToScreen(gEnt);
+			for(GameEntity gEnt : gEnts)
+			{
+				printToScreen(gEnt);
+			}
 		}
 	}
+
+
 }

@@ -20,7 +20,7 @@ public class HelloDungeon{
 		//
 		//
 
-		ConsoleSystemInterface csi = null;
+		WSwingConsoleInterface csi = null;
 		try{
 			csi = new WSwingConsoleInterface("My little Java Roguelike - Programming is fun", false);
 		}
@@ -34,7 +34,7 @@ public class HelloDungeon{
 		boolean stop = false;
 		while(!stop){
 			csi.cls();
-			csi.print(x,y, '@', CSIColor.WHITE);
+			csi.print(x,y, '@', CSIColor.WHITE, CSIColor.RED);
 			csi.refresh();
 			CharKey dir = csi.inkey();
 			if(dir.isUpArrow()&& (y-1 >= 0)){
