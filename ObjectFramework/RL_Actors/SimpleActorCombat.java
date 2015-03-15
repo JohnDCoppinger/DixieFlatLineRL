@@ -1,12 +1,9 @@
 package ObjectFramework.RL_Actors;
 
 import ObjectFramework.Commands.KillCommand;
-import ObjectFramework.Entity.CombatComponent;
-import ObjectFramework.Entity.GameEntity;
+import ObjectFramework.General.Entity.CombatComponent;
+import ObjectFramework.General.Entity.GameEntity;
 
-/**
- * Created by Gallanoth on 3/13/2015.
- */
 public class SimpleActorCombat implements CombatComponent {
 
     private int baseHP, currentHP;
@@ -28,20 +25,6 @@ public class SimpleActorCombat implements CombatComponent {
         this.owner = owner;
     }
 
-    public void takeDamage(int damage) {
-
-        this.decreaseHP(damage - currentArmor);
-
-        if (this.currentHP <= 0) {
-            KillCommand kill = new KillCommand(owner);
-            kill.execute();
-        }
-    }
-
-    public void takeMagicDamage(int damage) {
-        this.decreaseHP((int)(damage * magicResist));
-    }
-
     public void increaseHP(int value) {
         this.currentHP += value;
     }
@@ -50,16 +33,8 @@ public class SimpleActorCombat implements CombatComponent {
         this.currentHP -= value;
     }
 
-    public void increaseArmor(int value) {
-        this.currentArmor += value;
-    }
-
     public void decreaseArmor(int value) {
         this.currentArmor -= value;
-    }
-
-    public void increaseMagicResist(double value) {
-        this.magicResist += value;
     }
 
     public void decreaseMagicResist(double value) {
@@ -119,7 +94,31 @@ public class SimpleActorCombat implements CombatComponent {
         //use this to apply recurrent status effects
     }
 
+    public void increaseArmor(int value) {
+        this.currentArmor += value;
+    }
+
+    public void increaseMagicResist(double value) {
+        this.magicResist += value;
+    }
+
     public void heal(int heal) {}
+
     public void reduceArmor(int reduction) {}
+
     public void reduceMagicResist(double reduction) {}
+
+    public void takeDamage(int damage) {
+
+        this.decreaseHP(damage - currentArmor);
+
+        if (this.currentHP <= 0) {
+            KillCommand kill = new KillCommand(owner);
+            kill.execute();
+        }
+    }
+
+    public void takeMagicDamage(int damage) {
+        this.decreaseHP((int)(damage * magicResist));
+    }
 }

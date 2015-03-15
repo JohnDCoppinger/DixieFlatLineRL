@@ -1,6 +1,4 @@
-package ObjectFramework.Entity;
-
-import ObjectFramework.Commands.KillCommand;
+package ObjectFramework.General.Entity;
 
 /**
  * Created by Gallanoth on 3/4/2015.

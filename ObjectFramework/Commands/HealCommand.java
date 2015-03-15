@@ -1,6 +1,6 @@
 package ObjectFramework.Commands;
 
-import ObjectFramework.Entity.GameEntity;
+import ObjectFramework.General.Entity.GameEntity;
 
 /**
  * Created by Gallanoth on 3/9/2015.

@@ -1,7 +1,5 @@
 package ObjectFramework.General;
 
-import ObjectFramework.Entity.GameEntity;
-import ObjectFramework.RL_Actors.ActionManager;
 import ObjectFramework.RL_Map.*;
 
 /**

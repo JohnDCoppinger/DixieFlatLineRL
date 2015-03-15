@@ -1,6 +1,6 @@
 package ObjectFramework.RL_Actors;
 
-import ObjectFramework.Entity.GameEntity;
+import ObjectFramework.General.Entity.GameEntity;
 
 /**
  * Created by Gallanoth on 1/29/2015.

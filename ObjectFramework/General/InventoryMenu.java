@@ -1,7 +1,5 @@
 package ObjectFramework.General;
 
-import ObjectFramework.Commands.InspectInventoryCommand;
-
 import java.util.ArrayList;
 import java.util.Iterator;
 
@@ -59,7 +57,7 @@ public class InventoryMenu implements Menu{
     }
 
     public String getHeader() {
-        return null;
+        return this.header;
     }
 
 }

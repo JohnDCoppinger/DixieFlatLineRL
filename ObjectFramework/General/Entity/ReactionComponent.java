@@ -1,6 +1,4 @@
-package ObjectFramework.Entity;
-
-import java.util.Observer;
+package ObjectFramework.General.Entity;
 
 /**
  * Created by Gallanoth on 3/3/2015.

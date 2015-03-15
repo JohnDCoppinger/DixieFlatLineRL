@@ -12,15 +12,18 @@ public class MenuState implements PlayerState {
 
         net.slashie.libjcsi.CharKey key = MapView.instance().inKey();
 
-        if (key.toString().equalsIgnoreCase("w") || key.toString().equalsIgnoreCase("")) {
+        if (key == null)
+            return new NullCommand();
+
+        if (key.toString().equalsIgnoreCase("w") || key.isUpArrow()) {
             return new MenuScrollUpCommand((PlayerActionManager) actor.getManager());
         }
 
-        if (key.toString().equalsIgnoreCase("s")) {
+        if (key.toString().equalsIgnoreCase("s") || key.isDownArrow()) {
             return new MenuScrollDownCommand((PlayerActionManager) actor.getManager());
         }
 
-        if (key.toString().equalsIgnoreCase("SPACE")) {
+        if (key.toString().equalsIgnoreCase(" ")) {
             return new DropSelectedItemCommand((PlayerActionManager) actor.getManager());
         }
 

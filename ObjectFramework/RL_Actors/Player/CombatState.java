@@ -16,19 +16,19 @@ public class CombatState implements PlayerState {
 
             net.slashie.libjcsi.CharKey key = MapView.instance().inKey();
 
-            if (key.toString().equalsIgnoreCase("w") || key.toString().equalsIgnoreCase("")) {
+            if (key.toString().equalsIgnoreCase("w") || key.isUpArrow()) {
                 return (lastMove = new MoveUpCommand(client));
             }
 
-            if (key.toString().equalsIgnoreCase("a")) {
+            if (key.toString().equalsIgnoreCase("a") || key.isLeftArrow()) {
                 return (lastMove = new MoveLeftCommand(client));
             }
 
-            if (key.toString().equalsIgnoreCase("s")) {
+            if (key.toString().equalsIgnoreCase("s") || key.isDownArrow()) {
                 return (lastMove = new MoveDownCommand(client));
             }
 
-            if (key.toString().equalsIgnoreCase("d")) {
+            if (key.toString().equalsIgnoreCase("d") || key.isRightArrow()) {
                 return (lastMove = new MoveRightCommand(client));
             }
 
@@ -36,7 +36,7 @@ public class CombatState implements PlayerState {
                 return new OpenInventoryMenuCommand(client);
             }
 
-            if (key.toString().equalsIgnoreCase("SPACE")) {
+            if (key.toString().equalsIgnoreCase(" ")) {
                 return new PickUpItemCommand(client);
             }
 

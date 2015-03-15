@@ -1,8 +1,5 @@
-package ObjectFramework.Entity;
+package ObjectFramework.General.Entity;
 
-/**
- * Created by Gallanoth on 1/29/2015.
- */
 public class GameEntity {
 
     private int entityId;

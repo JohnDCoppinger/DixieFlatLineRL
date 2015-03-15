@@ -1,7 +1,7 @@
 package ObjectFramework.RL_Actors.Actions;
 
 import ObjectFramework.Commands.AttackCommand;
-import ObjectFramework.Entity.GameEntity;
+import ObjectFramework.General.Entity.GameEntity;
 import ObjectFramework.General.RandomNumber;
 
 /**

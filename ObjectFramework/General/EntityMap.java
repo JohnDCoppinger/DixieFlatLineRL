@@ -1,6 +1,6 @@
 package ObjectFramework.General;
 
-import ObjectFramework.Entity.GameEntity;
+import ObjectFramework.General.Entity.GameEntity;
 import ObjectFramework.RL_Terrain.TerrainFactory;
 
 /**

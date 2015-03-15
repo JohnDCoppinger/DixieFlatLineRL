@@ -1,6 +1,6 @@
 package ObjectFramework.RL_Terrain;
 
-import ObjectFramework.Entity.GameEntity;
+import ObjectFramework.General.Entity.GameEntity;
 import ObjectFramework.RenderComponents.Terrain.*;
 
 /**

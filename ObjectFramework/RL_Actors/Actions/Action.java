@@ -1,6 +1,6 @@
 package ObjectFramework.RL_Actors.Actions;
 
-import ObjectFramework.Entity.GameEntity;
+import ObjectFramework.General.Entity.GameEntity;
 
 /**
  * Be Careful! Actions are not commands, they are strategy patter for Actor default actions/reactions!!

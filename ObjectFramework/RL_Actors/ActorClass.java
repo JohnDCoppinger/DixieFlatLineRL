@@ -1,6 +1,6 @@
 package ObjectFramework.RL_Actors;
 
-import ObjectFramework.Entity.ReactionComponent;
+import ObjectFramework.General.Entity.ReactionComponent;
 import ObjectFramework.RL_Actors.Actions.Action;
 
 /**

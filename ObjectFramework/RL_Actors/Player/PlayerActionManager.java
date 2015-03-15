@@ -6,9 +6,6 @@ import ObjectFramework.RL_Actors.Actor;
 
 import java.util.Observable;
 
-/**
- * Created by Gallanoth on 3/9/2015.
- */
 public class PlayerActionManager extends Observable implements ActionManager {
 
     private Actor client;

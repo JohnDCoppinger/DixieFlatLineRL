@@ -1,6 +1,6 @@
 package ObjectFramework.RL_Actors;
 
-import ObjectFramework.Entity.GameEntity;
+import ObjectFramework.General.Entity.GameEntity;
 import ObjectFramework.RL_Actors.Actions.Action;
 import ObjectFramework.RL_Actors.Actions.BasicAttackAction;
 

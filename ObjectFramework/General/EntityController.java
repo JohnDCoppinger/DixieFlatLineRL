@@ -1,7 +1,7 @@
 package ObjectFramework.General;
 
-import ObjectFramework.Entity.GameEntity;
-import ObjectFramework.Entity.ReactionComponent;
+import ObjectFramework.General.Entity.GameEntity;
+import ObjectFramework.General.Entity.ReactionComponent;
 import ObjectFramework.RL_Actors.ActionManager;
 import ObjectFramework.RL_Actors.Actor;
 

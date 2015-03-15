@@ -1,6 +1,5 @@
 package ObjectFramework.Commands;
 
-import ObjectFramework.Entity.GameEntity;
 import ObjectFramework.General.EntityController;
 import ObjectFramework.RL_Actors.Actor;
 

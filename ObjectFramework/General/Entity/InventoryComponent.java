@@ -1,7 +1,5 @@
-package ObjectFramework.Entity;
+package ObjectFramework.General.Entity;
 import ObjectFramework.RL_Items.Item;
-import java.util.ArrayList;
-import java.util.Iterator;
 
 /**
  * Created by Gallanoth on 2/19/2015.

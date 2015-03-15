@@ -1,8 +1,7 @@
 package ObjectFramework.General;
-import  ObjectFramework.Entity.*;
-import net.slashie.libjcsi.CSIColor;
+
+import ObjectFramework.General.Entity.GameEntity;
 import net.slashie.libjcsi.CharKey;
-import net.slashie.libjcsi.ConsoleSystemInterface;
 import net.slashie.libjcsi.wswing.WSwingConsoleInterface;
 
 public class MapView
