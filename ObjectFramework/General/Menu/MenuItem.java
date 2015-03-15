@@ -1,4 +1,4 @@
-package ObjectFramework.General;
+package ObjectFramework.General.Menu;
 
 /**
  * Created by Gallanoth on 3/14/2015.

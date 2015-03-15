@@ -102,11 +102,20 @@ public class SimpleActorCombat implements CombatComponent {
         this.magicResist += value;
     }
 
-    public void heal(int heal) {}
+    public void heal(int heal) {
+        this.currentHP += heal;
 
-    public void reduceArmor(int reduction) {}
+        if (this.currentHP > baseHP)
+            this.currentHP = baseHP;
+    }
 
-    public void reduceMagicResist(double reduction) {}
+    public void reduceArmor(int reduction) {
+        this.currentArmor -= reduction;
+    }
+
+    public void reduceMagicResist(double reduction) {
+        this.magicResist += reduction;
+    }
 
     public void takeDamage(int damage) {
 
