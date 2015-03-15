@@ -1,7 +1,6 @@
 package ObjectFramework.RL_Actors;
-import ObjectFramework.Entity.CombatComponent;
+
 import ObjectFramework.Entity.GameEntity;
-import ObjectFramework.Entity.InventoryComponent;
 
 /**
  * Created by Gallanoth on 1/29/2015.
@@ -27,5 +26,9 @@ public class Actor extends GameEntity {
 
     public int getInitiative() {
         return this.initiative;
+    }
+
+    public ActorClass getActorClass() {
+        return (ActorClass) this.getReaction();
     }
 }

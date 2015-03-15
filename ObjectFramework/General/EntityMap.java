@@ -3,8 +3,6 @@ package ObjectFramework.General;
 import ObjectFramework.Entity.GameEntity;
 import ObjectFramework.RL_Terrain.TerrainFactory;
 
-import java.util.Observable;
-
 /**
  * Created by Gallanoth on 2/26/2015.
  */
@@ -67,6 +65,16 @@ public class EntityMap {
             old.setX(xtemp);
             old.setY(ytemp);
             old.setLevel(leveltemp);
+        }
+
+        else if (old != null && old.getBeneath() != null && newEntity == null) {
+
+            map[row][col] = old.getBeneath();
+
+            old.setBeneath(null);
+            old.setX(-1);
+            old.setY(-1);
+            old.setLevel(-1);
         }
 
         return old;

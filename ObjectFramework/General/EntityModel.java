@@ -171,6 +171,10 @@ public class EntityModel extends Observable {
         this.subscribers.add(new RegionObserver(observer, startx, starty, endx, endy));
     }
 
+    public void requestUpdate(Observer observer) {
+        observer.update(this, currentMap.getRegion(0, 0, currentMap.rows(), currentMap.cols()));
+    }
+
     private class RegionObserver{
 
         public Observer observer;
