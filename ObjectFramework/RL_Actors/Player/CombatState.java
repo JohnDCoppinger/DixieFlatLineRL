@@ -1,54 +1,45 @@
 package ObjectFramework.RL_Actors.Player;
 
+import ObjectFramework.Commands.*;
 import ObjectFramework.General.MapView;
-import ObjectFramework.RL_Actors.Actions.Action;
 import ObjectFramework.RL_Actors.Actor;
 
 public class CombatState implements PlayerState {
 
-    public Action getAction(Actor client) {
+    private MoveCommand lastMove;
 
-        while (true) {
+    public CombatState() {
+        this.lastMove = null;
+    }
+
+    public Command getAction(Actor client) {
 
             net.slashie.libjcsi.CharKey key = MapView.instance().inKey();
 
-            if (key.toString().equals("w")) {
-
+            if (key.toString().equalsIgnoreCase("w") || key.toString().equalsIgnoreCase("")) {
+                return (lastMove = new MoveUpCommand(client));
             }
 
-            if (key.toString().equals("a")) {
-
+            if (key.toString().equalsIgnoreCase("a")) {
+                return (lastMove = new MoveLeftCommand(client));
             }
 
-            if (key.toString().equals("s")) {
-
+            if (key.toString().equalsIgnoreCase("s")) {
+                return (lastMove = new MoveDownCommand(client));
             }
 
-            if (key.toString().equals("d")) {
-
+            if (key.toString().equalsIgnoreCase("d")) {
+                return (lastMove = new MoveRightCommand(client));
             }
 
-            if (key.toString().equals("e")) {
-
+            if (key.toString().equalsIgnoreCase("e")) {
+                return new OpenInventoryMenuCommand(client);
             }
 
-            if (key.toString().equals("f")) {
-
+            if (key.toString().equalsIgnoreCase("SPACE")) {
+                return new PickUpItemCommand(client);
             }
 
-            if (key.toString().equals("w")) {
-
-            }
-
-            if (key.toString().equals("w")) {
-
-            }
-
-            if (key.toString().equals("w")) {
-
-            }
-
-
-        }
+            return new NullCommand();
     }
 }

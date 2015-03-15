@@ -30,7 +30,7 @@ public class PlayerActionManager extends Observable implements ActionManager {
 
         while (currentPool > 0) {
 
-
+            currentState.getAction(client).execute();
         }
     }
 
