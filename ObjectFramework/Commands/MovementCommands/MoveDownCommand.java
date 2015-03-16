@@ -15,6 +15,6 @@ public class MoveDownCommand extends MoveCommand {
     public void execute() {
 
         if (entity != null)
-            EntityController.instance().move(entity.getX(), entity.getY() - 1, entity);
+            EntityController.instance().move(entity.getX(), entity.getY() + 1, entity);//TODO changed - 1 to + 1 temporarily
     }
 }
