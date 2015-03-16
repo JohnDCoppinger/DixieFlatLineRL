@@ -2,78 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="942eb137-ac80-4ced-b94b-a473ebc8a017" name="Default" comment="">
-      <change type="DELETED" beforePath="C:\Users\Aryk\IdeaProjects\DixieFlatLineRL\ObjectFramework\RL_Actors\Actions\EquipAction.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Aryk\IdeaProjects\DixieFlatLineRL\ObjectFramework\RL_Actors\Actions\UnequipAction.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Aryk\IdeaProjects\DixieFlatLineRL\ObjectFramework\RL_Items\SimpleItemReaction.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ObjectFramework/RL_Actors/ActionManager.java" afterPath="$PROJECT_DIR$/ObjectFramework/RL_Actors/ActionManager.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ObjectFramework/General/ActionQueue.java" afterPath="$PROJECT_DIR$/ObjectFramework/General/ActionQueue.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ObjectFramework/RL_Actors/Actor.java" afterPath="$PROJECT_DIR$/ObjectFramework/RL_Actors/Actor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ObjectFramework/RL_Actors/ActorClass.java" afterPath="$PROJECT_DIR$/ObjectFramework/RL_Actors/ActorClass.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ObjectFramework/RL_Actors/ActorInventoryComponent.java" afterPath="$PROJECT_DIR$/ObjectFramework/RL_Actors/ActorInventoryComponent.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ObjectFramework/RL_Items/Interfaces/ArmSlot.java" afterPath="$PROJECT_DIR$/ObjectFramework/RL_Items/Interfaces/ArmSlot.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ObjectFramework/RL_Items/Armor.java" afterPath="$PROJECT_DIR$/ObjectFramework/RL_Items/Armor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ObjectFramework/Commands/AttackCommand.java" afterPath="$PROJECT_DIR$/ObjectFramework/Commands/AttackCommand.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ObjectFramework/RL_Actors/Actions/BasicAttackAction.java" afterPath="$PROJECT_DIR$/ObjectFramework/RL_Actors/Actions/BasicAttackAction.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ObjectFramework/Commands/MenuCommands/CloseInventoryCommand.java" afterPath="$PROJECT_DIR$/ObjectFramework/Commands/MenuCommands/CloseInventoryCommand.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ObjectFramework/Commands/Command.java" afterPath="$PROJECT_DIR$/ObjectFramework/Commands/Command.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ObjectFramework/RL_Items/Consumable.java" afterPath="$PROJECT_DIR$/ObjectFramework/RL_Items/Consumable.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ObjectFramework/RenderComponents/Item/CorpseRenderComponent.java" afterPath="$PROJECT_DIR$/ObjectFramework/RenderComponents/Item/CorpseRenderComponent.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ObjectFramework/RenderComponents/Terrain/CorridorRenderComponent.java" afterPath="$PROJECT_DIR$/ObjectFramework/RenderComponents/Terrain/CorridorRenderComponent.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ObjectFramework/RL_Items/CurrentEquipment.java" afterPath="$PROJECT_DIR$/ObjectFramework/RL_Items/CurrentEquipment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ObjectFramework/RenderComponents/Terrain/DirtRenderComponent.java" afterPath="$PROJECT_DIR$/ObjectFramework/RenderComponents/Terrain/DirtRenderComponent.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ObjectFramework/RenderComponents/Terrain/DoorRenderComponent.java" afterPath="$PROJECT_DIR$/ObjectFramework/RenderComponents/Terrain/DoorRenderComponent.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ObjectFramework/RenderComponents/Terrain/DownStairsRenderComponent.java" afterPath="$PROJECT_DIR$/ObjectFramework/RenderComponents/Terrain/DownStairsRenderComponent.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ObjectFramework/General/EntityMap.java" afterPath="$PROJECT_DIR$/ObjectFramework/General/EntityMap.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ObjectFramework/General/EntityMapGenerator.java" afterPath="$PROJECT_DIR$/ObjectFramework/General/EntityMapGenerator.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ObjectFramework/General/EntityModel.java" afterPath="$PROJECT_DIR$/ObjectFramework/General/EntityModel.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ObjectFramework/RenderComponents/Terrain/FloorRenderComponent.java" afterPath="$PROJECT_DIR$/ObjectFramework/RenderComponents/Terrain/FloorRenderComponent.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ObjectFramework/RL_Items/Interfaces/FootSlot.java" afterPath="$PROJECT_DIR$/ObjectFramework/RL_Items/Interfaces/FootSlot.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ObjectFramework/RL_Items/Interfaces/HandSlot.java" afterPath="$PROJECT_DIR$/ObjectFramework/RL_Items/Interfaces/HandSlot.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ObjectFramework/RL_Items/Interfaces/HeadSlot.java" afterPath="$PROJECT_DIR$/ObjectFramework/RL_Items/Interfaces/HeadSlot.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ObjectFramework/Commands/HealCommand.java" afterPath="$PROJECT_DIR$/ObjectFramework/Commands/HealCommand.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ObjectFramework/Commands/InspectInventoryCommand.java" afterPath="$PROJECT_DIR$/ObjectFramework/Commands/InspectInventoryCommand.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ObjectFramework/General/Menu/InventoryMenu.java" afterPath="$PROJECT_DIR$/ObjectFramework/General/Menu/InventoryMenu.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ObjectFramework/RL_Items/Item.java" afterPath="$PROJECT_DIR$/ObjectFramework/RL_Items/Item.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ObjectFramework/RL_Items/Interfaces/ItemSlot.java" afterPath="$PROJECT_DIR$/ObjectFramework/RL_Items/Interfaces/ItemSlot.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ObjectFramework/Commands/KillCommand.java" afterPath="$PROJECT_DIR$/ObjectFramework/Commands/KillCommand.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ObjectFramework/RL_Items/Interfaces/LegSlot.java" afterPath="$PROJECT_DIR$/ObjectFramework/RL_Items/Interfaces/LegSlot.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ObjectFramework/General/MapDoesNotExistException.java" afterPath="$PROJECT_DIR$/ObjectFramework/General/MapDoesNotExistException.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ObjectFramework/General/Menu/Menu.java" afterPath="$PROJECT_DIR$/ObjectFramework/General/Menu/Menu.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ObjectFramework/General/Menu/MenuItem.java" afterPath="$PROJECT_DIR$/ObjectFramework/General/Menu/MenuItem.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ObjectFramework/Commands/MenuCommands/MenuScrollDownCommand.java" afterPath="$PROJECT_DIR$/ObjectFramework/Commands/MenuCommands/MenuScrollDownCommand.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ObjectFramework/Commands/MenuCommands/MenuScrollUpCommand.java" afterPath="$PROJECT_DIR$/ObjectFramework/Commands/MenuCommands/MenuScrollUpCommand.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ObjectFramework/General/MessageQueue.java" afterPath="$PROJECT_DIR$/ObjectFramework/General/MessageQueue.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ObjectFramework/RL_Actors/Actions/MoveAction.java" afterPath="$PROJECT_DIR$/ObjectFramework/RL_Actors/Actions/MoveAction.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ObjectFramework/Commands/MovementCommands/MoveCommand.java" afterPath="$PROJECT_DIR$/ObjectFramework/Commands/MovementCommands/MoveCommand.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ObjectFramework/RL_Actors/Actions/MoveDownAction.java" afterPath="$PROJECT_DIR$/ObjectFramework/RL_Actors/Actions/MoveDownAction.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ObjectFramework/Commands/MovementCommands/MoveDownCommand.java" afterPath="$PROJECT_DIR$/ObjectFramework/Commands/MovementCommands/MoveDownCommand.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ObjectFramework/RL_Actors/Actions/MoveLeftAction.java" afterPath="$PROJECT_DIR$/ObjectFramework/RL_Actors/Actions/MoveLeftAction.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ObjectFramework/Commands/MovementCommands/MoveLeftCommand.java" afterPath="$PROJECT_DIR$/ObjectFramework/Commands/MovementCommands/MoveLeftCommand.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ObjectFramework/RL_Actors/Actions/MoveRightAction.java" afterPath="$PROJECT_DIR$/ObjectFramework/RL_Actors/Actions/MoveRightAction.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ObjectFramework/Commands/MovementCommands/MoveRightCommand.java" afterPath="$PROJECT_DIR$/ObjectFramework/Commands/MovementCommands/MoveRightCommand.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ObjectFramework/RL_Actors/Actions/MoveUpAction.java" afterPath="$PROJECT_DIR$/ObjectFramework/RL_Actors/Actions/MoveUpAction.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ObjectFramework/Commands/MovementCommands/MoveUpCommand.java" afterPath="$PROJECT_DIR$/ObjectFramework/Commands/MovementCommands/MoveUpCommand.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ObjectFramework/Commands/NullCommand.java" afterPath="$PROJECT_DIR$/ObjectFramework/Commands/NullCommand.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ObjectFramework/Commands/MenuCommands/OpenInventoryMenuCommand.java" afterPath="$PROJECT_DIR$/ObjectFramework/Commands/MenuCommands/OpenInventoryMenuCommand.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ObjectFramework/Commands/PickUpItemCommand.java" afterPath="$PROJECT_DIR$/ObjectFramework/Commands/PickUpItemCommand.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ObjectFramework/RL_Actors/Player/PlayerState.java" afterPath="$PROJECT_DIR$/ObjectFramework/RL_Actors/Player/PlayerState.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ObjectFramework/General/RandomNumber.java" afterPath="$PROJECT_DIR$/ObjectFramework/General/RandomNumber.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ObjectFramework/Commands/RemoveActorCommand.java" afterPath="$PROJECT_DIR$/ObjectFramework/Commands/RemoveActorCommand.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ObjectFramework/Commands/RemoveEntityCommand.java" afterPath="$PROJECT_DIR$/ObjectFramework/Commands/RemoveEntityCommand.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ObjectFramework/RL_Actors/SimpleActorClass.java" afterPath="$PROJECT_DIR$/ObjectFramework/RL_Actors/SimpleActorClass.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ObjectFramework/RL_Items/SimpleItemInventory.java" afterPath="$PROJECT_DIR$/ObjectFramework/RL_Items/SimpleItemInventory.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ObjectFramework/RL_Actors/SimpleMobAI.java" afterPath="$PROJECT_DIR$/ObjectFramework/RL_Actors/SimpleMobAI.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ObjectFramework/RenderComponents/Terrain/StoneWallRenderComponent.java" afterPath="$PROJECT_DIR$/ObjectFramework/RenderComponents/Terrain/StoneWallRenderComponent.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ObjectFramework/Commands/TakeItemCommand.java" afterPath="$PROJECT_DIR$/ObjectFramework/Commands/TakeItemCommand.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ObjectFramework/RL_Items/Tool.java" afterPath="$PROJECT_DIR$/ObjectFramework/RL_Items/Tool.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ObjectFramework/RL_Items/Interfaces/TorsoSlot.java" afterPath="$PROJECT_DIR$/ObjectFramework/RL_Items/Interfaces/TorsoSlot.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ObjectFramework/RenderComponents/Terrain/TownWallRenderComponent.java" afterPath="$PROJECT_DIR$/ObjectFramework/RenderComponents/Terrain/TownWallRenderComponent.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ObjectFramework/RenderComponents/Terrain/UnusedRenderComponent.java" afterPath="$PROJECT_DIR$/ObjectFramework/RenderComponents/Terrain/UnusedRenderComponent.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ObjectFramework/RenderComponents/Terrain/UpStairsRenderComponent.java" afterPath="$PROJECT_DIR$/ObjectFramework/RenderComponents/Terrain/UpStairsRenderComponent.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ObjectFramework/RL_Actors/Actions/UseItemAction.java" afterPath="$PROJECT_DIR$/ObjectFramework/RL_Actors/Actions/UseItemAction.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ObjectFramework/RenderComponents/Terrain/VertWallRenderComponent.java" afterPath="$PROJECT_DIR$/ObjectFramework/RenderComponents/Terrain/VertWallRenderComponent.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ObjectFramework/RenderComponents/Terrain/WallRenderComponent.java" afterPath="$PROJECT_DIR$/ObjectFramework/RenderComponents/Terrain/WallRenderComponent.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ObjectFramework/RL_Items/Weapon.java" afterPath="$PROJECT_DIR$/ObjectFramework/RL_Items/Weapon.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="DixieFlatLineRL.iws" />
@@ -193,8 +121,8 @@
       <file leaf-file-name="TileFactory.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ObjectFramework/RL_Terrain/TileFactory.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.14529915" vertical-offset="0" max-vertical-offset="629">
-              <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+            <state vertical-scroll-proportion="0.40236688" vertical-offset="0" max-vertical-offset="676">
+              <caret line="16" column="38" selection-start-line="16" selection-start-column="38" selection-end-line="16" selection-end-column="38" />
               <folding />
             </state>
           </provider>
@@ -267,9 +195,9 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
-    <option name="y" value="24" />
-    <option name="width" value="1552" />
-    <option name="height" value="848" />
+    <option name="y" value="32" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -613,7 +541,7 @@
       <created>1426455923433</created>
       <option name="number" value="Default" />
       <updated>1426455923433</updated>
-      <workItem from="1426472941135" duration="4749000" />
+      <workItem from="1426472941135" duration="5452000" />
     </task>
     <task id="LOCAL-00001" summary="message">
       <created>1426473126921</created>
@@ -639,11 +567,17 @@
       <option name="project" value="LOCAL" />
       <updated>1426476081380</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Went through and removed some auto generated comments&#10;Fixed up some of the simple TODOs">
+      <created>1426477727659</created>
+      <option name="number" value="00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1426477727659</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4749000" />
+    <option name="totallyTimeSpent" value="5452000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -666,8 +600,8 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="24" width="1552" height="848" extended-state="6" />
-    <editor active="false" />
+    <frame x="-8" y="32" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32854864" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -679,13 +613,13 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25659978" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32854864" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2467448" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19739583" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32882273" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32882273" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -745,7 +679,8 @@
     <MESSAGE value="message" />
     <MESSAGE value="Changed PlayerActionManager constructor" />
     <MESSAGE value="Added implementations of menu commands. They are messy" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added implementations of menu commands. They are messy" />
+    <MESSAGE value="Went through and removed some auto generated comments&#10;Fixed up some of the simple TODOs" />
+    <option name="LAST_COMMIT_MESSAGE" value="Went through and removed some auto generated comments&#10;Fixed up some of the simple TODOs" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1165,8 +1100,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ObjectFramework/RL_Terrain/TileFactory.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.14529915" vertical-offset="0" max-vertical-offset="629">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        <state vertical-scroll-proportion="0.40236688" vertical-offset="0" max-vertical-offset="676">
+          <caret line="16" column="38" selection-start-line="16" selection-start-column="38" selection-end-line="16" selection-end-column="38" />
           <folding />
         </state>
       </provider>
