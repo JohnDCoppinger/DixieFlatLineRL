@@ -136,6 +136,10 @@ public class EntityModel extends Observable {
                     continue;
             }
 
+            else {
+                updatedMap = currentMap.getRegion(0, 0, currentMap.cols(), currentMap.rows());
+            }
+
             o.observer.update(this, updatedMap);
         }
     }

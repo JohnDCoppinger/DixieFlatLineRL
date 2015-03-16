@@ -109,7 +109,7 @@ public class EntityMap {
         }
 
         else {
-
+//TODO check this
             map[mover.getX()][mover.getY()] = null;
         }
 
