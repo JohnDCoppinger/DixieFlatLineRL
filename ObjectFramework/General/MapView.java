@@ -4,9 +4,12 @@ import ObjectFramework.General.Entity.GameEntity;
 import net.slashie.libjcsi.CSIColor;
 import net.slashie.libjcsi.CharKey;
 import net.slashie.libjcsi.wswing.WSwingConsoleInterface;
+import java.util.Observable;
+import java.util.Observer;
+import ObjectFramework.General.Menu.Menu;
 
 
-public class MapView
+public class MapView implements Observer
 {	
 	private static MapView instance;
 
@@ -61,10 +64,24 @@ public class MapView
 
 	}
 
-	public CharKey inKey()
-	{
+    public void printMenuToScreen()
+    {
+        //TODO
+    }
+
+	public CharKey inKey() {
 		CharKey key = csi.inkey();
 		return key;
 	}
+
+    public void update(Observable subject, Object data) {
+
+        GameEntity[][] update = (GameEntity[][])data;
+        printMapToScreen(update);
+    }
+
+    public void menuUpdate(Menu menu) {
+
+    }
 
 }
