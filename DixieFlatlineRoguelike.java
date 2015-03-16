@@ -7,8 +7,8 @@ import ObjectFramework.RL_Actors.Player.PlayerActionManager;
  */
 public class DixieFlatlineRoguelike {
 
-    private static int MAPXSIZE = 50;
-    private static int MAPYSIZE = 60;
+    private static int MAPXSIZE = 80;
+    private static int MAPYSIZE = 25;
     private static int NUMOFOBJECTS = 60;
     private static int NUMOFACTORS = 10;
 

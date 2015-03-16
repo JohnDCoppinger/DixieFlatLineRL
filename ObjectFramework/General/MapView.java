@@ -38,15 +38,18 @@ public class MapView implements Observer
 
 	private void printToScreen(GameEntity gEnt)
 	{
-		int x, y, color, bgColor;
+		int x, y, bgColor;
 		char renderChar;
+
+        CSIColor color;
 
 		x = gEnt.getX();
 		y = gEnt.getY();
+
 		color = gEnt.getRender().getColor();
 		//bgColor = gEnt.getRender().getBackgroundColor();
 		renderChar = gEnt.getRender().getRenderChar();
-        csi.print(x, y, renderChar, CSIColor.WHITE);
+        csi.print(x, y, renderChar, color);
 	}
 
 	public void printMapToScreen(GameEntity[][] curMap)
