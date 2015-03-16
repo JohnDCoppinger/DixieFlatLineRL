@@ -8,6 +8,7 @@ import java.util.Iterator;
 public interface Menu {
 
     public void select(int itemNo);
+    public int getSelectedKey();
     public MenuItem getSelected();
     public Iterator getIterator();
     public String getHeader();

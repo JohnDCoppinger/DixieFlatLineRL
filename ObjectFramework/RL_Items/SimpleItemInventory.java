@@ -45,5 +45,7 @@ public class SimpleItemInventory implements InventoryComponent {
         return items.size();
     }
 
-    public Menu getItemMenu(){return null;}
+    public Menu getItemMenu() {
+        return null; //TODO
+    }
 }

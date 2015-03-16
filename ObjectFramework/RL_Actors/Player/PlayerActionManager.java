@@ -1,5 +1,6 @@
 package ObjectFramework.RL_Actors.Player;
 
+import ObjectFramework.General.EntityController;
 import ObjectFramework.General.MapView;
 import ObjectFramework.General.Menu.Menu;
 import ObjectFramework.RL_Actors.ActionManager;
@@ -26,6 +27,8 @@ public class PlayerActionManager extends Observable implements ActionManager {
         this.setupState = new SetupState();
         this.combatState = new CombatState();
         this.currentState = this.combatState;
+        this.register(MapView.instance());
+        EntityController.instance().registerActor(this.client);
     }
 
     public void performActions() {
@@ -34,7 +37,7 @@ public class PlayerActionManager extends Observable implements ActionManager {
 
         while (currentPool > 0) {
 
-            currentState.getAction(client).execute();
+            currentPool -= currentState.performCommand(client);
         }
     }
 
@@ -80,5 +83,9 @@ public class PlayerActionManager extends Observable implements ActionManager {
 
     public Actor getClient() {
         return this.client;
+    }
+
+    public void displayMenu() {
+        MapView.instance(); //TODO
     }
 }

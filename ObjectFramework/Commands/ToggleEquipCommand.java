@@ -13,6 +13,6 @@ public class ToggleEquipCommand implements Command {
     }
 
     public void execute() {
-        //TODO
+
     }
 }

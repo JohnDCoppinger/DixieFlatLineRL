@@ -1,6 +1,5 @@
 package ObjectFramework.RL_Actors.Player;
 
-import ObjectFramework.Commands.Command;
 import ObjectFramework.RL_Actors.Actor;
 
 /**
@@ -8,5 +7,5 @@ import ObjectFramework.RL_Actors.Actor;
  */
 public interface PlayerState {
 
-    public Command getAction(Actor client);
+    public int performCommand(Actor client);
 }

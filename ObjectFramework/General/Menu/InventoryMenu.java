@@ -6,7 +6,7 @@ import java.util.Iterator;
 /**
  * Created by Gallanoth on 3/14/2015.
  */
-public class InventoryMenu implements Menu{
+public class InventoryMenu implements Menu {
 
     private int selected;
     private ArrayList<MenuItem> items;
@@ -23,16 +23,27 @@ public class InventoryMenu implements Menu{
     }
 
     public void select(MenuItem item) {
-        selected = items.indexOf(item);
+
+        int i;
+
+        if ((i = items.indexOf(item)) > 0)
+            selected = i;
     }
 
     public void select(int selected) {
-        this.selected = selected;
+
+        if (selected < items.size())
+            this.selected = selected;
     }
 
     public MenuItem getSelected() {
 
-        return items.get(selected);
+        MenuItem item;
+
+        if ((item = items.get(selected)) != null)
+            return item;
+
+        return null;
     }
 
     public Iterator getIterator() {
@@ -44,18 +55,22 @@ public class InventoryMenu implements Menu{
                 return items.get(currentIndex) != null;
             }
 
-            public MenuItem next() {return items.get(currentIndex++);}
-
-            public void remove() {}
+            public MenuItem next() {
+                return items.get(currentIndex++);
+            }
         };
     }
 
     public void emphasize(int itemIndex) {
-        items.get(itemIndex).setEmphasis(true);
+
+        if (itemIndex < items.size())
+            items.get(itemIndex).setEmphasis(true);
     }
 
     public void unemphasize(int itemIndex) {
-        items.get(itemIndex).setEmphasis(false);
+
+        if (itemIndex < items.size())
+            items.get(itemIndex).setEmphasis(false);
     }
 
     public String getHeader() {
@@ -64,6 +79,20 @@ public class InventoryMenu implements Menu{
 
     public void addMenuItem(MenuItem item) {
         this.items.add(item);
+    }
+
+    public void removeMenuItem(MenuItem item) {
+        this.items.remove(item);
+    }
+
+    public int getSelectedKey() {
+
+        MenuItem item;
+
+        if ((item = items.get(selected)) != null)
+            return item.getKey();
+
+        return -1;
     }
 
 }

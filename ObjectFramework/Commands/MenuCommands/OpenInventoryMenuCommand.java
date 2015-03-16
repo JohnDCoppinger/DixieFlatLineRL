@@ -1,6 +1,8 @@
 package ObjectFramework.Commands.MenuCommands;
 
 import ObjectFramework.Commands.Command;
+import ObjectFramework.General.MapView;
+import ObjectFramework.General.Menu.Menu;
 import ObjectFramework.RL_Actors.Actor;
 
 /**
@@ -17,6 +19,8 @@ public class OpenInventoryMenuCommand implements Command {
     }
 
     public void execute() {
-        //TODO
+
+        Menu menu = actor.getInventory().getItemMenu();
+        MapView.instance().
     }
 }
