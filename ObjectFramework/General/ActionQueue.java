@@ -4,9 +4,6 @@ import ObjectFramework.RL_Actors.ActionManager;
 
 import java.util.PriorityQueue;
 
-/**
- * Created by Gallanoth on 3/14/2015.
- */
 public class ActionQueue extends PriorityQueue<ActionManager>{
 
     private static ActionQueue instance;

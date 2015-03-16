@@ -2,9 +2,6 @@ package ObjectFramework.Commands;
 
 import ObjectFramework.General.Entity.GameEntity;
 
-/**
- * Created by Gallanoth on 3/9/2015.
- */
 public class HealCommand implements Command{
 
     private int heal;
@@ -20,7 +17,5 @@ public class HealCommand implements Command{
 
         if (this.entity.getCombat() != null)
             this.entity.getCombat().heal(heal);
-        else
-            ;//TODO add message queue thing here
     }
 }

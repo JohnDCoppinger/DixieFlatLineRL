@@ -3,9 +3,6 @@ package ObjectFramework.General;
 import ObjectFramework.General.Entity.GameEntity;
 import ObjectFramework.RL_Terrain.TerrainFactory;
 
-/**
- * Created by Gallanoth on 2/26/2015.
- */
 public class EntityMap {
 
     private GameEntity[][] map;

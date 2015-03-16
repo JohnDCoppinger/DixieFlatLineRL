@@ -20,6 +20,10 @@ public class ActorInventoryComponent implements InventoryComponent {
         return null;
     }
 
+    public Item referenceItem(int itemIndex) {
+        return null;
+    }
+
     public void addItem(Item newItem) {}
 
     public void deleteItem(int itemIndex) {}

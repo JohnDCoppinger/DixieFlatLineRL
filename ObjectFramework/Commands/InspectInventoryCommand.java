@@ -2,9 +2,6 @@ package ObjectFramework.Commands;
 
 import ObjectFramework.General.Entity.InventoryComponent;
 
-/**
- * Created by Gallanoth on 3/13/2015.
- */
 public class InspectInventoryCommand implements Command{
 
     private InspectInventoryCommand() {}

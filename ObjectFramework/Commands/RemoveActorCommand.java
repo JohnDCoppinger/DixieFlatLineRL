@@ -3,9 +3,6 @@ package ObjectFramework.Commands;
 import ObjectFramework.General.EntityController;
 import ObjectFramework.RL_Actors.Actor;
 
-/**
- * Created by Gallanoth on 3/14/2015.
- */
 public class RemoveActorCommand implements Command{
 
     private Actor actor;

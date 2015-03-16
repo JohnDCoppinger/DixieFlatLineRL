@@ -4,9 +4,6 @@ import ObjectFramework.Commands.Command;
 import ObjectFramework.General.Entity.GameEntity;
 import ObjectFramework.General.EntityController;
 
-/**
- * Created by Gallanoth on 3/3/2015.
- */
 public class MoveCommand implements Command {
 
     protected int x;
