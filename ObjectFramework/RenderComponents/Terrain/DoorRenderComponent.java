@@ -8,6 +8,6 @@ public class DoorRenderComponent extends RenderComponent
 {
     public DoorRenderComponent()
     {
-        super('D', CSIColor.BROWN,CSIColor.GRAY);
+        super('D', CSIColor.ALICE_BLUE,CSIColor.GRAY);
     }
 }

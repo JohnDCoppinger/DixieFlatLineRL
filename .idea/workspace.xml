@@ -3,27 +3,23 @@
   <component name="ChangeListManager">
     <list default="true" id="942eb137-ac80-4ced-b94b-a473ebc8a017" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DixieFlatLineRL/ObjectFramework/RenderComponents/Actor/ActorRenderComponentSimple.class" afterPath="$PROJECT_DIR$/out/production/DixieFlatLineRL/ObjectFramework/RenderComponents/Actor/ActorRenderComponentSimple.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DixieFlatLineRL/DixieFlatlineRoguelike.class" afterPath="$PROJECT_DIR$/out/production/DixieFlatLineRL/DixieFlatlineRoguelike.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DixieFlatLineRL/ObjectFramework/General/EntityController.class" afterPath="$PROJECT_DIR$/out/production/DixieFlatLineRL/ObjectFramework/General/EntityController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DixieFlatLineRL/ObjectFramework/General/EntityMapGenerator.class" afterPath="$PROJECT_DIR$/out/production/DixieFlatLineRL/ObjectFramework/General/EntityMapGenerator.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DixieFlatLineRL/ObjectFramework/General/EntityModel$RegionObserver.class" afterPath="$PROJECT_DIR$/out/production/DixieFlatLineRL/ObjectFramework/General/EntityModel$RegionObserver.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DixieFlatLineRL/ObjectFramework/General/EntityModel.class" afterPath="$PROJECT_DIR$/out/production/DixieFlatLineRL/ObjectFramework/General/EntityModel.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ObjectFramework/RenderComponents/Actor/ActorRenderComponentSimple.java" afterPath="$PROJECT_DIR$/ObjectFramework/RenderComponents/Actor/ActorRenderComponentSimple.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ObjectFramework/RenderComponents/Item/CorpseRenderComponent.java" afterPath="$PROJECT_DIR$/ObjectFramework/RenderComponents/Item/CorpseRenderComponent.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ObjectFramework/RenderComponents/Terrain/CorridorRenderComponent.java" afterPath="$PROJECT_DIR$/ObjectFramework/RenderComponents/Terrain/CorridorRenderComponent.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ObjectFramework/RenderComponents/Terrain/DirtRenderComponent.java" afterPath="$PROJECT_DIR$/ObjectFramework/RenderComponents/Terrain/DirtRenderComponent.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DixieFlatLineRL/ObjectFramework/RenderComponents/Item/CorpseRenderComponent.class" afterPath="$PROJECT_DIR$/out/production/DixieFlatLineRL/ObjectFramework/RenderComponents/Item/CorpseRenderComponent.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DixieFlatLineRL/ObjectFramework/RenderComponents/Terrain/CorridorRenderComponent.class" afterPath="$PROJECT_DIR$/out/production/DixieFlatLineRL/ObjectFramework/RenderComponents/Terrain/CorridorRenderComponent.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DixieFlatLineRL/ObjectFramework/RenderComponents/Terrain/DirtRenderComponent.class" afterPath="$PROJECT_DIR$/out/production/DixieFlatLineRL/ObjectFramework/RenderComponents/Terrain/DirtRenderComponent.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DixieFlatLineRL/ObjectFramework/RenderComponents/Terrain/DoorRenderComponent.class" afterPath="$PROJECT_DIR$/out/production/DixieFlatLineRL/ObjectFramework/RenderComponents/Terrain/DoorRenderComponent.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DixieFlatLineRL/ObjectFramework/RenderComponents/Terrain/DownStairsRenderComponent.class" afterPath="$PROJECT_DIR$/out/production/DixieFlatLineRL/ObjectFramework/RenderComponents/Terrain/DownStairsRenderComponent.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DixieFlatLineRL/ObjectFramework/RenderComponents/Terrain/FloorRenderComponent.class" afterPath="$PROJECT_DIR$/out/production/DixieFlatLineRL/ObjectFramework/RenderComponents/Terrain/FloorRenderComponent.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DixieFlatLineRL/ObjectFramework/General/MapView.class" afterPath="$PROJECT_DIR$/out/production/DixieFlatLineRL/ObjectFramework/General/MapView.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DixieFlatLineRL/ObjectFramework/General/Entity/RenderComponent.class" afterPath="$PROJECT_DIR$/out/production/DixieFlatLineRL/ObjectFramework/General/Entity/RenderComponent.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DixieFlatLineRL/ObjectFramework/RenderComponents/Terrain/StoneWallRenderComponent.class" afterPath="$PROJECT_DIR$/out/production/DixieFlatLineRL/ObjectFramework/RenderComponents/Terrain/StoneWallRenderComponent.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DixieFlatLineRL/ObjectFramework/RenderComponents/Terrain/TownWallRenderComponent.class" afterPath="$PROJECT_DIR$/out/production/DixieFlatLineRL/ObjectFramework/RenderComponents/Terrain/TownWallRenderComponent.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DixieFlatLineRL/ObjectFramework/RenderComponents/Terrain/UnusedRenderComponent.class" afterPath="$PROJECT_DIR$/out/production/DixieFlatLineRL/ObjectFramework/RenderComponents/Terrain/UnusedRenderComponent.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DixieFlatLineRL/ObjectFramework/RenderComponents/Terrain/UpStairsRenderComponent.class" afterPath="$PROJECT_DIR$/out/production/DixieFlatLineRL/ObjectFramework/RenderComponents/Terrain/UpStairsRenderComponent.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DixieFlatLineRL/ObjectFramework/RenderComponents/Terrain/VertWallRenderComponent.class" afterPath="$PROJECT_DIR$/out/production/DixieFlatLineRL/ObjectFramework/RenderComponents/Terrain/VertWallRenderComponent.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DixieFlatLineRL/ObjectFramework/RenderComponents/Terrain/WallRenderComponent.class" afterPath="$PROJECT_DIR$/out/production/DixieFlatLineRL/ObjectFramework/RenderComponents/Terrain/WallRenderComponent.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DixieFlatlineRoguelike.java" afterPath="$PROJECT_DIR$/DixieFlatlineRoguelike.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ObjectFramework/RenderComponents/Terrain/DoorRenderComponent.java" afterPath="$PROJECT_DIR$/ObjectFramework/RenderComponents/Terrain/DoorRenderComponent.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ObjectFramework/RenderComponents/Terrain/DownStairsRenderComponent.java" afterPath="$PROJECT_DIR$/ObjectFramework/RenderComponents/Terrain/DownStairsRenderComponent.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ObjectFramework/RenderComponents/Terrain/FloorRenderComponent.java" afterPath="$PROJECT_DIR$/ObjectFramework/RenderComponents/Terrain/FloorRenderComponent.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ObjectFramework/General/MapView.java" afterPath="$PROJECT_DIR$/ObjectFramework/General/MapView.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ObjectFramework/General/Entity/RenderComponent.java" afterPath="$PROJECT_DIR$/ObjectFramework/General/Entity/RenderComponent.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ObjectFramework/RenderComponents/Terrain/StoneWallRenderComponent.java" afterPath="$PROJECT_DIR$/ObjectFramework/RenderComponents/Terrain/StoneWallRenderComponent.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ObjectFramework/RenderComponents/Terrain/TownWallRenderComponent.java" afterPath="$PROJECT_DIR$/ObjectFramework/RenderComponents/Terrain/TownWallRenderComponent.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ObjectFramework/RenderComponents/Terrain/UnusedRenderComponent.java" afterPath="$PROJECT_DIR$/ObjectFramework/RenderComponents/Terrain/UnusedRenderComponent.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ObjectFramework/RenderComponents/Terrain/UpStairsRenderComponent.java" afterPath="$PROJECT_DIR$/ObjectFramework/RenderComponents/Terrain/UpStairsRenderComponent.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ObjectFramework/RenderComponents/Terrain/VertWallRenderComponent.java" afterPath="$PROJECT_DIR$/ObjectFramework/RenderComponents/Terrain/VertWallRenderComponent.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ObjectFramework/RenderComponents/Terrain/WallRenderComponent.java" afterPath="$PROJECT_DIR$/ObjectFramework/RenderComponents/Terrain/WallRenderComponent.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="DixieFlatLineRL.iws" />
@@ -49,7 +45,63 @@
     <favorites_list name="DixieFlatLineRL" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="DixieFlatlineRoguelike.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/DixieFlatlineRoguelike.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="547" max-vertical-offset="1258">
+              <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TerrainFactory.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ObjectFramework/RL_Terrain/TerrainFactory.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1275">
+              <caret line="34" column="70" selection-start-line="34" selection-start-column="70" selection-end-line="34" selection-end-column="70" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MapView.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ObjectFramework/General/MapView.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1513">
+              <caret line="51" column="50" selection-start-line="51" selection-start-column="50" selection-end-line="51" selection-end-column="50" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DoorRenderComponent.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ObjectFramework/RenderComponents/Terrain/DoorRenderComponent.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="289">
+              <caret line="10" column="38" selection-start-line="10" selection-start-column="38" selection-end-line="10" selection-end-column="38" />
+              <folding>
+                <element signature="e#291#292#0" expanded="true" />
+                <element signature="e#352#353#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="EntityMapGenerator.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ObjectFramework/General/EntityMapGenerator.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.21144278" vertical-offset="51" max-vertical-offset="1564">
+              <caret line="8" column="49" selection-start-line="8" selection-start-column="49" selection-end-line="8" selection-end-column="49" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -92,14 +144,11 @@
         <option value="$PROJECT_DIR$/ObjectFramework/General/EntityModel.java" />
         <option value="$PROJECT_DIR$/ObjectFramework/General/EntityController.java" />
         <option value="$PROJECT_DIR$/ObjectFramework/General/EntityMapGenerator.java" />
-        <option value="$PROJECT_DIR$/DixieFlatlineRoguelike.java" />
-        <option value="$PROJECT_DIR$/ObjectFramework/General/MapView.java" />
         <option value="$PROJECT_DIR$/ObjectFramework/General/Entity/RenderComponent.java" />
         <option value="$PROJECT_DIR$/ObjectFramework/RenderComponents/Item/CorpseRenderComponent.java" />
         <option value="$PROJECT_DIR$/ObjectFramework/RenderComponents/Actor/ActorRenderComponentSimple.java" />
         <option value="$PROJECT_DIR$/ObjectFramework/RenderComponents/Terrain/CorridorRenderComponent.java" />
         <option value="$PROJECT_DIR$/ObjectFramework/RenderComponents/Terrain/DirtRenderComponent.java" />
-        <option value="$PROJECT_DIR$/ObjectFramework/RenderComponents/Terrain/DoorRenderComponent.java" />
         <option value="$PROJECT_DIR$/ObjectFramework/RenderComponents/Terrain/DownStairsRenderComponent.java" />
         <option value="$PROJECT_DIR$/ObjectFramework/RenderComponents/Terrain/FloorRenderComponent.java" />
         <option value="$PROJECT_DIR$/ObjectFramework/RenderComponents/Terrain/StoneWallRenderComponent.java" />
@@ -108,6 +157,9 @@
         <option value="$PROJECT_DIR$/ObjectFramework/RenderComponents/Terrain/UpStairsRenderComponent.java" />
         <option value="$PROJECT_DIR$/ObjectFramework/RenderComponents/Terrain/VertWallRenderComponent.java" />
         <option value="$PROJECT_DIR$/ObjectFramework/RenderComponents/Terrain/WallRenderComponent.java" />
+        <option value="$PROJECT_DIR$/ObjectFramework/General/MapView.java" />
+        <option value="$PROJECT_DIR$/ObjectFramework/RenderComponents/Terrain/DoorRenderComponent.java" />
+        <option value="$PROJECT_DIR$/DixieFlatlineRoguelike.java" />
       </list>
     </option>
   </component>
@@ -178,6 +230,24 @@
               <option name="myItemId" value="ObjectFramework" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RL_Terrain" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DixieFlatLineRL" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DixieFlatLineRL" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ObjectFramework" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -212,6 +282,86 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="RenderComponents" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Terrain" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DixieFlatLineRL" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DixieFlatLineRL" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ObjectFramework" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RenderComponents" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DixieFlatLineRL" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DixieFlatLineRL" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ObjectFramework" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="General" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DixieFlatLineRL" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DixieFlatLineRL" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ObjectFramework" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Commands" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DixieFlatLineRL" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DixieFlatLineRL" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ObjectFramework" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Commands" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MenuCommands" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -544,7 +694,7 @@
       <created>1426455923433</created>
       <option name="number" value="Default" />
       <updated>1426455923433</updated>
-      <workItem from="1426472941135" duration="15622000" />
+      <workItem from="1426472941135" duration="16468000" />
     </task>
     <task id="LOCAL-00001" summary="message">
       <created>1426473126921</created>
@@ -606,11 +756,17 @@
       <option name="project" value="LOCAL" />
       <updated>1426522584518</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Added color to mapView">
+      <created>1426523555696</created>
+      <option name="number" value="00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1426523555696</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15622000" />
+    <option name="totallyTimeSpent" value="16468000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -634,7 +790,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="24" width="1552" height="848" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32854864" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -650,7 +806,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.4181326" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32854864" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2467448" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2467448" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32882273" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -717,7 +873,8 @@
     <MESSAGE value="Changed main so init works properly" />
     <MESSAGE value="Debugging main. Added case to updateSubscribers method in the EntityModel" />
     <MESSAGE value="Debugging main. Added Player actor placement to the EntityMapGenerator" />
-    <option name="LAST_COMMIT_MESSAGE" value="Debugging main. Added Player actor placement to the EntityMapGenerator" />
+    <MESSAGE value="Added color to mapView" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added color to mapView" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -904,14 +1061,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ObjectFramework/RL_Terrain/TerrainFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="223" max-vertical-offset="1275">
-          <caret line="34" column="70" selection-start-line="34" selection-start-column="70" selection-end-line="34" selection-end-column="70" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ObjectFramework/Commands/MoveToPreviousMapCommand.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="510">
@@ -1083,36 +1232,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ObjectFramework/General/EntityMapGenerator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="91" max-vertical-offset="1564">
-          <caret line="79" column="91" selection-start-line="79" selection-start-column="91" selection-end-line="79" selection-end-column="91" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DixieFlatlineRoguelike.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1258">
-          <caret line="10" column="36" selection-start-line="10" selection-start-column="36" selection-end-line="10" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/net/slashie/libjcsi/ConsoleSystemInterface.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3128">
           <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ObjectFramework/General/MapView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="499" max-vertical-offset="1513">
-          <caret line="47" column="8" selection-start-line="47" selection-start-column="8" selection-end-line="47" selection-end-column="8" />
           <folding />
         </state>
       </provider>
@@ -1167,14 +1290,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="238">
           <caret line="10" column="43" selection-start-line="10" selection-start-column="43" selection-end-line="10" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ObjectFramework/RenderComponents/Terrain/DoorRenderComponent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="238">
-          <caret line="10" column="42" selection-start-line="10" selection-start-column="42" selection-end-line="10" selection-end-column="42" />
           <folding />
         </state>
       </provider>
@@ -1239,6 +1354,51 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.25373134" vertical-offset="0" max-vertical-offset="402">
           <caret line="10" column="43" selection-start-line="10" selection-start-column="43" selection-end-line="10" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ObjectFramework/RenderComponents/Terrain/DoorRenderComponent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="289">
+          <caret line="10" column="38" selection-start-line="10" selection-start-column="38" selection-end-line="10" selection-end-column="38" />
+          <folding>
+            <element signature="e#291#292#0" expanded="true" />
+            <element signature="e#352#353#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ObjectFramework/General/MapView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1513">
+          <caret line="51" column="50" selection-start-line="51" selection-start-column="50" selection-end-line="51" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DixieFlatlineRoguelike.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="547" max-vertical-offset="1258">
+          <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ObjectFramework/RL_Terrain/TerrainFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="223" max-vertical-offset="1275">
+          <caret line="34" column="70" selection-start-line="34" selection-start-column="70" selection-end-line="34" selection-end-column="70" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ObjectFramework/General/EntityMapGenerator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.21144278" vertical-offset="51" max-vertical-offset="1564">
+          <caret line="8" column="49" selection-start-line="8" selection-start-column="49" selection-end-line="8" selection-end-column="49" />
           <folding />
         </state>
       </provider>
