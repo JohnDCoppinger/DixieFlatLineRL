@@ -14,7 +14,7 @@ public class SimpleActorCombat implements CombatComponent {
 
     private SimpleActorCombat() {}
 
-    public SimpleActorCombat(GameEntity owner, int currentHP, int currentArmor, int magicResist) {
+    public SimpleActorCombat(GameEntity owner, int currentHP, int currentArmor, double magicResist) {
 
         this.baseHP = currentHP;
         this.currentHP = currentHP;

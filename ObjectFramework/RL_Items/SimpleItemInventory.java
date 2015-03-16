@@ -1,7 +1,9 @@
 package ObjectFramework.RL_Items;
 
 import ObjectFramework.General.Entity.InventoryComponent;
+import ObjectFramework.General.Menu.InventoryMenu;
 import ObjectFramework.General.Menu.Menu;
+import ObjectFramework.General.Menu.MenuItem;
 
 import java.util.ArrayList;
 
@@ -18,8 +20,16 @@ public class SimpleItemInventory implements InventoryComponent {
         this.items.add(item);
     }
 
-    public Item[] showItems() {
-        return (Item[]) items.toArray();
+    public Menu showItems() {
+
+        InventoryMenu menu = new InventoryMenu("Items on Ground");
+        int i = 0;
+
+        for (Item item : items) {
+            menu.addMenuItem(new MenuItem(item.description(), i++));
+        }
+
+        return menu;
     }
 
     public Item giveItem(int itemIndex) {
@@ -48,9 +58,5 @@ public class SimpleItemInventory implements InventoryComponent {
 
     public int inventorySize() {
         return items.size();
-    }
-
-    public Menu getItemMenu() {
-        return null; //TODO
     }
 }

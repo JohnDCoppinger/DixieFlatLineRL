@@ -1,5 +1,7 @@
 package ObjectFramework.General.Entity;
 
+import ObjectFramework.RenderComponents.Item.CorpseRenderComponent;
+
 public class GameEntity {
 
     private int entityId;
@@ -24,6 +26,17 @@ public class GameEntity {
     public GameEntity(RenderComponent render) {
         this();
         this.render = render;
+
+        if(this.render == null) {
+            this.render = new CorpseRenderComponent();
+        }
+    }
+
+    public GameEntity(InventoryComponent inventory, CombatComponent combat, ReactionComponent reaction, RenderComponent render) {
+        this(render);
+        this.inventory = inventory;
+        this.combat = combat;
+        this.reaction = reaction;
     }
 
     private static int assignId() {
