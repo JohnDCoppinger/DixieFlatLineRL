@@ -1,5 +1,7 @@
 package ObjectFramework.Commands;
 
+import ObjectFramework.General.Entity.GameEntity;
+import ObjectFramework.General.EntityController;
 import ObjectFramework.RL_Actors.Actor;
 
 /**
@@ -16,6 +18,7 @@ public class PickUpItemCommand implements Command {
     }
 
     public void execute() {
-        //TODO
+
+        if (actor.getBeneath() != null);
     }
 }
