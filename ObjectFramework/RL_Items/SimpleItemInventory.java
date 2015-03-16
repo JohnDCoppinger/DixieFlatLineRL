@@ -45,9 +45,5 @@ public class SimpleItemInventory implements InventoryComponent {
         return items.size();
     }
 
-    @Override
-    public Menu getItemMenu()
-    {
-        return null;
-    }
+    public Menu getItemMenu(){return null;}
 }

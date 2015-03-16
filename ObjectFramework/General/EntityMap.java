@@ -46,7 +46,12 @@ public class EntityMap {
         GameEntity old = map[row][col];
         map[row][col] = newEntity;
 
+        if(newEntity!= null){
+            newEntity.setX(col);
+            newEntity.setY(row);
+        }
         if (old != null && newEntity != null) {
+
 
             GameEntity temp;
             int xtemp, ytemp, leveltemp;

@@ -28,7 +28,7 @@ public class DixieFlatlineRoguelike {
         model.addMap(generator.generateMap("town"));
         model.addMap(generator.generateMap("cave"));
 
-        model.changeMap(0);
+        model.changeMap(1);
         swingCSI.printMapToScreen(model.getRegion(0, 0, 79, 24));
         EntityController.instance().setModel(model);
     }
