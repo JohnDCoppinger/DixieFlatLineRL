@@ -8,6 +8,6 @@ public class TownWallRenderComponent  extends RenderComponent
 {
     public TownWallRenderComponent()
     {
-        super('#', CSIColor.BLACK, CSIColor.RED);
+        super('#', CSIColor.RED_VIOLET, CSIColor.BLACK);
     }
 }

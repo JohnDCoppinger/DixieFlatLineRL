@@ -8,7 +8,7 @@ public class FloorRenderComponent extends RenderComponent
 {
     public FloorRenderComponent()
     {
-        super(',', CSIColor.BLACK, CSIColor.GRAY);
+        super(',', CSIColor.GRAY, CSIColor.BLACK);
     }
 }
 

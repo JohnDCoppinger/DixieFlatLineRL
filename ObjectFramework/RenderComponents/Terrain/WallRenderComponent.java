@@ -8,6 +8,6 @@ public class WallRenderComponent extends RenderComponent
 {
     public WallRenderComponent()
     {
-        super('-', CSIColor.BLACK, CSIColor.BROWN);
+        super('-', CSIColor.BROWN, CSIColor.BLACK);
     }
 }

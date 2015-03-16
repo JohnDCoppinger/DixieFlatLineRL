@@ -6,6 +6,6 @@ import net.slashie.libjcsi.CSIColor;
 public class CorpseRenderComponent extends RenderComponent {
 
     public CorpseRenderComponent() {
-        super('K', CSIColor.ALICE_BLUE, CSIColor.BROWN);
+        super('K', CSIColor.DARK_RED, CSIColor.BLACK);
     }
 }

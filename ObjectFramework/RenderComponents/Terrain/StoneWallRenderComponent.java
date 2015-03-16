@@ -8,6 +8,6 @@ public class StoneWallRenderComponent  extends RenderComponent
 {
     public StoneWallRenderComponent()
     {
-        super('O', CSIColor.BLACK, CSIColor.GRAY);
+        super('O', CSIColor.GRAY, CSIColor.BLACK);
     }
 }

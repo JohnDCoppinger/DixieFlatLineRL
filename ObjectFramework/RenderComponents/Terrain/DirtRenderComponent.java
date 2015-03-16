@@ -8,6 +8,6 @@ public class DirtRenderComponent extends RenderComponent
 {
     public DirtRenderComponent()
     {
-        super('.', CSIColor.BLACK, CSIColor.BROWN);
+        super('.', CSIColor.BROWN, CSIColor.BLACK);
     }
 }

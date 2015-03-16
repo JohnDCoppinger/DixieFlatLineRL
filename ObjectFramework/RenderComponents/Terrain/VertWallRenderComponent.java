@@ -8,6 +8,6 @@ public class VertWallRenderComponent extends RenderComponent
 {
     public VertWallRenderComponent()
     {
-        super('|', CSIColor.BLACK, CSIColor.BROWN);
+        super('|', CSIColor.BROWN, CSIColor.BLACK);
     }
 }
