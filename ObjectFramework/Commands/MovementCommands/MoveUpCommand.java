@@ -1,4 +1,4 @@
-package ObjectFramework.Commands;
+package ObjectFramework.Commands.MovementCommands;
 
 import ObjectFramework.General.Entity.GameEntity;
 import ObjectFramework.General.EntityController;

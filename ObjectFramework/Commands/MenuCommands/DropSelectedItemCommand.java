@@ -1,5 +1,6 @@
-package ObjectFramework.Commands;
+package ObjectFramework.Commands.MenuCommands;
 
+import ObjectFramework.Commands.Command;
 import ObjectFramework.RL_Actors.Player.PlayerActionManager;
 
 public class DropSelectedItemCommand implements Command {

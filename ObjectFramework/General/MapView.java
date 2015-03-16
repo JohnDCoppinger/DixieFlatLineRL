@@ -20,7 +20,6 @@ public class MapView
 
 	private MapView()
 	{
-		WSwingConsoleInterface csi = null;
         try {
             csi = new WSwingConsoleInterface("DixieFlatlineRL", false);
         } catch (ExceptionInInitializerError eiie) {

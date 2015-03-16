@@ -1,6 +1,6 @@
 package ObjectFramework.RL_Actors.Actions;
 
-import ObjectFramework.Commands.MoveUpCommand;
+import ObjectFramework.Commands.MovementCommands.MoveUpCommand;
 import ObjectFramework.General.Entity.GameEntity;
 
 /**

@@ -1,6 +1,12 @@
 package ObjectFramework.RL_Actors.Player;
 
-import ObjectFramework.Commands.*;
+import ObjectFramework.Commands.Command;
+import ObjectFramework.Commands.MenuCommands.CloseInventoryCommand;
+import ObjectFramework.Commands.MenuCommands.DropSelectedItemCommand;
+import ObjectFramework.Commands.MenuCommands.MenuScrollDownCommand;
+import ObjectFramework.Commands.MenuCommands.MenuScrollUpCommand;
+import ObjectFramework.Commands.NullCommand;
+import ObjectFramework.Commands.ToggleEquipCommand;
 import ObjectFramework.General.MapView;
 import ObjectFramework.RL_Actors.Actor;
 

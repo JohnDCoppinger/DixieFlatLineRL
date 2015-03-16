@@ -1,6 +1,6 @@
 package ObjectFramework.RL_Actors.Actions;
 
-import ObjectFramework.Commands.MoveDownCommand;
+import ObjectFramework.Commands.MovementCommands.MoveDownCommand;
 import ObjectFramework.General.Entity.GameEntity;
 
 /**
