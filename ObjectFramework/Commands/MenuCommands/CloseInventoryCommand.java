@@ -17,6 +17,8 @@ public class CloseInventoryCommand implements Command {
     }
 
     public void execute() {
-        //TODO
+
+        manager.setCurrentMenu(null);
+        manager.displayMenu();
     }
 }

@@ -1,12 +1,14 @@
 package ObjectFramework.Commands;
 
 import ObjectFramework.General.Entity.GameEntity;
-import ObjectFramework.General.EntityController;
+import ObjectFramework.General.Entity.InventoryComponent;
 import ObjectFramework.RL_Actors.Actor;
 
 /**
  * Created by Gallanoth on 3/15/2015.
  */
+
+//This command is very fragile. Not a good one.
 public class PickUpItemCommand implements Command {
 
     private Actor actor;
@@ -19,6 +21,22 @@ public class PickUpItemCommand implements Command {
 
     public void execute() {
 
-        if (actor.getBeneath() != null);
+        GameEntity beneath = actor.getBeneath();
+        InventoryComponent mahNewStuff = null;
+
+        if (beneath == null)
+            return;
+
+        while (beneath.getCombat() != null)
+            beneath = beneath.getBeneath();
+
+        if ((mahNewStuff = beneath.getInventory()) == null)
+            return;
+
+        while (mahNewStuff.inventorySize() > 0) {
+            actor.getInventory().addItem(mahNewStuff.giveItem(0));
+        }
+
+        new RemoveEntityCommand(beneath).execute();
     }
 }

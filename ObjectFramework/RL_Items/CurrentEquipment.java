@@ -80,6 +80,10 @@ public class CurrentEquipment {
         this.feet = feet;
     }
 
+    public void equip(Item item) {
+        //Catch for trying to equip unequippable items
+    }
+
     public void unequip(HeadSlot head) {
         this.head = empty;
     }
