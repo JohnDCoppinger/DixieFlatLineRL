@@ -47,6 +47,8 @@ public class InventoryMenu implements Menu{
             }
 
             public MenuItem next() {return items.get(currentIndex++);}
+
+            public void remove() {}
         };
     }
 

@@ -1,6 +1,4 @@
 package ObjectFramework.Entity;
-import net.slashie.libjcsi.CSIColor;
-import java.util.Vector;
 
 /**
  * Created by Gallanoth on 3/3/2015.

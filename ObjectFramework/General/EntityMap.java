@@ -207,10 +207,10 @@ public class EntityMap {
 
         GameEntity[][] subregion = null;
 
-        int     lrbound = 0,
-                urbound = 0,
-                lcbound = 0,
-                ucbound = 0;
+        int     lrbound = startY,
+                urbound = endY,
+                lcbound = startX,
+                ucbound = endX;
 
         if (endX - startX > 0 && endY - startY > 0)
             subregion = new GameEntity[endY - startY][endX - startX];
@@ -241,7 +241,7 @@ public class EntityMap {
 
             for(int j = 0; j < endX - startX; j++) {
 
-                if (i > lrbound && j > lcbound && i < urbound && i < ucbound)
+                if (i > lrbound && j > lcbound && i < urbound && j < ucbound)
                     subregion[i][j] = map[i][j];
 
                 else

@@ -23,9 +23,11 @@ public class DixieFlatlineRoguelike {
         MapView swingCSI = MapView.instance();
         EntityMapGenerator generator = EntityMapGenerator.instance();
 
-        generator.setMapValues(MAPXSIZE,MAPYSIZE,NUMOFOBJECTS,NUMOFACTORS);
+        generator.setMapValues(MAPXSIZE, MAPYSIZE, NUMOFOBJECTS, NUMOFACTORS);
         model.addMap(generator.generateMap("town"));
         model.addMap(generator.generateMap("cave"));
-        System.out.println("Finished init");
+        model.changeMap(0);
+
+        swingCSI.printMapToScreen(model.getRegion(0, 0, 79, 24));
     }
 }
