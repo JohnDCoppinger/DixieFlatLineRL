@@ -9,6 +9,18 @@ public class MenuItem {
     private boolean emphasis;
     private int key;
 
+    private MenuItem() {};
+
+    public MenuItem(String itemName, int key) {
+        this.itemName = itemName;
+        this.key = key;
+    }
+
+    public MenuItem(String itemName, int key, boolean emphasis) {
+        this(itemName, key);
+        this.emphasis = emphasis;
+    }
+
     public boolean isEmphasized() {
         return emphasis;
     }

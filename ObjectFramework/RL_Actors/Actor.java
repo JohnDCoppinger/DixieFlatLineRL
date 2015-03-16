@@ -1,12 +1,14 @@
 package ObjectFramework.RL_Actors;
 
 import ObjectFramework.General.Entity.GameEntity;
+import ObjectFramework.RL_Items.CurrentEquipment;
 
 /**
  * Created by Gallanoth on 1/29/2015.
  */
 public class Actor extends GameEntity {
 
+    private CurrentEquipment equipment;
     private ActionManager manager;
     private int initiative;
     private String name;
@@ -30,5 +32,9 @@ public class Actor extends GameEntity {
 
     public ActorClass getActorClass() {
         return (ActorClass) this.getReaction();
+    }
+
+    public CurrentEquipment getCurrentEquipment() {
+        return this.equipment;
     }
 }

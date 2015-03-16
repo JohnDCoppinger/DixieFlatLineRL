@@ -62,4 +62,8 @@ public class InventoryMenu implements Menu{
         return this.header;
     }
 
+    public void addMenuItem(MenuItem item) {
+        this.items.add(item);
+    }
+
 }
