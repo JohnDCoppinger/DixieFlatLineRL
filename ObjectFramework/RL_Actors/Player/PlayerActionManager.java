@@ -28,12 +28,8 @@ public class PlayerActionManager extends Observable implements ActionManager {
     }
 
     public PlayerActionManager(Actor client) {
+        this();
         this.client = client;
-        this.menuState = new MenuState();
-        this.setupState = new SetupState();
-        this.combatState = new CombatState();
-        this.currentState = this.combatState;
-        this.register(MapView.instance());
         EntityController.instance().registerActor(this.client);
     }
 

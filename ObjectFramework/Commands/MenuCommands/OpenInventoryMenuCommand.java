@@ -18,7 +18,7 @@ public class OpenInventoryMenuCommand implements Command {
 
     public void execute() {
 
-        Menu menu = actor.getInventory().getItemMenu();
+        Menu menu = actor.getInventory().showItems();
         ((PlayerActionManager)actor.getManager()).setCurrentMenu(menu);
         MapView.instance().menuUpdate(menu);
     }

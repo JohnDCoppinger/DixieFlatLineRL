@@ -8,6 +8,6 @@ import net.slashie.libjcsi.ConsoleSystemInterface;
 public class ActorRenderComponentSimple extends RenderComponent{
     public ActorRenderComponentSimple()
     {
-        super('@', ConsoleSystemInterface.GREEN, ConsoleSystemInterface.BLACK);
+        super('@', ConsoleSystemInterface.GREEN, ConsoleSystemInterface.LIGHT_GRAY);
     }
 }

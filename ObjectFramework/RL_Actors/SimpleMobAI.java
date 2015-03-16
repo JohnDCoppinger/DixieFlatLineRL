@@ -15,7 +15,7 @@ public class SimpleMobAI implements ActionManager {
 
         /**
          * The intelligence of the mob is encapsualted here, so it should probably ask for a region around itself, or
-         * for the whole map, and then path to the player and try to attack them. ActionManagers use
+         * for the whole map, and then path to the player and try to attack them. Any subsytem is available to use here. AIs cheat
          */
     }
 

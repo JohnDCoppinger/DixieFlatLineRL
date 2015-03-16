@@ -78,7 +78,7 @@ public class EntityController {
         return entity.clippable();
     }
 
-    public void registerModel(Observer observer) {
+    public void registerToModel(Observer observer) {
         this.model.register(observer);
     }
 
@@ -117,5 +117,9 @@ public class EntityController {
 
         for (ActionManager manager : actors)
             queue.add(manager);
+    }
+
+    public GameEntity getPlayerActor() {
+        return this.model.getPlayerActor();
     }
 }

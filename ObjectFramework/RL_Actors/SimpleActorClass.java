@@ -1,7 +1,9 @@
 package ObjectFramework.RL_Actors;
 
 import ObjectFramework.General.Entity.GameEntity;
+import ObjectFramework.General.Menu.InventoryMenu;
 import ObjectFramework.General.Menu.Menu;
+import ObjectFramework.General.Menu.MenuItem;
 import ObjectFramework.RL_Actors.Actions.Action;
 import ObjectFramework.RL_Actors.Actions.BasicAttackAction;
 
@@ -32,11 +34,17 @@ public class SimpleActorClass implements ActorClass {
 
     public Menu listAbilities() {
 
-        return null;
+        //TODO create ability menu
+        InventoryMenu menu = new InventoryMenu("Ability List");
+
+        menu.addMenuItem(new MenuItem("Basic Attack", 1));
+
+        return menu;
     }
 
     public Action selectAbility(int abilityNo) {
-        return null;
+
+        return this.currentReaction;
     }
 
     public void setDefault(Action newDefault) {
