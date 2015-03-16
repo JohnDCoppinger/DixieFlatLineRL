@@ -19,7 +19,13 @@ public class PlayerActionManager extends Observable implements ActionManager {
     private Menu currentMenu;
     private int currentPool;
 
-    private PlayerActionManager() {}
+    public PlayerActionManager() {
+        this.menuState = new MenuState();
+        this.setupState = new SetupState();
+        this.combatState = new CombatState();
+        this.currentState = this.combatState;
+        this.register(MapView.instance());
+    }
 
     public PlayerActionManager(Actor client) {
         this.client = client;
@@ -87,5 +93,14 @@ public class PlayerActionManager extends Observable implements ActionManager {
 
     public void displayMenu() {
         MapView.instance(); //TODO
+    }
+
+    public void setClient(Actor client) {
+
+        if (this.client != null)
+            return;
+
+        this.client = client;
+        EntityController.instance().registerActor(client);
     }
 }
