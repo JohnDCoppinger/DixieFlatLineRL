@@ -1,6 +1,7 @@
 package ObjectFramework.RL_Actors;
 
 import ObjectFramework.General.Entity.GameEntity;
+import ObjectFramework.General.Menu.Menu;
 import ObjectFramework.RL_Actors.Actions.Action;
 import ObjectFramework.RL_Actors.Actions.BasicAttackAction;
 
@@ -32,7 +33,7 @@ public class SimpleActorClass implements ActorClass {
             currentReaction.perform(entity);
     }
 
-    public Action[] listAbilities() {
+    public Menu listAbilities() {
 
         return null;
     }
@@ -52,6 +53,6 @@ public class SimpleActorClass implements ActorClass {
 
     public int getActionPool() {
 
-        return 7;
+        return 1;
     }
 }

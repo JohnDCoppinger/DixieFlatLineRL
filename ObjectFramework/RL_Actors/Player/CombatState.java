@@ -1,49 +1,59 @@
 package ObjectFramework.RL_Actors.Player;
 
-import ObjectFramework.Commands.Command;
 import ObjectFramework.Commands.MenuCommands.OpenInventoryMenuCommand;
-import ObjectFramework.Commands.MovementCommands.*;
-import ObjectFramework.Commands.NullCommand;
+import ObjectFramework.Commands.MovementCommands.MoveDownCommand;
+import ObjectFramework.Commands.MovementCommands.MoveLeftCommand;
+import ObjectFramework.Commands.MovementCommands.MoveRightCommand;
+import ObjectFramework.Commands.MovementCommands.MoveUpCommand;
 import ObjectFramework.Commands.PickUpItemCommand;
 import ObjectFramework.General.MapView;
 import ObjectFramework.RL_Actors.Actor;
 
 public class CombatState implements PlayerState {
 
-    private MoveCommand lastMove;
+    //private MoveCommand lastMove;
 
     public CombatState() {
-        this.lastMove = null;
+        //this.lastMove = null;
     }
 
-    public Command getAction(Actor client) {
+    public int performCommand(Actor client) {
 
             net.slashie.libjcsi.CharKey key = MapView.instance().inKey();
 
+            if (key == null)
+                return 0;
+
             if (key.toString().equalsIgnoreCase("w") || key.isUpArrow()) {
-                return (lastMove = new MoveUpCommand(client));
+                new MoveUpCommand(client).execute();
+                return 1;
             }
 
             if (key.toString().equalsIgnoreCase("a") || key.isLeftArrow()) {
-                return (lastMove = new MoveLeftCommand(client));
+                new MoveLeftCommand(client).execute();
+                return 1;
             }
 
             if (key.toString().equalsIgnoreCase("s") || key.isDownArrow()) {
-                return (lastMove = new MoveDownCommand(client));
+                new MoveDownCommand(client).execute();
+                return 1;
             }
 
             if (key.toString().equalsIgnoreCase("d") || key.isRightArrow()) {
-                return (lastMove = new MoveRightCommand(client));
+                new MoveRightCommand(client).execute();
+                return 1;
             }
 
             if (key.toString().equalsIgnoreCase("e")) {
-                return new OpenInventoryMenuCommand(client);
+                new OpenInventoryMenuCommand(client).execute();
+                return 0;
             }
 
             if (key.toString().equalsIgnoreCase(" ")) {
-                return new PickUpItemCommand(client);
+                new PickUpItemCommand(client).execute();
+                return 0;
             }
 
-            return new NullCommand();
+            return 0;
     }
 }
