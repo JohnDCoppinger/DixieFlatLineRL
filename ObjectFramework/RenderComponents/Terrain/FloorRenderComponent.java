@@ -1,13 +1,14 @@
 package ObjectFramework.RenderComponents.Terrain;
 
 import ObjectFramework.General.Entity.RenderComponent;
+import net.slashie.libjcsi.CSIColor;
 import net.slashie.libjcsi.ConsoleSystemInterface;
 
 public class FloorRenderComponent extends RenderComponent
 {
     public FloorRenderComponent()
     {
-        super(',', ConsoleSystemInterface.BLACK, ConsoleSystemInterface.GRAY);
+        super(',', CSIColor.BLACK, CSIColor.GRAY);
     }
 }
 

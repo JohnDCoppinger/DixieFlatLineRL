@@ -1,18 +1,20 @@
 package ObjectFramework.General.Entity;
 
+import net.slashie.libjcsi.CSIColor;
+
 /**
  * Created by Gallanoth on 3/3/2015.
  */
 public class RenderComponent {
 
     private char renderChar;
-    private int color;
-    private int backgroundColor;
+    private CSIColor color;
+    private CSIColor backgroundColor;
     private String name;
 
     protected RenderComponent() {}
 
-    public RenderComponent(char renderChar, int color, int backgroundColor) {
+    public RenderComponent(char renderChar, CSIColor color, CSIColor backgroundColor) {
 
         this.renderChar = renderChar;
         this.color = color;
@@ -29,20 +31,20 @@ public class RenderComponent {
         this.renderChar = renderChar;
     }
 
-    public int getColor() {
+    public CSIColor getColor() {
 
         return this.color;
     }
 
-    public int getBackgroundColor() {
+    public CSIColor getBackgroundColor() {
         return backgroundColor;
     }
 
-    public void setBackgroundColor(int backgroundColor) {
+    public void setBackgroundColor(CSIColor backgroundColor) {
         this.backgroundColor = backgroundColor;
     }
 
-    public void setColor(int color) {
+    public void setColor(CSIColor color) {
         this.color = color;
     }
 
