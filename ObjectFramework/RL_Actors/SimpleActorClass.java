@@ -5,9 +5,6 @@ import ObjectFramework.General.Menu.Menu;
 import ObjectFramework.RL_Actors.Actions.Action;
 import ObjectFramework.RL_Actors.Actions.BasicAttackAction;
 
-/**
- * Created by Gallanoth on 3/14/2015.
- */
 public class SimpleActorClass implements ActorClass {
 
     private static int basePower = 15;

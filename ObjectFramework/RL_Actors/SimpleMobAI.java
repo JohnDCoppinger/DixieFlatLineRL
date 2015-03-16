@@ -1,8 +1,5 @@
 package ObjectFramework.RL_Actors;
 
-/**
- * Created by Gallanoth on 3/14/2015.
- */
 public class SimpleMobAI implements ActionManager {
 
     private Actor client;

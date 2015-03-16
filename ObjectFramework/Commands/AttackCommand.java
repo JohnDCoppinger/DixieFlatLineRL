@@ -2,9 +2,6 @@ package ObjectFramework.Commands;
 
 import ObjectFramework.General.Entity.GameEntity;
 
-/**
- * Created by Gallanoth on 3/3/2015.
- */
 public class AttackCommand implements Command {
 
     private GameEntity entity;

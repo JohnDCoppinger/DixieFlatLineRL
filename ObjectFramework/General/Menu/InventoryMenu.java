@@ -3,9 +3,6 @@ package ObjectFramework.General.Menu;
 import java.util.ArrayList;
 import java.util.Iterator;
 
-/**
- * Created by Gallanoth on 3/14/2015.
- */
 public class InventoryMenu implements Menu {
 
     private int selected;
@@ -36,7 +33,7 @@ public class InventoryMenu implements Menu {
             this.selected = selected;
     }
 
-    public MenuItem getSelected() {
+    public MenuItem getSelectedItem() {
 
         MenuItem item;
 
@@ -44,6 +41,10 @@ public class InventoryMenu implements Menu {
             return item;
 
         return null;
+    }
+
+    public int getSelected() {
+        return this.selected;
     }
 
     public Iterator getIterator() {
@@ -57,6 +58,10 @@ public class InventoryMenu implements Menu {
 
             public MenuItem next() {
                 return items.get(currentIndex++);
+            }
+
+            public void remove() {
+
             }
         };
     }
@@ -93,6 +98,10 @@ public class InventoryMenu implements Menu {
             return item.getKey();
 
         return -1;
+    }
+
+    public void remove(int itemNo) {
+        this.items.remove(itemNo);
     }
 
 }

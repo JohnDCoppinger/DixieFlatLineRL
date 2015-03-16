@@ -5,9 +5,6 @@ import ObjectFramework.General.Menu.Menu;
 
 import java.util.ArrayList;
 
-/**
- * Created by Gallanoth on 3/13/2015.
- */
 public class SimpleItemInventory implements InventoryComponent {
 
     private ArrayList<Item> items;
@@ -31,6 +28,14 @@ public class SimpleItemInventory implements InventoryComponent {
         items.remove(itemIndex);
 
         return temp;
+    }
+
+    public Item referenceItem(int itemIndex) {
+
+        if (itemIndex < items.size())
+            return items.get(itemIndex);
+
+        return null;
     }
 
     public void addItem(Item newItem) {

@@ -4,10 +4,6 @@ import ObjectFramework.General.Entity.GameEntity;
 import ObjectFramework.General.Entity.InventoryComponent;
 import ObjectFramework.RL_Actors.Actor;
 
-/**
- * Created by Gallanoth on 3/15/2015.
- */
-
 //This command is very fragile. Not a good one.
 public class PickUpItemCommand implements Command {
 

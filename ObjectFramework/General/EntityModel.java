@@ -116,8 +116,6 @@ public class EntityModel extends Observable {
         return this.currentMap.getRegion(startx, starty, endx, endy);
     }
 
-
-    //TODO
     private void updateSubscribers() {
 
         if (!this.hasChanged())

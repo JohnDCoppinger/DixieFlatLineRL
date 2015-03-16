@@ -2,9 +2,6 @@ package ObjectFramework.General;
 
 import ObjectFramework.RL_Map.*;
 
-/**
- * Created by Gallanoth on 3/12/2015.
- */
 public class EntityMapGenerator {
 
     private static EntityMapGenerator instance;

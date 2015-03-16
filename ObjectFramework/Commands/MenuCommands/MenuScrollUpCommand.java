@@ -5,9 +5,6 @@ import ObjectFramework.General.MapView;
 import ObjectFramework.General.Menu.Menu;
 import ObjectFramework.RL_Actors.Player.PlayerActionManager;
 
-/**
- * Created by Gallanoth on 3/15/2015.
- */
 public class MenuScrollUpCommand implements Command {
 
     PlayerActionManager manager;

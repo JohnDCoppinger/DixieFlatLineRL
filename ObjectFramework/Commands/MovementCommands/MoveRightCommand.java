@@ -3,9 +3,6 @@ package ObjectFramework.Commands.MovementCommands;
 import ObjectFramework.General.Entity.GameEntity;
 import ObjectFramework.General.EntityController;
 
-/**
- * Created by Gallanoth on 3/9/2015.
- */
 public class MoveRightCommand extends MoveCommand{
 
     private MoveRightCommand() {}

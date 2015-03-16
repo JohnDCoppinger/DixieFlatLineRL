@@ -3,9 +3,6 @@ package ObjectFramework.Commands;
 import ObjectFramework.General.Entity.GameEntity;
 import ObjectFramework.General.EntityController;
 
-/**
- * Created by Gallanoth on 3/13/2015.
- */
 public class RemoveEntityCommand implements Command {
 
     GameEntity entity;

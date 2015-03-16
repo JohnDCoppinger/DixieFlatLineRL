@@ -3,9 +3,6 @@ package ObjectFramework.RL_Actors.Actions;
 import ObjectFramework.Commands.MovementCommands.MoveRightCommand;
 import ObjectFramework.General.Entity.GameEntity;
 
-/**
- * Created by Gallanoth on 3/13/2015.
- */
 public class MoveRightAction extends MoveAction{
 
     private int cost;

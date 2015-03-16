@@ -2,9 +2,6 @@ package ObjectFramework.RL_Items;
 
 import ObjectFramework.RL_Items.Interfaces.*;
 
-/**
- * Created by Gallanoth on 3/15/2015.
- */
 public class CurrentEquipment {
 
     private class EmptyItemSlot implements ArmSlot, FootSlot, HandSlot, HeadSlot, LegSlot, TorsoSlot{

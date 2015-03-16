@@ -4,9 +4,6 @@ import ObjectFramework.Commands.AttackCommand;
 import ObjectFramework.General.Entity.GameEntity;
 import ObjectFramework.General.RandomNumber;
 
-/**
- * Created by Gallanoth on 3/13/2015.
- */
 public class BasicAttackAction implements Action{
 
     private int cost;
