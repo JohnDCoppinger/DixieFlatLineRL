@@ -1,89 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="942eb137-ac80-4ced-b94b-a473ebc8a017" name="Default" comment="Fleshed out simple Actor Classes">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ObjectFramework/RL_Actors/Actions/ChangeMapAction.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ObjectFramework/RL_Terrain/DownStairsReactionComponent.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ObjectFramework/Commands/MoveToNextMapCommand.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ObjectFramework/Commands/MoveToPreviousMapCommand.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ObjectFramework/RL_Terrain/UpStairsReactionComponent.java" />
-      <change type="DELETED" beforePath="C:\Users\Aryk\IdeaProjects\DixieFlatLineRL\out\production\DixieFlatLineRL\ObjectFramework\RL_Actors\Actions\EquipAction.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Aryk\IdeaProjects\DixieFlatLineRL\out\production\DixieFlatLineRL\ObjectFramework\RL_Actors\Actions\UnequipAction.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Aryk\IdeaProjects\DixieFlatLineRL\out\production\DixieFlatLineRL\ObjectFramework\RL_Items\SimpleItemReaction.class" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DixieFlatLineRL/ObjectFramework/General/ActionQueue.class" afterPath="$PROJECT_DIR$/out/production/DixieFlatLineRL/ObjectFramework/General/ActionQueue.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DixieFlatLineRL/ObjectFramework/RL_Actors/Actor.class" afterPath="$PROJECT_DIR$/out/production/DixieFlatLineRL/ObjectFramework/RL_Actors/Actor.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DixieFlatLineRL/ObjectFramework/RL_Items/Armor.class" afterPath="$PROJECT_DIR$/out/production/DixieFlatLineRL/ObjectFramework/RL_Items/Armor.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DixieFlatLineRL/ObjectFramework/Commands/AttackCommand.class" afterPath="$PROJECT_DIR$/out/production/DixieFlatLineRL/ObjectFramework/Commands/AttackCommand.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DixieFlatLineRL/ObjectFramework/RL_Actors/Actions/BasicAttackAction.class" afterPath="$PROJECT_DIR$/out/production/DixieFlatLineRL/ObjectFramework/RL_Actors/Actions/BasicAttackAction.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DixieFlatLineRL/ObjectFramework/Commands/MenuCommands/CloseInventoryCommand.class" afterPath="$PROJECT_DIR$/out/production/DixieFlatLineRL/ObjectFramework/Commands/MenuCommands/CloseInventoryCommand.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DixieFlatLineRL/ObjectFramework/RL_Items/Consumable.class" afterPath="$PROJECT_DIR$/out/production/DixieFlatLineRL/ObjectFramework/RL_Items/Consumable.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DixieFlatLineRL/ObjectFramework/RenderComponents/Item/CorpseRenderComponent.class" afterPath="$PROJECT_DIR$/out/production/DixieFlatLineRL/ObjectFramework/RenderComponents/Item/CorpseRenderComponent.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DixieFlatLineRL/ObjectFramework/RenderComponents/Terrain/CorridorRenderComponent.class" afterPath="$PROJECT_DIR$/out/production/DixieFlatLineRL/ObjectFramework/RenderComponents/Terrain/CorridorRenderComponent.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DixieFlatLineRL/ObjectFramework/RL_Items/CurrentEquipment$EmptyItemSlot.class" afterPath="$PROJECT_DIR$/out/production/DixieFlatLineRL/ObjectFramework/RL_Items/CurrentEquipment$EmptyItemSlot.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DixieFlatLineRL/ObjectFramework/RL_Items/CurrentEquipment.class" afterPath="$PROJECT_DIR$/out/production/DixieFlatLineRL/ObjectFramework/RL_Items/CurrentEquipment.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DixieFlatLineRL/ObjectFramework/RenderComponents/Terrain/DirtRenderComponent.class" afterPath="$PROJECT_DIR$/out/production/DixieFlatLineRL/ObjectFramework/RenderComponents/Terrain/DirtRenderComponent.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DixieFlatLineRL/ObjectFramework/RenderComponents/Terrain/DoorRenderComponent.class" afterPath="$PROJECT_DIR$/out/production/DixieFlatLineRL/ObjectFramework/RenderComponents/Terrain/DoorRenderComponent.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DixieFlatLineRL/ObjectFramework/RenderComponents/Terrain/DownStairsRenderComponent.class" afterPath="$PROJECT_DIR$/out/production/DixieFlatLineRL/ObjectFramework/RenderComponents/Terrain/DownStairsRenderComponent.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DixieFlatLineRL/ObjectFramework/Commands/MenuCommands/DropSelectedItemCommand.class" afterPath="$PROJECT_DIR$/out/production/DixieFlatLineRL/ObjectFramework/Commands/MenuCommands/DropSelectedItemCommand.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DixieFlatLineRL/ObjectFramework/General/EntityMap.class" afterPath="$PROJECT_DIR$/out/production/DixieFlatLineRL/ObjectFramework/General/EntityMap.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DixieFlatLineRL/ObjectFramework/General/EntityMapGenerator.class" afterPath="$PROJECT_DIR$/out/production/DixieFlatLineRL/ObjectFramework/General/EntityMapGenerator.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DixieFlatLineRL/ObjectFramework/General/EntityModel$RegionObserver.class" afterPath="$PROJECT_DIR$/out/production/DixieFlatLineRL/ObjectFramework/General/EntityModel$RegionObserver.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DixieFlatLineRL/ObjectFramework/General/EntityModel.class" afterPath="$PROJECT_DIR$/out/production/DixieFlatLineRL/ObjectFramework/General/EntityModel.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DixieFlatLineRL/ObjectFramework/RenderComponents/Terrain/FloorRenderComponent.class" afterPath="$PROJECT_DIR$/out/production/DixieFlatLineRL/ObjectFramework/RenderComponents/Terrain/FloorRenderComponent.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DixieFlatLineRL/ObjectFramework/General/Entity/GameEntity.class" afterPath="$PROJECT_DIR$/out/production/DixieFlatLineRL/ObjectFramework/General/Entity/GameEntity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DixieFlatLineRL/ObjectFramework/Commands/HealCommand.class" afterPath="$PROJECT_DIR$/out/production/DixieFlatLineRL/ObjectFramework/Commands/HealCommand.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DixieFlatLineRL/ObjectFramework/Commands/InspectInventoryCommand.class" afterPath="$PROJECT_DIR$/out/production/DixieFlatLineRL/ObjectFramework/Commands/InspectInventoryCommand.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DixieFlatLineRL/ObjectFramework/General/Entity/InventoryComponent.class" afterPath="$PROJECT_DIR$/out/production/DixieFlatLineRL/ObjectFramework/General/Entity/InventoryComponent.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DixieFlatLineRL/ObjectFramework/RL_Items/Item.class" afterPath="$PROJECT_DIR$/out/production/DixieFlatLineRL/ObjectFramework/RL_Items/Item.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DixieFlatLineRL/ObjectFramework/Commands/KillCommand.class" afterPath="$PROJECT_DIR$/out/production/DixieFlatLineRL/ObjectFramework/Commands/KillCommand.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DixieFlatLineRL/ObjectFramework/General/MapDoesNotExistException.class" afterPath="$PROJECT_DIR$/out/production/DixieFlatLineRL/ObjectFramework/General/MapDoesNotExistException.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DixieFlatLineRL/ObjectFramework/General/Menu/MenuItem.class" afterPath="$PROJECT_DIR$/out/production/DixieFlatLineRL/ObjectFramework/General/Menu/MenuItem.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DixieFlatLineRL/ObjectFramework/Commands/MenuCommands/MenuScrollDownCommand.class" afterPath="$PROJECT_DIR$/out/production/DixieFlatLineRL/ObjectFramework/Commands/MenuCommands/MenuScrollDownCommand.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DixieFlatLineRL/ObjectFramework/Commands/MenuCommands/MenuScrollUpCommand.class" afterPath="$PROJECT_DIR$/out/production/DixieFlatLineRL/ObjectFramework/Commands/MenuCommands/MenuScrollUpCommand.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DixieFlatLineRL/ObjectFramework/General/MessageQueue.class" afterPath="$PROJECT_DIR$/out/production/DixieFlatLineRL/ObjectFramework/General/MessageQueue.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DixieFlatLineRL/ObjectFramework/RL_Actors/Actions/MoveAction.class" afterPath="$PROJECT_DIR$/out/production/DixieFlatLineRL/ObjectFramework/RL_Actors/Actions/MoveAction.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DixieFlatLineRL/ObjectFramework/Commands/MovementCommands/MoveCommand.class" afterPath="$PROJECT_DIR$/out/production/DixieFlatLineRL/ObjectFramework/Commands/MovementCommands/MoveCommand.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DixieFlatLineRL/ObjectFramework/RL_Actors/Actions/MoveDownAction.class" afterPath="$PROJECT_DIR$/out/production/DixieFlatLineRL/ObjectFramework/RL_Actors/Actions/MoveDownAction.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DixieFlatLineRL/ObjectFramework/Commands/MovementCommands/MoveDownCommand.class" afterPath="$PROJECT_DIR$/out/production/DixieFlatLineRL/ObjectFramework/Commands/MovementCommands/MoveDownCommand.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DixieFlatLineRL/ObjectFramework/RL_Actors/Actions/MoveLeftAction.class" afterPath="$PROJECT_DIR$/out/production/DixieFlatLineRL/ObjectFramework/RL_Actors/Actions/MoveLeftAction.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DixieFlatLineRL/ObjectFramework/Commands/MovementCommands/MoveLeftCommand.class" afterPath="$PROJECT_DIR$/out/production/DixieFlatLineRL/ObjectFramework/Commands/MovementCommands/MoveLeftCommand.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DixieFlatLineRL/ObjectFramework/RL_Actors/Actions/MoveRightAction.class" afterPath="$PROJECT_DIR$/out/production/DixieFlatLineRL/ObjectFramework/RL_Actors/Actions/MoveRightAction.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DixieFlatLineRL/ObjectFramework/Commands/MovementCommands/MoveRightCommand.class" afterPath="$PROJECT_DIR$/out/production/DixieFlatLineRL/ObjectFramework/Commands/MovementCommands/MoveRightCommand.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DixieFlatLineRL/ObjectFramework/RL_Actors/Actions/MoveUpAction.class" afterPath="$PROJECT_DIR$/out/production/DixieFlatLineRL/ObjectFramework/RL_Actors/Actions/MoveUpAction.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DixieFlatLineRL/ObjectFramework/Commands/MovementCommands/MoveUpCommand.class" afterPath="$PROJECT_DIR$/out/production/DixieFlatLineRL/ObjectFramework/Commands/MovementCommands/MoveUpCommand.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DixieFlatLineRL/ObjectFramework/Commands/NullCommand.class" afterPath="$PROJECT_DIR$/out/production/DixieFlatLineRL/ObjectFramework/Commands/NullCommand.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DixieFlatLineRL/ObjectFramework/Commands/MenuCommands/OpenInventoryMenuCommand.class" afterPath="$PROJECT_DIR$/out/production/DixieFlatLineRL/ObjectFramework/Commands/MenuCommands/OpenInventoryMenuCommand.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DixieFlatLineRL/ObjectFramework/Commands/PickUpItemCommand.class" afterPath="$PROJECT_DIR$/out/production/DixieFlatLineRL/ObjectFramework/Commands/PickUpItemCommand.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DixieFlatLineRL/ObjectFramework/General/RandomNumber.class" afterPath="$PROJECT_DIR$/out/production/DixieFlatLineRL/ObjectFramework/General/RandomNumber.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DixieFlatLineRL/ObjectFramework/Commands/RemoveActorCommand.class" afterPath="$PROJECT_DIR$/out/production/DixieFlatLineRL/ObjectFramework/Commands/RemoveActorCommand.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DixieFlatLineRL/ObjectFramework/Commands/RemoveEntityCommand.class" afterPath="$PROJECT_DIR$/out/production/DixieFlatLineRL/ObjectFramework/Commands/RemoveEntityCommand.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DixieFlatLineRL/ObjectFramework/RL_Actors/SimpleActorClass.class" afterPath="$PROJECT_DIR$/out/production/DixieFlatLineRL/ObjectFramework/RL_Actors/SimpleActorClass.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DixieFlatLineRL/ObjectFramework/RL_Actors/SimpleActorCombat.class" afterPath="$PROJECT_DIR$/out/production/DixieFlatLineRL/ObjectFramework/RL_Actors/SimpleActorCombat.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DixieFlatLineRL/ObjectFramework/RL_Actors/SimpleMobAI.class" afterPath="$PROJECT_DIR$/out/production/DixieFlatLineRL/ObjectFramework/RL_Actors/SimpleMobAI.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DixieFlatLineRL/ObjectFramework/RenderComponents/Terrain/StoneWallRenderComponent.class" afterPath="$PROJECT_DIR$/out/production/DixieFlatLineRL/ObjectFramework/RenderComponents/Terrain/StoneWallRenderComponent.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DixieFlatLineRL/ObjectFramework/Commands/TakeItemCommand.class" afterPath="$PROJECT_DIR$/out/production/DixieFlatLineRL/ObjectFramework/Commands/TakeItemCommand.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DixieFlatLineRL/ObjectFramework/RL_Items/Tool.class" afterPath="$PROJECT_DIR$/out/production/DixieFlatLineRL/ObjectFramework/RL_Items/Tool.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DixieFlatLineRL/ObjectFramework/RenderComponents/Terrain/TownWallRenderComponent.class" afterPath="$PROJECT_DIR$/out/production/DixieFlatLineRL/ObjectFramework/RenderComponents/Terrain/TownWallRenderComponent.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DixieFlatLineRL/ObjectFramework/RenderComponents/Terrain/UnusedRenderComponent.class" afterPath="$PROJECT_DIR$/out/production/DixieFlatLineRL/ObjectFramework/RenderComponents/Terrain/UnusedRenderComponent.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DixieFlatLineRL/ObjectFramework/RenderComponents/Terrain/UpStairsRenderComponent.class" afterPath="$PROJECT_DIR$/out/production/DixieFlatLineRL/ObjectFramework/RenderComponents/Terrain/UpStairsRenderComponent.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DixieFlatLineRL/ObjectFramework/RL_Actors/Actions/UseItemAction.class" afterPath="$PROJECT_DIR$/out/production/DixieFlatLineRL/ObjectFramework/RL_Actors/Actions/UseItemAction.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DixieFlatLineRL/ObjectFramework/RenderComponents/Terrain/VertWallRenderComponent.class" afterPath="$PROJECT_DIR$/out/production/DixieFlatLineRL/ObjectFramework/RenderComponents/Terrain/VertWallRenderComponent.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DixieFlatLineRL/net/slashie/libjcsi/wswing/WSwingConsoleInterface.class" afterPath="$PROJECT_DIR$/out/production/DixieFlatLineRL/net/slashie/libjcsi/wswing/WSwingConsoleInterface.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DixieFlatLineRL/ObjectFramework/RenderComponents/Terrain/WallRenderComponent.class" afterPath="$PROJECT_DIR$/out/production/DixieFlatLineRL/ObjectFramework/RenderComponents/Terrain/WallRenderComponent.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DixieFlatLineRL/ObjectFramework/RL_Items/Weapon.class" afterPath="$PROJECT_DIR$/out/production/DixieFlatLineRL/ObjectFramework/RL_Items/Weapon.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ObjectFramework/RL_Actors/Actor.java" afterPath="$PROJECT_DIR$/ObjectFramework/RL_Actors/Actor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ObjectFramework/RL_Actors/ActorInventoryComponent.java" afterPath="$PROJECT_DIR$/ObjectFramework/RL_Actors/ActorInventoryComponent.java" />
+    <list default="true" id="942eb137-ac80-4ced-b94b-a473ebc8a017" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DixieFlatLineRL/DixieFlatlineRoguelike.class" afterPath="$PROJECT_DIR$/out/production/DixieFlatLineRL/DixieFlatlineRoguelike.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DixieFlatLineRL/ObjectFramework/RL_Actors/Player/PlayerActionManager.class" afterPath="$PROJECT_DIR$/out/production/DixieFlatLineRL/ObjectFramework/RL_Actors/Player/PlayerActionManager.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DixieFlatLineRL/ObjectFramework/RL_Terrain/TerrainFactory.class" afterPath="$PROJECT_DIR$/out/production/DixieFlatLineRL/ObjectFramework/RL_Terrain/TerrainFactory.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DixieFlatlineRoguelike.java" afterPath="$PROJECT_DIR$/DixieFlatlineRoguelike.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ObjectFramework/Commands/MenuCommands/DropSelectedItemCommand.java" afterPath="$PROJECT_DIR$/ObjectFramework/Commands/MenuCommands/DropSelectedItemCommand.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ObjectFramework/General/Entity/GameEntity.java" afterPath="$PROJECT_DIR$/ObjectFramework/General/Entity/GameEntity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ObjectFramework/General/Entity/InventoryComponent.java" afterPath="$PROJECT_DIR$/ObjectFramework/General/Entity/InventoryComponent.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ObjectFramework/Commands/MenuCommands/OpenInventoryMenuCommand.java" afterPath="$PROJECT_DIR$/ObjectFramework/Commands/MenuCommands/OpenInventoryMenuCommand.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ObjectFramework/RL_Actors/SimpleActorClass.java" afterPath="$PROJECT_DIR$/ObjectFramework/RL_Actors/SimpleActorClass.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ObjectFramework/RL_Actors/SimpleActorCombat.java" afterPath="$PROJECT_DIR$/ObjectFramework/RL_Actors/SimpleActorCombat.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ObjectFramework/RL_Items/SimpleItemInventory.java" afterPath="$PROJECT_DIR$/ObjectFramework/RL_Items/SimpleItemInventory.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ObjectFramework/RL_Actors/SimpleMobAI.java" afterPath="$PROJECT_DIR$/ObjectFramework/RL_Actors/SimpleMobAI.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ObjectFramework/RL_Terrain/DownStairsReactionComponent.java" afterPath="$PROJECT_DIR$/ObjectFramework/RL_Terrain/DownStairsReactionComponent.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ObjectFramework/General/EntityModel.java" afterPath="$PROJECT_DIR$/ObjectFramework/General/EntityModel.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ObjectFramework/RL_Actors/Player/PlayerActionManager.java" afterPath="$PROJECT_DIR$/ObjectFramework/RL_Actors/Player/PlayerActionManager.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ObjectFramework/RL_Terrain/TerrainFactory.java" afterPath="$PROJECT_DIR$/ObjectFramework/RL_Terrain/TerrainFactory.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DixieFlatLineRL/.idea/workspace.xml" afterPath="$PROJECT_DIR$/out/production/DixieFlatLineRL/.idea/workspace.xml" />
     </list>
     <ignored path="DixieFlatLineRL.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -109,11 +36,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="DixieFlatlineRoguelike.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="DixieFlatlineRoguelike.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/DixieFlatlineRoguelike.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="408" max-vertical-offset="1292">
-              <caret line="15" column="44" selection-start-line="15" selection-start-column="44" selection-end-line="15" selection-end-column="44" />
+            <state vertical-scroll-proportion="0.5262295" vertical-offset="631" max-vertical-offset="1241">
+              <caret line="56" column="58" selection-start-line="56" selection-start-column="58" selection-end-line="56" selection-end-column="58" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -121,18 +48,35 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UpStairsReactionComponent.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/ObjectFramework/RL_Terrain/UpStairsReactionComponent.java">
+      <file leaf-file-name="PlayerActionManager.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ObjectFramework/RL_Actors/Player/PlayerActionManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5852459" vertical-offset="0" max-vertical-offset="610">
-              <caret line="21" column="5" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="461" max-vertical-offset="1071">
+              <caret line="31" column="29" selection-start-line="31" selection-start-column="29" selection-end-line="31" selection-end-column="29" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#437#438#0" expanded="true" />
-                <element signature="e#494#495#0" expanded="true" />
-                <element signature="e#598#599#0" expanded="true" />
-                <element signature="e#638#639#0" expanded="true" />
+                <element signature="method#performActions#0;class#PlayerActionManager#0" expanded="false" />
+                <element signature="method#setClient#0;class#PlayerActionManager#0" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TileFactory.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ObjectFramework/RL_Terrain/TileFactory.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="629">
+              <caret line="16" column="38" selection-start-line="16" selection-start-column="38" selection-end-line="16" selection-end-column="38" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TerrainFactory.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ObjectFramework/RL_Terrain/TerrainFactory.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="223" max-vertical-offset="1275">
+              <caret line="34" column="70" selection-start-line="34" selection-start-column="70" selection-end-line="34" selection-end-column="70" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -140,14 +84,12 @@
       <file leaf-file-name="DownStairsReactionComponent.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ObjectFramework/RL_Terrain/DownStairsReactionComponent.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="527">
-              <caret line="18" column="36" selection-start-line="18" selection-start-column="36" selection-end-line="18" selection-end-column="36" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="510">
+              <caret line="10" column="69" selection-start-line="10" selection-start-column="69" selection-end-line="10" selection-end-column="69" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#356#357#0" expanded="true" />
-                <element signature="e#415#416#0" expanded="true" />
-                <element signature="e#467#468#0" expanded="true" />
-                <element signature="e#512#513#0" expanded="true" />
+                <element signature="e#552#553#0" expanded="true" />
+                <element signature="e#597#598#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -169,15 +111,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MoveToNextMapCommand.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ObjectFramework/Commands/MoveToNextMapCommand.java">
+      <file leaf-file-name="EntityModel.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ObjectFramework/General/EntityModel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="510">
-              <caret line="21" column="34" selection-start-line="21" selection-start-column="34" selection-end-line="21" selection-end-column="34" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="2581" max-vertical-offset="3468">
+              <caret line="167" column="0" selection-start-line="167" selection-start-column="0" selection-end-line="167" selection-end-column="0" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#351#352#0" expanded="true" />
-                <element signature="e#387#388#0" expanded="true" />
+                <element signature="e#4232#4233#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -197,54 +137,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Action.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ObjectFramework/RL_Actors/Actions/Action.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="306">
-              <caret line="6" column="3" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="ActionQueue.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ObjectFramework/General/ActionQueue.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="408">
-              <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+              <caret line="15" column="24" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PlayerActionManager.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ObjectFramework/RL_Actors/Player/PlayerActionManager.java">
+      <file leaf-file-name="EntityController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ObjectFramework/General/EntityController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="48" max-vertical-offset="1139">
-              <caret line="21" column="26" selection-start-line="21" selection-start-column="26" selection-end-line="21" selection-end-column="26" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="1068" max-vertical-offset="1853">
+              <caret line="82" column="0" selection-start-line="82" selection-start-column="0" selection-end-line="82" selection-end-column="0" />
               <folding>
-                <element signature="method#performActions#0;class#PlayerActionManager#0" expanded="false" />
-                <element signature="method#setClient#0;class#PlayerActionManager#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="InventoryMenu.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ObjectFramework/General/Menu/InventoryMenu.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="765">
-              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-              <folding>
-                <element signature="method#InventoryMenu#1;class#InventoryMenu#0" expanded="false" />
-                <element signature="method#select#0;class#InventoryMenu#0" expanded="false" />
-                <element signature="method#select#1;class#InventoryMenu#0" expanded="false" />
-                <element signature="method#getSelectedItem#0;class#InventoryMenu#0" expanded="false" />
-                <element signature="method#getIterator#0;class#InventoryMenu#0" expanded="false" />
-                <element signature="method#remove#0;class#983:1321" expanded="false" />
-                <element signature="method#emphasize#0;class#InventoryMenu#0" expanded="false" />
-                <element signature="method#unemphasize#0;class#InventoryMenu#0" expanded="false" />
-                <element signature="method#getSelectedKey#0;class#InventoryMenu#0" expanded="false" />
+                <element signature="e#2151#2152#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -258,8 +167,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/ObjectFramework/RenderComponents/Terrain/CorridorRenderComponent.java" />
-        <option value="$PROJECT_DIR$/ObjectFramework/RenderComponents/Terrain/DirtRenderComponent.java" />
         <option value="$PROJECT_DIR$/ObjectFramework/RenderComponents/Terrain/DoorRenderComponent.java" />
         <option value="$PROJECT_DIR$/ObjectFramework/RenderComponents/Terrain/DownStairsRenderComponent.java" />
         <option value="$PROJECT_DIR$/ObjectFramework/RenderComponents/Terrain/FloorRenderComponent.java" />
@@ -302,13 +209,15 @@
         <option value="$PROJECT_DIR$/ObjectFramework/General/Entity/GameEntity.java" />
         <option value="$PROJECT_DIR$/ObjectFramework/RL_Actors/Actor.java" />
         <option value="$PROJECT_DIR$/ObjectFramework/RL_Actors/SimpleActorClass.java" />
-        <option value="$PROJECT_DIR$/ObjectFramework/RL_Actors/Player/PlayerActionManager.java" />
-        <option value="$PROJECT_DIR$/DixieFlatlineRoguelike.java" />
         <option value="$PROJECT_DIR$/ObjectFramework/Commands/MoveToNextMapCommand.java" />
         <option value="$PROJECT_DIR$/ObjectFramework/Commands/MoveToPreviousMapCommand.java" />
         <option value="$PROJECT_DIR$/ObjectFramework/RL_Actors/Actions/ChangeMapAction.java" />
-        <option value="$PROJECT_DIR$/ObjectFramework/RL_Terrain/DownStairsReactionComponent.java" />
         <option value="$PROJECT_DIR$/ObjectFramework/RL_Terrain/UpStairsReactionComponent.java" />
+        <option value="$PROJECT_DIR$/ObjectFramework/RL_Terrain/TerrainFactory.java" />
+        <option value="$PROJECT_DIR$/ObjectFramework/RL_Terrain/DownStairsReactionComponent.java" />
+        <option value="$PROJECT_DIR$/DixieFlatlineRoguelike.java" />
+        <option value="$PROJECT_DIR$/ObjectFramework/RL_Actors/Player/PlayerActionManager.java" />
+        <option value="$PROJECT_DIR$/ObjectFramework/General/EntityModel.java" />
       </list>
     </option>
   </component>
@@ -397,6 +306,10 @@
               <option name="myItemId" value="ObjectFramework" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RL_Map" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -413,6 +326,28 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="RL_Items" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DixieFlatLineRL" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DixieFlatLineRL" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ObjectFramework" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RL_Items" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Interfaces" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -492,6 +427,72 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="RenderComponents" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Terrain" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DixieFlatLineRL" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DixieFlatLineRL" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ObjectFramework" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RenderComponents" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Item" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DixieFlatLineRL" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DixieFlatLineRL" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ObjectFramework" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RenderComponents" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Actor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DixieFlatLineRL" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DixieFlatLineRL" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ObjectFramework" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="General" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -510,7 +511,95 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="General" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Menu" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DixieFlatLineRL" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DixieFlatLineRL" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ObjectFramework" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="General" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Entity" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DixieFlatLineRL" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DixieFlatLineRL" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ObjectFramework" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="Commands" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DixieFlatLineRL" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DixieFlatLineRL" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ObjectFramework" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Commands" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MovementCommands" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DixieFlatLineRL" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DixieFlatLineRL" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ObjectFramework" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Commands" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MenuCommands" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -811,7 +900,7 @@
       <created>1426455923433</created>
       <option name="number" value="Default" />
       <updated>1426455923433</updated>
-      <workItem from="1426472941135" duration="10807000" />
+      <workItem from="1426472941135" duration="11851000" />
     </task>
     <task id="LOCAL-00001" summary="message">
       <created>1426473126921</created>
@@ -849,11 +938,17 @@
       <option name="project" value="LOCAL" />
       <updated>1426480086993</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Added ChangeMapAction and Map movement commands. Need hooks to be able to actually move the GameEntity however.">
+      <created>1426517085751</created>
+      <option name="number" value="00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1426517085751</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10807000" />
+    <option name="totallyTimeSpent" value="11851000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -901,7 +996,7 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.36682615" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.36642027" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -956,11 +1051,20 @@
     <MESSAGE value="Changed PlayerActionManager constructor" />
     <MESSAGE value="Added implementations of menu commands. They are messy" />
     <MESSAGE value="Went through and removed some auto generated comments&#10;Fixed up some of the simple TODOs" />
-    <option name="LAST_COMMIT_MESSAGE" value="Went through and removed some auto generated comments&#10;Fixed up some of the simple TODOs" />
+    <MESSAGE value="Added ChangeMapAction and Map movement commands. Need hooks to be able to actually move the GameEntity however." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added ChangeMapAction and Map movement commands. Need hooks to be able to actually move the GameEntity however." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="27" />
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/ObjectFramework/General/EntityModel.java</url>
+          <line>166</line>
+          <properties />
+          <option name="timeStamp" value="27" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="28" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -969,14 +1073,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/ObjectFramework/RenderComponents/Terrain/WallRenderComponent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="238">
-          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ObjectFramework/RL_Actors/Actions/BasicAttackAction.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="476">
@@ -1169,24 +1265,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ObjectFramework/RL_Terrain/TileFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.44590163" vertical-offset="0" max-vertical-offset="629">
-          <caret line="16" column="38" selection-start-line="16" selection-start-column="38" selection-end-line="16" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ObjectFramework/General/EntityModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="2534" max-vertical-offset="3451">
-          <caret line="165" column="0" selection-start-line="165" selection-start-column="0" selection-end-line="165" selection-end-column="0" />
-          <folding>
-            <element signature="e#4238#4239#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ObjectFramework/RL_Terrain/InteractiveTerrain.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="238">
@@ -1199,14 +1277,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="629">
           <caret line="7" column="22" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ObjectFramework/RL_Terrain/TerrainFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="631" max-vertical-offset="1241">
-          <caret line="7" column="3" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
           <folding />
         </state>
       </provider>
@@ -1323,17 +1393,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ObjectFramework/RL_Actors/Player/PlayerActionManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="48" max-vertical-offset="1139">
-          <caret line="21" column="26" selection-start-line="21" selection-start-column="26" selection-end-line="21" selection-end-column="26" />
-          <folding>
-            <element signature="method#performActions#0;class#PlayerActionManager#0" expanded="false" />
-            <element signature="method#setClient#0;class#PlayerActionManager#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ObjectFramework/General/Menu/InventoryMenu.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="765">
@@ -1348,36 +1407,6 @@
             <element signature="method#emphasize#0;class#InventoryMenu#0" expanded="false" />
             <element signature="method#unemphasize#0;class#InventoryMenu#0" expanded="false" />
             <element signature="method#getSelectedKey#0;class#InventoryMenu#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ObjectFramework/General/ActionQueue.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="408">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DixieFlatlineRoguelike.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="408" max-vertical-offset="1292">
-          <caret line="15" column="44" selection-start-line="15" selection-start-column="44" selection-end-line="15" selection-end-column="44" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ObjectFramework/Commands/MoveToPreviousMapCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="510">
-          <caret line="21" column="36" selection-start-line="21" selection-start-column="36" selection-end-line="21" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#371#372#0" expanded="true" />
-            <element signature="e#407#408#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1408,20 +1437,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ObjectFramework/RL_Terrain/DownStairsReactionComponent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="527">
-          <caret line="18" column="36" selection-start-line="18" selection-start-column="36" selection-end-line="18" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#356#357#0" expanded="true" />
-            <element signature="e#415#416#0" expanded="true" />
-            <element signature="e#467#468#0" expanded="true" />
-            <element signature="e#512#513#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ObjectFramework/RL_Terrain/UpStairsReactionComponent.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.5852459" vertical-offset="0" max-vertical-offset="610">
@@ -1432,6 +1447,95 @@
             <element signature="e#494#495#0" expanded="true" />
             <element signature="e#598#599#0" expanded="true" />
             <element signature="e#638#639#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ObjectFramework/RL_Terrain/TileFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="629">
+          <caret line="16" column="38" selection-start-line="16" selection-start-column="38" selection-end-line="16" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ObjectFramework/RL_Terrain/DownStairsReactionComponent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="510">
+          <caret line="10" column="69" selection-start-line="10" selection-start-column="69" selection-end-line="10" selection-end-column="69" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#552#553#0" expanded="true" />
+            <element signature="e#597#598#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ObjectFramework/RL_Terrain/TerrainFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="223" max-vertical-offset="1275">
+          <caret line="34" column="70" selection-start-line="34" selection-start-column="70" selection-end-line="34" selection-end-column="70" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ObjectFramework/Commands/MoveToPreviousMapCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="510">
+          <caret line="21" column="36" selection-start-line="21" selection-start-column="36" selection-end-line="21" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#371#372#0" expanded="true" />
+            <element signature="e#407#408#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ObjectFramework/General/ActionQueue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="408">
+          <caret line="15" column="24" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ObjectFramework/RL_Actors/Player/PlayerActionManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="461" max-vertical-offset="1071">
+          <caret line="31" column="29" selection-start-line="31" selection-start-column="29" selection-end-line="31" selection-end-column="29" />
+          <folding>
+            <element signature="method#performActions#0;class#PlayerActionManager#0" expanded="false" />
+            <element signature="method#setClient#0;class#PlayerActionManager#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ObjectFramework/General/EntityModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="2581" max-vertical-offset="3468">
+          <caret line="167" column="0" selection-start-line="167" selection-start-column="0" selection-end-line="167" selection-end-column="0" />
+          <folding>
+            <element signature="e#4232#4233#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ObjectFramework/General/EntityController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1068" max-vertical-offset="1853">
+          <caret line="82" column="0" selection-start-line="82" selection-start-column="0" selection-end-line="82" selection-end-column="0" />
+          <folding>
+            <element signature="e#2151#2152#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DixieFlatlineRoguelike.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5262295" vertical-offset="631" max-vertical-offset="1241">
+          <caret line="56" column="58" selection-start-line="56" selection-start-column="58" selection-end-line="56" selection-end-column="58" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

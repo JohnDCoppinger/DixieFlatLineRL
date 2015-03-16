@@ -32,6 +32,7 @@ public class TerrainFactory {
         if (terrain.equals("downstairs")) {
             newTerrain = new GameEntity((new DownStairsRenderComponent()));
             newTerrain.setClippable(true);
+            newTerrain.setReaction(new DownStairsReactionComponent());
         }
 
         if (terrain.equals("floor")) {
@@ -50,6 +51,7 @@ public class TerrainFactory {
         if (terrain.equals("upstairs")) {
             newTerrain = new GameEntity((new UpStairsRenderComponent()));
             newTerrain.setClippable(true);
+            newTerrain.setReaction(new UpStairsReactionComponent());
         }
 
         if (terrain.equals("vertwall")) {

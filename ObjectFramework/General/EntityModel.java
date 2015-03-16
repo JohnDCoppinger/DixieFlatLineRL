@@ -29,6 +29,7 @@ public class EntityModel extends Observable {
     public EntityModel() {
 
         this.entityMap = new ArrayList<EntityMap>();
+        this.subscribers = new ArrayList<RegionObserver>();
     }
 
     public int addMap(EntityMap newMap) {

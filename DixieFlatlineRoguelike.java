@@ -15,9 +15,9 @@ public class DixieFlatlineRoguelike {
 
     public static void main(String[] args) {
 
-        ActionQueue queue;
+        ActionQueue queue = ActionQueue.instance();
 
-        queue = initialize();
+        initialize();
 
         while(true) {
 
@@ -28,7 +28,7 @@ public class DixieFlatlineRoguelike {
         }
     }
 
-    public static ActionQueue initialize() {
+    public static void initialize() {
 
         EntityModel model = new EntityModel();
 
@@ -50,9 +50,6 @@ public class DixieFlatlineRoguelike {
         MapView swingCSI = MapView.instance();
         EntityController.instance().registerModel(swingCSI);
         swingCSI.printMapToScreen(model.getRegion(0, 0, 79, 24));
-
-        return null;
-
     }
 
     public static PlayerActionManager createPlayer() {
