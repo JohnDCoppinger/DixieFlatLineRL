@@ -77,7 +77,7 @@ public class EntityMapGenerator {
                 }
                 if(actorMapTemp[x][y] == '@')
                 {
-                    ;//gameMap.moveEntity(x,y,new PartyEntity());
+                    gameMap.moveEntity(x, y, EntityController.instance().getPlayerActor());
                 }
             }
 

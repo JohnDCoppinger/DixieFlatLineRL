@@ -1,6 +1,7 @@
 package ObjectFramework.General;
 
 import ObjectFramework.General.Entity.GameEntity;
+import ObjectFramework.RL_Actors.Actor;
 
 import java.util.ArrayList;
 import java.util.Observable;
@@ -20,6 +21,7 @@ public class EntityModel extends Observable {
     private ArrayList<EntityMap> entityMap;
     private EntityMap currentMap;
     private EntityMap previousMap;
+    private Actor playerActor;
 
     private int lbDirtyX;
     private int lbDirtyY;
@@ -202,5 +204,15 @@ public class EntityModel extends Observable {
             this.region = true;
         }
     }
+
+    public Actor getPlayerActor() {
+        return playerActor;
+    }
+
+    public void setPlayerActor(Actor playerActor) {
+        this.playerActor = playerActor;
+    }
+
+
 
 }

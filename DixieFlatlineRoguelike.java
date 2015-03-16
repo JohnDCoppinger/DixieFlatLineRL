@@ -1,5 +1,4 @@
 import ObjectFramework.General.*;
-import ObjectFramework.RL_Actors.ActionManager;
 import ObjectFramework.RL_Actors.Actor;
 import ObjectFramework.RL_Actors.Player.PlayerActionManager;
 
@@ -30,7 +29,14 @@ public class DixieFlatlineRoguelike {
 
     public static void initialize() {
 
+        MapView swingCSI = MapView.instance();
         EntityModel model = new EntityModel();
+
+        PlayerActionManager player = createPlayer();
+
+        model.setPlayerActor(player.getClient());
+        EntityController.instance().setModel(model);
+        EntityController.instance().registerToModel(swingCSI);
 
         EntityMapGenerator generator = EntityMapGenerator.instance();
         generator.setMapValues(MAPXSIZE, MAPYSIZE, NUMOFOBJECTS, NUMOFACTORS);
@@ -43,12 +49,7 @@ public class DixieFlatlineRoguelike {
         //dungeon add actors
         model.changeMap(0);
 
-        PlayerActionManager player = createPlayer();
 
-        EntityController.instance().setModel(model);
-
-        MapView swingCSI = MapView.instance();
-        EntityController.instance().registerModel(swingCSI);
         swingCSI.printMapToScreen(model.getRegion(0, 0, 79, 24));
     }
 
