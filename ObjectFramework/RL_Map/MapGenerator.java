@@ -10,11 +10,11 @@ import java.util.*;
 
 public abstract class MapGenerator
 {
-    public int _xsize;
-    public int _ysize;
+    protected int _xsize;
+    protected int _ysize;
     private long oldseed = 0;
 
-   final public int CHANCEROOM = 75;
+    final protected int CHANCEROOM = 75;
 
     protected char[][] _Map;
 

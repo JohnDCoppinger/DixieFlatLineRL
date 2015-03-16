@@ -1,6 +1,7 @@
 package ObjectFramework.RL_Items;
 
 import ObjectFramework.General.Entity.InventoryComponent;
+import ObjectFramework.General.Menu.Menu;
 
 import java.util.ArrayList;
 
@@ -42,5 +43,11 @@ public class SimpleItemInventory implements InventoryComponent {
 
     public int inventorySize() {
         return items.size();
+    }
+
+    @Override
+    public Menu getItemMenu()
+    {
+        return null;
     }
 }

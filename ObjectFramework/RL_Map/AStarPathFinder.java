@@ -18,12 +18,12 @@ public class AStarPathFinder implements PathFinder {
     private int MAXSEARCHSIZE = 1000;
 
     private boolean DIAGONALMOVEMENT = false;
-    char[][] _map;
+    public char[][] _map;
     private ArrayList<Node> open;
     private ArrayList<Node> closed;
     private Node[][] nodes;
 
-    AStarPathFinder(char[][] map, int xStart, int yStart, int xEnd, int yEnd, int xsize, int ysize)
+    public AStarPathFinder(char[][] map, int xStart, int yStart, int xEnd, int yEnd, int xsize, int ysize)
     {
         _xStart = xStart;
         _yStart = yStart;

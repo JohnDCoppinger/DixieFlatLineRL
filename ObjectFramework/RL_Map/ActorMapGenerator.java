@@ -8,7 +8,7 @@ import java.util.Random;
 
 public abstract class ActorMapGenerator
 {
-    long oldseed = 0;
+    protected long oldseed = 0;
 
     public abstract char[][] createEntityMap();
 
