@@ -92,7 +92,7 @@ public class PlayerActionManager extends Observable implements ActionManager {
     }
 
     public void displayMenu() {
-        MapView.instance(); //TODO
+        view.menuUpdate(currentMenu);
     }
 
     public void setClient(Actor client) {

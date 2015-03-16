@@ -14,5 +14,9 @@ public class ToggleEquipCommand implements Command {
 
     public void execute() {
 
+        if (manager.getCurrentMenu() != null) {
+            int selected = manager.getCurrentMenu().getSelectedKey();
+            manager.getClient().getCurrentEquipment().equip(manager.getClient().getInventory().referenceItem(selected));
+        }
     }
 }

@@ -9,6 +9,7 @@ public interface InventoryComponent {
 
     public Item[] showItems();
     public Item giveItem(int itemIndex);
+    public Item referenceItem(int itemIndex);
     public void addItem(Item newItem);
     public void deleteItem(int itemIndex);
     public int inventorySize();
