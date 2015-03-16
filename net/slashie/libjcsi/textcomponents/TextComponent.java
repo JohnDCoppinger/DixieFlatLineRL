@@ -205,3 +205,4 @@ public abstract class TextComponent implements Serializable {
         borderColor = color;
     }
 }
+

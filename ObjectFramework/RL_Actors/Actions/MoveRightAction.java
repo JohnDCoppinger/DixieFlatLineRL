@@ -1,7 +1,7 @@
 package ObjectFramework.RL_Actors.Actions;
 
-import ObjectFramework.Commands.MoveRightCommand;
-import ObjectFramework.Entity.GameEntity;
+import ObjectFramework.Commands.MovementCommands.MoveRightCommand;
+import ObjectFramework.General.Entity.GameEntity;
 
 /**
  * Created by Gallanoth on 3/13/2015.

@@ -1,7 +1,5 @@
 package ObjectFramework.RL_Items;
 
-import ObjectFramework.Entity.GameEntity;
-
 /**
  * Created by Gallanoth on 1/29/2015.
  */

@@ -1,7 +1,10 @@
 package net.slashie.libjcsi.wswing;
 
-import net.slashie.libjcsi.*;
-import net.slashie.util.*;
+import net.slashie.libjcsi.CSIColor;
+import net.slashie.libjcsi.CharKey;
+import net.slashie.libjcsi.ConsoleSystemInterface;
+import net.slashie.util.FileUtil;
+import net.slashie.util.Position;
 
 import java.awt.*;
 import java.awt.event.ComponentEvent;
@@ -367,4 +370,5 @@ public class WSwingConsoleInterface implements ConsoleSystemInterface, Runnable,
         colorsBuffer = colors.clone();
         charsBuffer = chars.clone();
     }
+
 }

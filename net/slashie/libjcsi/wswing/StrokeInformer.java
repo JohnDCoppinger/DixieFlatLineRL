@@ -20,7 +20,6 @@ public class StrokeInformer implements KeyListener, java.io.Serializable {
     }
 
     /**
-     *
      * @param toWho where to add keyListener
      */
     public void informKey(Thread toWho) {
@@ -28,7 +27,6 @@ public class StrokeInformer implements KeyListener, java.io.Serializable {
     }
 
     /**
-     *
      * @return code shows what was input
      */
     public int getInkeyBuffer() {
@@ -37,6 +35,7 @@ public class StrokeInformer implements KeyListener, java.io.Serializable {
 
     /**
      * Captures input
+     *
      * @param e
      */
     public void keyPressed(KeyEvent e) {
@@ -46,6 +45,7 @@ public class StrokeInformer implements KeyListener, java.io.Serializable {
 
     /**
      * Takes raw input and turns it into CharKey encoding.
+     *
      * @param x pressing of a key
      * @return CharKey encoded value
      */
@@ -126,6 +126,7 @@ public class StrokeInformer implements KeyListener, java.io.Serializable {
 
     /**
      * Currently does nothing.
+     *
      * @param e
      */
     public void keyReleased(KeyEvent e) {
@@ -133,6 +134,7 @@ public class StrokeInformer implements KeyListener, java.io.Serializable {
 
     /**
      * Currently does nothing.
+     *
      * @param e
      */
     public void keyTyped(KeyEvent e) {

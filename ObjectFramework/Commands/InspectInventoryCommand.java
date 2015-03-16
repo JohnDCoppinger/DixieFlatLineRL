@@ -1,6 +1,6 @@
 package ObjectFramework.Commands;
 
-import ObjectFramework.Entity.InventoryComponent;
+import ObjectFramework.General.Entity.InventoryComponent;
 
 /**
  * Created by Gallanoth on 3/13/2015.

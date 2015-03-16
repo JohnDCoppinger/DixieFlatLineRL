@@ -1,8 +1,10 @@
 package ObjectFramework.General;
-import  ObjectFramework.Entity.*;
-import  net.slashie.libjcsi.*;
-//import  net.slashie.libjcsi.CharKey;
-import  net.slashie.libjcsi.wswing.WSwingConsoleInterface;
+
+import ObjectFramework.General.Entity.GameEntity;
+import net.slashie.libjcsi.CSIColor;
+import net.slashie.libjcsi.CharKey;
+import net.slashie.libjcsi.wswing.WSwingConsoleInterface;
+
 
 public class MapView
 {	
@@ -20,6 +22,7 @@ public class MapView
 
 	private MapView()
 	{
+
 		csi = null;
         try {
              csi = new WSwingConsoleInterface("DixieFlatlineRL", false);

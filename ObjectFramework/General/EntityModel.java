@@ -1,6 +1,6 @@
 package ObjectFramework.General;
 
-import ObjectFramework.Entity.GameEntity;
+import ObjectFramework.General.Entity.GameEntity;
 
 import java.util.ArrayList;
 import java.util.Observable;

@@ -1,11 +1,9 @@
 package ObjectFramework.General;
 
-import ObjectFramework.Commands.AttackCommand;
-import ObjectFramework.Entity.GameEntity;
+import ObjectFramework.General.Entity.GameEntity;
+import ObjectFramework.General.Entity.ReactionComponent;
 import ObjectFramework.RL_Actors.ActionManager;
 import ObjectFramework.RL_Actors.Actor;
-import ObjectFramework.RL_Items.SimpleItemReaction;
-import ObjectFramework.RenderComponents.Item.CorpseRenderComponent;
 
 import java.util.ArrayList;
 import java.util.Observer;
@@ -37,23 +35,6 @@ public class EntityController {
         this.model.moveEntity(x, y, requester);
     }
 
-    public void kill(GameEntity corpse) {
-
-        if (corpse == null)
-            return;
-
-        GameEntity item = null;
-
-        if (corpse.getInventory() != null) {
-
-            item = new GameEntity(new CorpseRenderComponent());
-            item.setInventory(corpse.getInventory());
-            item.setReaction(new SimpleItemReaction(item));
-        }
-
-        this.model.swapEntity(corpse.getX(), corpse.getY(), item);
-    }
-
     public void swapEntity(int x, int y, GameEntity entity) {
 
         this.model.swapEntity(x, y, entity);
@@ -69,7 +50,22 @@ public class EntityController {
     }
 
     public void interactArea(int x, int y, GameEntity aggressor) {
-        //TODO
+
+
+        GameEntity defender;
+        ReactionComponent reaction;
+        ReactionComponent action;
+
+        if (aggressor == null || ((action = aggressor.getReaction()) == null))
+            return;
+
+        if ((defender = this.model.getEntity(x, y)) != null)
+            if ((reaction = defender.getReaction())!= null) {
+
+                action.defaultAction(defender);
+                reaction.react(aggressor);
+            }
+
     }
 
     private boolean entityClippable(int x, int y) {
@@ -90,12 +86,13 @@ public class EntityController {
         this.model.register(observer);
     }
 
-    public EntityModel getModel() {
+    private EntityModel getModel() {
         return model;
     }
 
     public void setModel(EntityModel model) {
-        this.model = model;
+        if (this.model == null)
+            this.model = model;
     }
 
     public int addMap(EntityMap newMap) {

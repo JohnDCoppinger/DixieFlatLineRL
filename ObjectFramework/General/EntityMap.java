@@ -1,6 +1,6 @@
 package ObjectFramework.General;
 
-import ObjectFramework.Entity.GameEntity;
+import ObjectFramework.General.Entity.GameEntity;
 import ObjectFramework.RL_Terrain.TerrainFactory;
 
 /**
@@ -222,22 +222,16 @@ public class EntityMap {
         if (startY < 0)
             lrbound = 0;
 
-        if (endY < startY)
-            urbound = startY;
-
         if (endY > this.rows)
             urbound = this.rows;
 
         if (startX < 0)
             lcbound = 0;
 
-        if (endX < startX)
-            ucbound = startX;
-
         if (endX > this.cols)
             ucbound = this.cols;
 
-        for (int i = 0; i < endY - startY; i ++) {
+        for (int i = 0; i < endY - startY; i++) {
 
             for(int j = 0; j < endX - startX; j++) {
 

@@ -1,6 +1,6 @@
 package ObjectFramework.RenderComponents.Item;
 
-import ObjectFramework.Entity.RenderComponent;
+import ObjectFramework.General.Entity.RenderComponent;
 
 /**
  * Created by Gallanoth on 3/13/2015.

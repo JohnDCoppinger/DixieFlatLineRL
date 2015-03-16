@@ -1,3 +1,4 @@
+import ObjectFramework.General.EntityController;
 import ObjectFramework.General.EntityMapGenerator;
 import ObjectFramework.General.EntityModel;
 import ObjectFramework.General.MapView;
@@ -26,8 +27,9 @@ public class DixieFlatlineRoguelike {
         generator.setMapValues(MAPXSIZE, MAPYSIZE, NUMOFOBJECTS, NUMOFACTORS);
         model.addMap(generator.generateMap("town"));
         model.addMap(generator.generateMap("cave"));
-        model.changeMap(0);
 
+        model.changeMap(0);
         swingCSI.printMapToScreen(model.getRegion(0, 0, 79, 24));
+        EntityController.instance().setModel(model);
     }
 }

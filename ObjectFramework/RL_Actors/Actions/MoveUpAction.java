@@ -1,8 +1,7 @@
 package ObjectFramework.RL_Actors.Actions;
 
-import ObjectFramework.Commands.MoveUpCommand;
-import ObjectFramework.Entity.GameEntity;
-import ObjectFramework.RL_Actors.ActorClass;
+import ObjectFramework.Commands.MovementCommands.MoveUpCommand;
+import ObjectFramework.General.Entity.GameEntity;
 
 /**
  * Created by Gallanoth on 3/13/2015.

@@ -1,8 +1,9 @@
+
 package net.slashie.libjcsi.textcomponents;
 
 import net.slashie.libjcsi.CharKey;
 import net.slashie.libjcsi.ConsoleSystemInterface;
-import net.slashie.util.*;
+import net.slashie.util.Util;
 
 import java.util.Vector;
 
