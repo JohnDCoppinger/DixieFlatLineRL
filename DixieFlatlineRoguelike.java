@@ -16,20 +16,26 @@ public class DixieFlatlineRoguelike {
     public static void main(String[] args) {
 
         initialize();
+
     }
 
     public static void initialize() {
 
         EntityModel model = new EntityModel();
-        MapView swingCSI = MapView.instance();
         EntityMapGenerator generator = EntityMapGenerator.instance();
-
         generator.setMapValues(MAPXSIZE, MAPYSIZE, NUMOFOBJECTS, NUMOFACTORS);
         model.addMap(generator.generateMap("town"));
+        //town add actors
         model.addMap(generator.generateMap("cave"));
-
-        model.changeMap(1);
-        swingCSI.printMapToScreen(model.getRegion(0, 0, 79, 24));
+        //cave add actors
+        model.addMap(generator.generateMap("Dungeon"));
+        //dungeon add actors
+        model.changeMap(0);
         EntityController.instance().setModel(model);
+
+        MapView swingCSI = MapView.instance();
+        EntityController.instance().registerModel(swingCSI);
+        swingCSI.printMapToScreen(model.getRegion(0, 0, 79, 24));
+
     }
 }
