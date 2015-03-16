@@ -1,4 +1,5 @@
 package ObjectFramework.General.Entity;
+import ObjectFramework.General.Menu.Menu;
 import ObjectFramework.RL_Items.Item;
 
 /**
@@ -11,4 +12,5 @@ public interface InventoryComponent {
     public void addItem(Item newItem);
     public void deleteItem(int itemIndex);
     public int inventorySize();
+    public Menu getItemMenu();
 }

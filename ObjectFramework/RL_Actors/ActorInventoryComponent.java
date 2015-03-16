@@ -1,11 +1,16 @@
 package ObjectFramework.RL_Actors;
 
 import ObjectFramework.General.Entity.InventoryComponent;
+import ObjectFramework.General.Menu.Menu;
 import ObjectFramework.RL_Items.Item;
+
+import java.util.ArrayList;
 
 //TODO
 
 public class ActorInventoryComponent implements InventoryComponent {
+
+    private ArrayList<Item> items;
 
     public Item[] showItems() {
         return null;
@@ -21,5 +26,10 @@ public class ActorInventoryComponent implements InventoryComponent {
 
     public int inventorySize() {
         return 0;
+    }
+
+    public Menu getItemMenu() {
+
+        return null;
     }
 }
